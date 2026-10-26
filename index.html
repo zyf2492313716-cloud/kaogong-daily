@@ -53,6 +53,8 @@ details summary:hover{color:var(--gold)}
 .tw tr:nth-child(even) td{background:rgba(255,255,255,.018)}
 .tw td:first-child{color:var(--dim);font-variant-numeric:tabular-nums;
   white-space:nowrap}
+/* 短单元格不许折行：避免"天津财经 / 大学""10月26 / 日"这种断字 */
+.tw td.nw{white-space:nowrap}
 /* 表内网址：长串会撑爆列，截断显示但完整可点 */
 .tw td a{word-break:break-all;font-size:13px;color:var(--link)}
 ol.idx{list-style:none}
