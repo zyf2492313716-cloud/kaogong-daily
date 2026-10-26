@@ -41,6 +41,20 @@ details summary:hover{color:var(--gold)}
 .body strong{color:#fff;font-weight:700}
 .body code{background:rgba(255,255,255,.07);padding:1px 6px;border-radius:4px;
   font-size:13.5px;color:#a8d8ff}
+/* 岗位汇总表：横向可滚，宽表在手机上不撑破页面 */
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:10px}
+.tw table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+.tw th{background:rgba(201,155,66,.1);color:var(--gold);font-weight:700;
+  text-align:left;padding:10px 14px;white-space:nowrap;
+  border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.5px}
+.tw td{padding:10px 14px;border-bottom:1px solid rgba(28,38,53,.7);
+  vertical-align:top;color:#c6d4e6}
+.tw tr:last-child td{border-bottom:none}
+.tw tr:nth-child(even) td{background:rgba(255,255,255,.018)}
+.tw td:first-child{color:var(--dim);font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+/* 表内网址：长串会撑爆列，截断显示但完整可点 */
+.tw td a{word-break:break-all;font-size:13px;color:var(--link)}
 ol.idx{list-style:none}
 ol.idx li{padding:11px 0;border-bottom:1px solid var(--line);font-size:16px}
 ol.idx li .d{color:var(--dim);font-size:13.5px;margin-right:14px;
