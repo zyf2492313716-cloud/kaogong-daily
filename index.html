@@ -5,76 +5,99 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+/* 字号刻度只用这五档（13/16/19/24/30），垂直间距只用 4 的倍数。
+   上一版实测有 8 种字号（13/13.5/14/15/16/19/30 + 12.5）、7 种非栅格间距，
+   其中 12.5/13/13.5/14 差 1px 内肉眼分不出，却是四次独立决定。
+   收成五档就是强迫所有层级复用同一个决定，不是把字改小。 */
 :root{--bg:#0b1018;--fg:#e8eef7;--dim:#8ea4c2;--line:#1c2635;--gold:#c99b42;
-  --card:#121a26;--link:#8db9ff}
+  --card:#121a26;--link:#8db9ff;--body:#c6d4e6;
+  --fs-xs:13px;--fs-md:16px;--fs-lg:19px;--fs-xl:24px;--fs-2xl:30px}
 body{background:var(--bg);color:var(--fg);line-height:1.75;
   font-family:"Noto Sans SC","Microsoft YaHei UI",-apple-system,sans-serif;
   -webkit-font-smoothing:antialiased}
-.wrap{max-width:860px;margin:0 auto;padding:56px 28px 96px}
+/* 700 是行宽：正文可用 644px，16px 字约 40 字一行。
+   上一版 860px 实测每行 48 字（最大 71），中文一行超过 38–42 就要回行找位置。 */
+.wrap{max-width:700px;margin:0 auto;padding:56px 28px 96px}
 a{color:var(--link);text-decoration:none}
 a:hover{text-decoration:underline}
-header.top{border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:34px}
-header.top h1{font-size:30px;letter-spacing:1px}
-header.top h1 i{display:inline-block;width:6px;height:22px;background:var(--gold);
-  border-radius:2px;margin-right:12px;vertical-align:-3px}
-header.top .sub{color:var(--dim);font-size:15px;margin-top:8px}
-.meta{color:var(--dim);font-size:14px}
-h2.sec{font-size:19px;color:var(--gold);margin:44px 0 18px;letter-spacing:2px;
-  padding-bottom:10px;border-bottom:1px solid var(--line)}
-.item{padding:22px 0;border-bottom:1px solid var(--line)}
-.item h3{font-size:19px;line-height:1.5;font-weight:700}
+header.top{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:32px}
+header.top h1{font-size:var(--fs-2xl);letter-spacing:1px;line-height:1.4}
+header.top h1 i{display:inline-block;width:8px;height:24px;background:var(--gold);
+  border-radius:2px;margin-right:12px;vertical-align:-4px}
+header.top .sub{color:var(--dim);font-size:var(--fs-md);margin-top:8px}
+.meta{color:var(--dim);font-size:var(--fs-xs)}
+h2.sec{font-size:var(--fs-lg);color:var(--gold);margin:48px 0 16px;letter-spacing:2px;
+  padding-bottom:12px;border-bottom:1px solid var(--line);line-height:1.4}
+.item{padding:24px 0;border-bottom:1px solid var(--line);scroll-margin-top:16px}
+.item h3{font-size:var(--fs-lg);line-height:1.5;font-weight:700}
 .item h3 a{color:var(--fg)}
 .item h3 a:hover{color:var(--gold);text-decoration:none}
-.item .src{color:var(--dim);font-size:13.5px;margin-top:7px;
+.item .src{color:var(--dim);font-size:var(--fs-xs);margin-top:8px;
   display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12.5px;
+.tag{display:inline-block;padding:4px 12px;border-radius:999px;font-size:var(--fs-xs);
   background:rgba(201,155,66,.14);color:var(--gold);border:1px solid rgba(201,155,66,.3)}
-.tag.t2{background:rgba(70,140,255,.13);color:#8db9ff;border-color:rgba(70,140,255,.3)}
-blockquote{margin:14px 0 0;padding:12px 18px;border-left:3px solid rgba(201,155,66,.5);
+.tag.t2{background:rgba(70,140,255,.13);color:var(--link);border-color:rgba(70,140,255,.3)}
+blockquote{margin:12px 0 0;padding:12px 16px;border-left:4px solid rgba(201,155,66,.5);
   background:rgba(255,255,255,.028);border-radius:0 8px 8px 0;
-  color:#cfdcec;font-size:15px}
+  color:#cfdcec;font-size:var(--fs-md);line-height:1.7}
 details{margin-top:12px}
-details summary{cursor:pointer;color:var(--dim);font-size:14px;user-select:none}
+details summary{cursor:pointer;color:var(--dim);font-size:var(--fs-md);user-select:none;
+  min-height:32px;display:flex;align-items:center}
 details summary:hover{color:var(--gold)}
-.body{margin-top:12px;font-size:15px;color:#c6d4e6}
-.body p{margin:10px 0}
+.body{margin-top:12px;font-size:var(--fs-md);color:var(--body)}
+.body p{margin:12px 0}
 .body strong{color:#fff;font-weight:700}
-.body code{background:rgba(255,255,255,.07);padding:1px 6px;border-radius:4px;
-  font-size:13.5px;color:#a8d8ff}
-/* 岗位汇总表：横向可滚，宽表在手机上不撑破页面 */
-.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:10px}
-.tw table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+.body code{background:rgba(255,255,255,.07);padding:0 4px;border-radius:4px;
+  font-size:var(--fs-xs);color:#a8d8ff}
+/* 岗位汇总表：横向可滚，宽表在手机上不撑破页面。
+   表格需要宽度但正文不需要，所以让它向两侧出血，正文列仍保持窄。 */
+.tw{overflow-x:auto;margin:16px -40px;border:1px solid var(--line);border-radius:12px}
+.tw table{border-collapse:collapse;width:100%;font-size:var(--fs-md);min-width:560px;
+  line-height:1.6}
 .tw th{background:rgba(201,155,66,.1);color:var(--gold);font-weight:700;
-  text-align:left;padding:10px 14px;white-space:nowrap;
-  border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.5px}
-.tw td{padding:10px 14px;border-bottom:1px solid rgba(28,38,53,.7);
-  vertical-align:top;color:#c6d4e6}
+  text-align:left;padding:12px 16px;white-space:nowrap;
+  border-bottom:1px solid var(--line);font-size:var(--fs-xs);letter-spacing:.5px}
+.tw td{padding:12px 16px;border-bottom:1px solid rgba(28,38,53,.7);
+  vertical-align:top;color:var(--body)}
 .tw tr:last-child td{border-bottom:none}
 .tw tr:nth-child(even) td{background:rgba(255,255,255,.018)}
 .tw td:first-child{color:var(--dim);font-variant-numeric:tabular-nums;
   white-space:nowrap}
 /* 短单元格不许折行：避免"天津财经 / 大学""10月26 / 日"这种断字 */
 .tw td.nw{white-space:nowrap}
-/* 表内网址：长串会撑爆列，截断显示但完整可点 */
-.tw td a{word-break:break-all;font-size:13px;color:var(--link)}
+/* 表内网址：长串会撑爆列，截断显示但完整可点。
+   字号 13px 的字形盒只有 19 高，低于 WCAG 2.5.8 的 24×24 硬线，
+   所以补 min-height 把命中区抬到 24（实测这是全站唯一一处违例）。 */
+.tw td a{word-break:break-all;font-size:var(--fs-xs);color:var(--link);
+  display:inline-flex;align-items:center;min-height:24px}
 ol.idx{list-style:none}
-ol.idx li{padding:11px 0;border-bottom:1px solid var(--line);font-size:16px}
-ol.idx li .d{color:var(--dim);font-size:13.5px;margin-right:14px;
+ol.idx li{padding:12px 0;border-bottom:1px solid var(--line);font-size:var(--fs-md)}
+ol.idx li .d{color:var(--dim);font-size:var(--fs-xs);margin-right:16px;
   font-variant-numeric:tabular-nums}
 ol.idx li a{color:var(--fg)}
 ol.idx li a:hover{color:var(--gold)}
-.note{color:var(--dim);font-size:13.5px;margin-top:14px;padding:14px 18px;
+.note{color:var(--dim);font-size:var(--fs-md);margin-top:16px;padding:16px 20px;
   background:rgba(255,255,255,.025);border-radius:8px;border:1px solid var(--line)}
-footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);
-  color:var(--dim);font-size:13.5px}
-footer p{margin:6px 0}
-.kv{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
-.kv span{padding:6px 14px;border-radius:8px;background:var(--card);
-  border:1px solid var(--line);font-size:14px;color:var(--dim)}
-.kv b{color:var(--gold);font-size:16px;margin-right:5px}
+footer{margin-top:64px;padding-top:24px;border-top:1px solid var(--line);
+  color:var(--dim);font-size:var(--fs-md)}
+footer p{margin:8px 0}
+.kv{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+.kv span{padding:8px 16px;border-radius:8px;background:var(--card);
+  border:1px solid var(--line);font-size:var(--fs-md);color:var(--dim)}
+.kv b{color:var(--gold);font-size:var(--fs-lg);margin-right:4px}
+/* 指尖命中区：上一版"原文 ↗"只有 24×16，手机上按不准。
+   给行内链接补够 32px 高与左右命中余量，视觉上仍是一行字。 */
+.src a,.idx li a[href*="http"]{display:inline-flex;align-items:center;
+  min-height:32px;padding:0 8px;margin:0 -8px}
+@media (max-width:760px){
+  .wrap{padding:32px 16px 64px}
+  .tw{margin-left:-16px;margin-right:-16px}
+  header.top h1{font-size:var(--fs-xl)}
+}
 </style></head><body><div class="wrap">
 <header class="top"><h1><i></i>考公资讯日报</h1><div class="sub">每天把国考、省考、事业单位的招考公告和截止节点做成一份可核对的日报</div></header>
 <h2 class="sec">最近更新</h2><ol class="idx">
+<li><span class="d">2026-10-27</span><a href="/kaogong-daily/issues/2026-10-27/">第 10 期 · 22 条</a></li>
 <li><span class="d">2026-10-26</span><a href="/kaogong-daily/issues/2026-10-26/">第 09 期 · 23 条</a></li>
 <li><span class="d">2026-10-24</span><a href="/kaogong-daily/issues/2026-10-24/">第 08 期 · 23 条</a></li>
 </ol>
