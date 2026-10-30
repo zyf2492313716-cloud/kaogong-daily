@@ -114,8 +114,33 @@ ol.idx li .d{color:var(--stone-ink);font-size:var(--fs-xs);flex:none;
   font-variant-numeric:tabular-nums}
 ol.idx li a{color:var(--ink)}
 ol.idx li a:hover{color:var(--amber-ink)}
-.note{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-3);
-  padding:var(--sp-3) var(--sp-4);background:var(--band);
+/* 进度：国考这条线（左边的点只作辅助，状态一律写成字）+ 待盯的日子 */
+.steps{display:flex;flex-direction:column;gap:var(--sp-1)}
+.step{display:flex;align-items:center;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md);line-height:1.5}
+.step .s{width:10px;height:10px;border-radius:50%;background:var(--stone);flex:none}
+.step.done .s,.step.past .s{opacity:.5}
+.step.upcoming .s{background:var(--amber)}
+.step.today{border-color:var(--amber);background:var(--band)}
+.step.today .s{background:var(--amber);box-shadow:0 0 0 4px rgba(217,119,6,.16)}
+.step b{font-weight:600;flex:1 1 auto;min-width:0}
+.step .w{flex:none;font-weight:700}
+.step.unknown .w,.step.gap .w{color:var(--stone-ink);font-weight:500}
+.step a,.step .o{flex:none;font-size:var(--fs-xs);color:var(--stone-ink);
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  min-height:24px;display:inline-flex;align-items:center}
+.days{list-style:none;display:flex;flex-direction:column;gap:var(--sp-1)}
+.days li{display:flex;align-items:baseline;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md)}
+.days .dd{flex:none;font-weight:700;font-variant-numeric:tabular-nums}
+.days .dn{flex:none;font-size:var(--fs-xs);color:var(--amber-ink);min-width:52px}
+.days a{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;min-height:24px;display:inline-flex;align-items:center}
+.days .dg{flex:1 1 auto;text-align:right;font-size:var(--fs-xs);color:var(--stone-ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.note{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-3);  padding:var(--sp-3) var(--sp-4);background:var(--band);
   border-radius:var(--radius);border:1px solid var(--line)}
 footer{margin-top:var(--sp-7);padding-top:var(--sp-4);border-top:1px solid var(--line);
   color:var(--stone-ink);font-size:var(--fs-xs);line-height:1.8}
@@ -147,6 +172,7 @@ footer p{margin:var(--sp-2) 0}
 </style></head><body><div class="wrap">
 <header class="top"><h1><i></i>考公资讯日报</h1><div class="sub">每天把国考、省考、事业单位的招考公告和截止节点做成一份可核对的日报</div></header>
 <h2 class="sec">最近更新</h2><ol class="idx">
+<li><span class="d">2026-10-30</span><a href="/kaogong-daily/issues/2026-10-30/">第 13 期 · 18 条</a></li>
 <li><span class="d">2026-10-29</span><a href="/kaogong-daily/issues/2026-10-29/">第 12 期 · 22 条</a></li>
 <li><span class="d">2026-10-27</span><a href="/kaogong-daily/issues/2026-10-27/">第 10 期 · 22 条</a></li>
 <li><span class="d">2026-10-26</span><a href="/kaogong-daily/issues/2026-10-26/">第 09 期 · 23 条</a></li>
