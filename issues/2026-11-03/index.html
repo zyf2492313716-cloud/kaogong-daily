@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-03 · 考公资讯日报</title>
+<meta name="description" content="2026-11-03 共 10 条考公资讯：招考公告、报名截止节点、政策文件。">
+<meta property="og:updated_time" content="2026-11-03T11:30:38.034045+08:00">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+/* ── 设计令牌 ───────────────────────────────────────────────────────────
+   来源：ui-ux-pro-max 的 "Swiss Modernism 2.0 + 暖纸" 方案（warm paper white
+   + ink brown + amber accent）。两处按实测改了它的值，写在下面各自位置。
+
+   全部色值都在这里，规则里一个裸色值都不留（它的 checklist 第一条就是
+   「禁止逐屏硬编码颜色」，上一版规则里还有 3 处裸值，这次一并收进来）。 */
+:root{
+  --paper:#FFFBEB;      /* 底：暖纸白 */
+  --ink:#0F172A;        /* 正文墨色 */
+  --stone:#78716C;      /* 石色（只用于装饰笔画，不用于正文，对比度不够） */
+  --stone-ink:#57534E;  /* 弱化文字用这个：在纸底上约 7:1，--stone 只有 4.3:1 */
+  --amber:#D97706;      /* 强调色：分隔线、色块、hover */
+  --amber-ink:#92400E;  /* 链接色：纸底上约 6.4:1，可直接当正文链接 */
+  --line:#E5E0D6;
+  --card:#FFFFFF;
+  --band:#F7F2E7;       /* 表头/引用块底色 */
+  --zebra:#FAF7F0;      /* 表格隔行 */
+  --focus:#B45309;      /* 焦点环 */
+  --ink-strong:#000000; /* 强调字：比正文更重的黑 */
+
+  /* 字号五档。正文提到 17px：中文长文 16px 在 700px 行宽下每行 40 字，
+     17px 配 1.85 行高更适合连着看几十条公告。 */
+  --fs-xs:13px;--fs-md:17px;--fs-lg:20px;--fs-xl:26px;--fs-2xl:32px;
+
+  /* 间距八档，全部 4 的倍数（沿用插件给的刻度，去掉它没用的 3 档） */
+  --sp-1:4px;--sp-2:8px;--sp-3:16px;--sp-4:24px;--sp-5:32px;
+  --sp-6:48px;--sp-7:64px;--sp-8:96px;
+
+  --radius:10px;
+  --radius-pill:999px;
+}
+body{background:var(--paper);color:var(--ink);font-size:var(--fs-md);line-height:1.85;
+  /* 字体不照抄它给的 Inter/Playfair Display：两者都没有中文字形，
+     中文会掉回系统字体，中英混排的行高基线会漂。中文字族用 Noto Sans SC。 */
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei UI",-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+/* 行宽：720px 容器减左右 32px = 656px 正文，17px 字约 38 字一行，
+   落在中文长文最舒服的 38–42 区间。 */
+.wrap{max-width:720px;margin:0 auto;padding:var(--sp-7) var(--sp-5) var(--sp-8)}
+a{color:var(--amber-ink);text-decoration:none;
+  text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration:underline}
+a:focus-visible,summary:focus-visible,button:focus-visible{
+  outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--sp-1)}
+header.top{border-bottom:1px solid var(--line);padding-bottom:var(--sp-4);
+  margin-bottom:var(--sp-5)}
+header.top h1{font-size:var(--fs-2xl);letter-spacing:.5px;line-height:1.35;
+  font-weight:700;display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap}
+/* 标题前的色块：瑞士风格的网格感，不用阴影不用渐变 */
+header.top h1::before{content:"";width:6px;height:.95em;background:var(--amber);
+  border-radius:2px;display:inline-block;flex:none}
+header.top .sub{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-2)}
+.meta{color:var(--stone-ink);font-size:var(--fs-xs);letter-spacing:.3px}
+h2.sec{font-size:var(--fs-lg);color:var(--ink);margin:var(--sp-6) 0 var(--sp-3);
+  letter-spacing:.5px;line-height:1.4;padding-bottom:var(--sp-2);
+  border-bottom:2px solid var(--ink)}
+h2.sec::before{content:"§";color:var(--amber);margin-right:var(--sp-2);font-weight:400}
+.item{padding:var(--sp-4) 0;border-bottom:1px solid var(--line);scroll-margin-top:var(--sp-3)}
+.item:last-child{border-bottom:none}
+.item h3{font-size:var(--fs-lg);line-height:1.55;font-weight:700;letter-spacing:.1px}
+.item h3 a{color:var(--ink)}
+.item h3 a:hover{color:var(--amber-ink);text-decoration:none}
+.item .src{color:var(--stone-ink);font-size:var(--fs-xs);margin-top:var(--sp-2);
+  display:flex;gap:var(--sp-3);flex-wrap:wrap;align-items:center}
+.tag{display:inline-block;padding:var(--sp-1) var(--sp-3);border-radius:var(--radius-pill);
+  font-size:var(--fs-xs);background:var(--band);color:var(--amber-ink);
+  border:1px solid var(--line)}
+.tag.t2{background:var(--card);color:var(--stone-ink)}
+blockquote{margin:var(--sp-3) 0 0;padding:var(--sp-3) var(--sp-4);
+  border-left:3px solid var(--amber);background:var(--band);
+  border-radius:0 var(--radius) var(--radius) 0;
+  color:var(--ink);font-size:var(--fs-md);line-height:1.75}
+details{margin-top:var(--sp-3)}
+details summary{cursor:pointer;color:var(--stone-ink);font-size:var(--fs-md);
+  user-select:none;min-height:var(--sp-5);display:flex;align-items:center;gap:var(--sp-2)}
+details summary:hover{color:var(--amber-ink)}
+details summary::marker{color:var(--amber)}
+.body{margin-top:var(--sp-3);font-size:var(--fs-md);color:var(--ink)}
+.body p{margin:var(--sp-3) 0}
+.body strong{color:var(--ink-strong);font-weight:700}
+.body code{background:var(--band);padding:0 var(--sp-1);border-radius:var(--sp-1);
+  font-size:var(--fs-xs);color:var(--amber-ink)}
+/* 表格：宽表向两侧出血，手机上横向滚动，正文列仍保持窄 */
+.tw{overflow-x:auto;margin:var(--sp-3) calc(-1 * var(--sp-5));
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.tw table{border-collapse:collapse;width:100%;font-size:var(--fs-xs);min-width:560px;
+  line-height:1.65}
+.tw th{background:var(--band);color:var(--ink);font-weight:700;text-align:left;
+  padding:var(--sp-2) var(--sp-3);white-space:nowrap;
+  border-bottom:1px solid var(--line);letter-spacing:.3px}
+.tw td{padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--line);
+  vertical-align:top;color:var(--ink)}
+.tw tr:last-child td{border-bottom:none}
+.tw tr:nth-child(even) td{background:var(--zebra)}
+.tw td:first-child{color:var(--stone-ink);font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+/* 短单元格不许折行：避免"天津财经 / 大学""10月26 / 日"这种断字 */
+.tw td.nw{white-space:nowrap}
+/* 表内网址：13px 字形盒只有 19 高，低于 WCAG 2.5.8 的 24×24 硬线，
+   补 min-height 把命中区抬到 24。 */
+.tw td a{word-break:break-all;color:var(--amber-ink);
+  display:inline-flex;align-items:center;min-height:var(--sp-4)}
+ol.idx{list-style:none}
+ol.idx li{padding:var(--sp-2) 0;border-bottom:1px solid var(--line);font-size:var(--fs-md);
+  display:flex;gap:var(--sp-3);align-items:baseline}
+ol.idx li .d{color:var(--stone-ink);font-size:var(--fs-xs);flex:none;
+  font-variant-numeric:tabular-nums}
+ol.idx li a{color:var(--ink)}
+ol.idx li a:hover{color:var(--amber-ink)}
+/* 进度：国考这条线（左边的点只作辅助，状态一律写成字）+ 待盯的日子 */
+.steps{display:flex;flex-direction:column;gap:var(--sp-1)}
+.step{display:flex;align-items:center;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md);line-height:1.5}
+.step .s{width:10px;height:10px;border-radius:50%;background:var(--stone);flex:none}
+.step.done .s,.step.past .s{opacity:.5}
+.step.upcoming .s{background:var(--amber)}
+.step.today{border-color:var(--amber);background:var(--band)}
+.step.today .s{background:var(--amber);box-shadow:0 0 0 4px rgba(217,119,6,.16)}
+.step b{font-weight:600;flex:1 1 auto;min-width:0}
+.step .w{flex:none;font-weight:700}
+.step.unknown .w,.step.gap .w{color:var(--stone-ink);font-weight:500}
+.step a,.step .o{flex:none;font-size:var(--fs-xs);color:var(--stone-ink);
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  min-height:24px;display:inline-flex;align-items:center}
+.days{list-style:none;display:flex;flex-direction:column;gap:var(--sp-1)}
+.days li{display:flex;align-items:baseline;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md)}
+.days .dd{flex:none;font-weight:700;font-variant-numeric:tabular-nums}
+.days .dn{flex:none;font-size:var(--fs-xs);color:var(--amber-ink);min-width:52px}
+.days a{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;min-height:24px;display:inline-flex;align-items:center}
+.days .dg{flex:1 1 auto;text-align:right;font-size:var(--fs-xs);color:var(--stone-ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.note{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-3);  padding:var(--sp-3) var(--sp-4);background:var(--band);
+  border-radius:var(--radius);border:1px solid var(--line)}
+footer{margin-top:var(--sp-7);padding-top:var(--sp-4);border-top:1px solid var(--line);
+  color:var(--stone-ink);font-size:var(--fs-xs);line-height:1.8}
+footer p{margin:var(--sp-2) 0}
+.kv{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin:var(--sp-3) 0}
+.kv span{padding:var(--sp-2) var(--sp-3);border-radius:var(--radius);background:var(--card);
+  border:1px solid var(--line);font-size:var(--fs-xs);color:var(--stone-ink)}
+.kv b{color:var(--ink);font-size:var(--fs-lg);margin-right:var(--sp-1);
+  font-variant-numeric:tabular-nums}
+/* 指尖命中区：行内链接补够 32px 高与左右余量，视觉上仍是一行字 */
+.src a,.idx li a[href*="http"],footer a,.kv a{display:inline-flex;align-items:center;
+  min-height:var(--sp-5);padding:0 var(--sp-2);margin:0 calc(-1 * var(--sp-2))}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+@media (max-width:760px){
+  .wrap{padding:var(--sp-5) var(--sp-3) var(--sp-7)}
+  .tw{margin-left:calc(-1 * var(--sp-3));margin-right:calc(-1 * var(--sp-3))}
+  header.top h1{font-size:var(--fs-xl)}
+  h2.sec{font-size:var(--fs-md)}
+}
+/* 深色偏好下反色：只在系统明确要求时生效，默认仍是暖纸 */
+@media (prefers-color-scheme:dark){
+  :root{--paper:#12100C;--ink:#EDE6DA;--stone-ink:#A8A29E;--line:#2A2622;
+        --card:#1A1713;--band:#1F1B16;--zebra:#191510;--amber:#F59E0B;
+        --amber-ink:#FBBF24;--focus:#FBBF24}
+  .body strong{color:var(--paper)}
+}
+</style></head><body><div class="wrap">
+<header class="top"><h1><i></i>考公资讯日报</h1><div class="sub">2026-11-03 星期二 · 第 16 期</div></header>
+<div class="kv"><span><b>10</b>条</span><span>更新于 2026-11-03 11:30</span></div>
+<h2 class="sec">国考这条线</h2><div class="steps" data-today="2026-11-03">
+<div class="step unknown"><span class="s"></span><b>发布公告与职位表</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>网上报名</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>网上报名与资格审查结束</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>报名确认</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>准考证打印</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>笔试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>成绩公布</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>面试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>体检与考察</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>公示与录用</b><span class="w">尚未公告</span></div>
+</div>
+<h2 class="sec">接下来要盯的日子</h2><ul class="days">
+<li><span class="dd">2026年11月3日</span><span class="dn">今天</span><a href="https://www.scpta.com.cn/front/News/info/1d5a8d2a7b9d4c58913333a962390e8c?t=162" target="_blank" rel="noopener">公示</a><span class="dg" title="四川省中医药管理局所属事业单位成都中医药大学第三附属医院2025年下半年公开考核招聘工作">四川省人事考试中心</span></li>
+<li><span class="dd">2026年11月03日</span><span class="dn">今天</span><a href="http://www.apta.gov.cn/ProfTech_NoticeIndex/ProfTechActivityDetail?aid=1693" target="_blank" rel="noopener">缴费</a><span class="dg" title="2026年度安徽省二级造价工程师职业资格考试现场人工核查安排">安徽省人事考试院</span></li>
+<li><span class="dd">2026年11月03日</span><span class="dn">今天</span><a href="http://www.fjpta.com/portal/indexbulletin/062osBV.htm" target="_blank" rel="noopener">网上报名</a><span class="dg" title="2026年度翻译专业资格（水平）考试福建考区成绩合格人员承诺情况公示">福建省人事考试中心</span></li>
+<li><span class="dd">2026年11月5日</span><span class="dn">2 天后</span><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928095.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="门头沟区教育系统事业单位2027年第一次公开招聘教师公告">北京市人力资源和社会保障局</span></li>
+<li><span class="dd">11月5日</span><span class="dn">2 天后</span><a href="https://www.gxpta.com.cn/ksxm/gwyzlks/gx2026ndkslygwyxdszt/2026nlygs/t33102.html" target="_blank" rel="noopener">公示</a><span class="dg" title="广西壮族自治区戒毒管理局2026年度考试录用公务员（人民警察）第二批拟录用人员公示">广西壮族自治区人事考试院</span></li>
+<li><span class="dd">2026年11月5日</span><span class="dn">2 天后</span><a href="https://rst.ln.gov.cn/rst/zxzx/gsgg/2026102914122114211/index.shtml" target="_blank" rel="noopener">报名截止</a><span class="dg" title="辽宁省人力资源和社会保障厅关于公开选聘法律顾问的公告">辽宁省人力资源和社会保障厅</span></li>
+<li><span class="dd">2026年11月6日</span><span class="dn">3 天后</span><a href="https://www.scpta.com.cn/front/News/info/1c34b9dbcfea411c9e20010e4556c105?t=162" target="_blank" rel="noopener">体检</a><span class="dg" title="成都轻工职业技术大学关于2026年4月公开考核招聘思想政治理论课教师考核总成绩及体检事项">四川省人事考试中心</span></li>
+<li><span class="dd">11月6日</span><span class="dn">3 天后</span><a href="https://www.nxpta.com/gwyks/202610/t20261030_5105913.html" target="_blank" rel="noopener">报名确认</a><span class="dg" title="中央机关及其直属机构2027年度考试录用公务员宁夏考区报名确认须知">宁夏人事考试中心</span></li>
+<li><span class="dd">2026年11月6日</span><span class="dn">3 天后</span><a href="http://www.qhpta.com/ncms/article_703c6c6331a4dc386d2557659eaa9154.shtml" target="_blank" rel="noopener">网上报名</a><span class="dg" title="关于中央机关及其直属机构2027年度考试录用公务员青海考区报名确认的须知">青海省人事考试信息网</span></li>
+</ul>
+<h2 class="sec">今天要事</h2><ol class="idx">
+<li><span class="d">2026-11-03</span><a href="#s1">辽宁现代服务职业技术学院2026年赴高校现场公开招聘工作人员公告</a> <a href="https://www.lnrsks.com/html/sydw_zhaopingonggao/7819.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-03</span><a href="#s2">天津市2027年度定向招录选调生公告</a> <a href="https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261103_7648740.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-03</span><a href="#s3">关于泉州市2026年度考试录用公务员拟录用人员名单公示（六）</a> <a href="http://gwykl.fujian.gov.cn/portal/qz/klbulletin/bn6pekx8.htm" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s4">中央机关及其直属机构2027年度考试录用公务员笔试温馨提醒</a> <a href="http://www.hnrsks.com/sitesources/hnsrskszx/page_pc/zngg/article171a8a4d6665465e94d0e2c117fd4b3a.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s5">贵州民族大学参加第十四届贵州人才博览会引才拟聘用人员公示（第二批）</a> <a href="https://rst.guizhou.gov.cn/zwgk/zdlyxx/sydwgkzp/202611/t20261102_91063231.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s6">贵州民族大学2026年公开招聘工作人员拟聘用人员公示</a> <a href="https://rst.guizhou.gov.cn/zwgk/zdlyxx/sydwgkzp/202611/t20261102_91063219.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s7">门头沟区教育系统事业单位2027年第一次公开招聘教师公告</a> <a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928095.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s8">广西电力职业技术学院2026年公开招聘博士及正高级职称人员拟聘人员公示（二）</a> <a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33114.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s9">北京人民艺术剧院演员岗位面向2027年应届毕业生公开招聘公告</a> <a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928052.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s10">习近平同阿曼苏丹海赛姆会谈</a> <a href="https://www.qstheory.cn/20261102/d26595de677d4b0c9ef4fab335c2003a/c.html" target="_blank" rel="noopener">↗</a></li>
+</ol>
+<h2 class="sec">招考公告</h2>
+<div class="item" id="s1"><h3><a href="https://www.lnrsks.com/html/sydw_zhaopingonggao/7819.html" target="_blank" rel="noopener">辽宁现代服务职业技术学院2026年赴高校现场公开招聘工作人员公告</a></h3><div class="src"><span>辽宁省人事考试中心</span><span>2026-11-03 10:47</span><a href="https://www.lnrsks.com/html/sydw_zhaopingonggao/7819.html" target="_blank" rel="noopener">lnrsks.com</a></div><blockquote>报名时间：2026年11月9日；2026年11月9日至11月20日</blockquote><details><summary>展开原文全文（19 段）</summary><div class="body"><p>现将有关事项公告如下： 一、招聘对象 符合招聘基本条件和招聘岗位具体资格条件的吉林大学、东北农业大学、大连理工大学、东北大学、哈尔滨工业大学、中央美术学院、同济大学、东南大学、江南大学、中国海洋大学等<strong>2026年</strong>硕士及以上应届毕业生。不包括往年毕业但未派遣的毕业生。</p><p>二、招聘基本条件 （一）具有中华人民共和国国籍；（二）遵守宪法和法律；（三）年满十八周岁，具有良好的品行；（四）具备岗位所需的专业或技能条件，适应岗位要求的身体条件；（五）具有博士学位的应聘人员，年龄原则上不超过<strong>38周岁</strong>（<strong>1987年</strong><strong>11月</strong><strong>9日</strong>及以后出生）。</p><p>具有硕士学位的应聘人员，年龄原则上不超过<strong>30周岁</strong>（<strong>1995年</strong><strong>11月</strong><strong>9日</strong>及以后出生）。（六）应届硕士毕业生需在<strong>2026年</strong><strong>12月</strong><strong>31日</strong>前取得毕业证、学位证，应届博士毕业生需在<strong>2026年</strong><strong>12月</strong><strong>31日</strong>前取得毕业证、学位证，可按规定聘用，否则不予聘用。</p><p>应聘者相关资格条件或相关资历的计算日期为报名起始之日。（七）岗位所需要的其他条件，详见《辽宁现代服务职业技术学院<strong>2026年</strong>赴高校现场公开招聘工作人员计划信息表》（附件<strong>1</strong>）。曾因犯罪受过各类刑事处罚，有犯罪嫌疑尚未查清或正在接受纪律审查的，国家法律法规规定不得聘用的其他人员，均不得报考。</p><p>三、招聘方式 招聘采取考核方式。四、招聘工作步骤 （一）发布招聘信息 招聘人员岗位信息在辽宁人事考试网（www.lnrsks.com）、辽宁现代服务职业技术学院（www.lnxdfwxy.edu.cn）及所赴高校的就业网站上统一发布。（二）报名 报名时间：<strong>2026年</strong><strong>11月</strong><strong>9日</strong>至<strong>11月</strong><strong>20日</strong> 报名方式：网上报名。</p><p>符合我单位招聘条件的应聘人员将《辽宁现代服务职业技术学院<strong>2026年</strong>赴高校现场公开招聘工作人员报名登记表》（附件<strong>2</strong>）、简历和其他证明材料（以上两个文档为pdf格式）发至lnxdfwgkzp@<strong>163</strong>.com，邮件命名方式：报考岗位+姓名+毕业院校+所学专业+毕业时间（以电子邮件接收时间为准，逾期作废）。</p><p>每名应聘人员只能报考一个岗位，报名实行诚信承诺制度，报名者填报的信息应真实有效，如发现材料虚假者随即取消其应聘资格。（三）资格审查 我单位将严格按照公告及岗位资格条件，对应聘人员的报名资格进行审查确认。主要审查报名者的身份证、学生证、学信网学历学位证明等招聘信息中所涉及的其他条件要求的证明材料，资格审查贯穿招聘全过程，一经发现应聘人员不符合报考岗位要求或弄虚作假的，随时取消应聘资格。</p><p>未在规定时间内提交证明材料者，将视为自动放弃。（四）考核 考核以面试方式进行。面试重点考察职业素质、专业水平和分析解决问题能力。应聘人员参加汇报（考生汇报学习和实践业绩等）和回答问题两个环节考核，面试成绩即为考生总成绩，满分为<strong>100分</strong>，保留两位小数计算（如出现并列情况，依次按照汇报分数、回答问题分数高低排列名次），合格分数线为<strong>60分</strong>，未达到合格分数线的，不能确定为签约人员。</p><p>根据面试分数从高到低的顺序，按招聘计划<strong>1</strong>:<strong>1</strong>的比例确定签约人员。经考核合格后的<strong>10个</strong>工作日内，在双方自愿的基础上按照相关法律、政策规定签订就业协议。考核的具体时间、地点和相关事宜待与高校预约确认后，在辽宁现代服务职业技术学院网站发布和所赴高校就业网站上统一发布。</p><p>（五）体检 应聘人员在取得学历、学位证书后，由我单位统一组织在具有公务员考录和事业单位公开招聘体检经验的三级甲等医院进行体检。体检由主管部门会同用人单位在具有公务员考录和事业单位公开招聘体检经验的三级甲等医院或各市事业单位公开招聘体检定点机构统一进行。</p><p>体检工作参照《关于修订〈公务员录用体检通用标准（试行）〉及〈公务员录用体检操作手册（试行）〉的通知》（人社部发〔<strong>2016</strong>〕<strong>140</strong>号）等相关文件政策组织实施。应聘者对体检结论有疑问要求复检的，可在接到体检结论的<strong>7日</strong>内，以书面形式向我单位提出。</p><p>另有规定的，从其规定。复检将在应聘者提出申请的<strong>7个</strong>工作日内安排。复检内容为对体检结论有影响的项目，复检只能进行一次，体检结果以复检结论为准。体检合格者确定为拟考察人员。（六）考察 我单位对拟考察人员的思想政治表现、道德品质、业务能力、工作实绩等情况进行实地调查了解，并对被考察人员资格条件进行复查。</p><p>考察中发现不符合聘用条件的，取消其聘用资格，并将结论及依据明确告知被考察人员。考察合格者，确定为拟聘用人员。（七）公示与聘用 拟聘用人员信息统一在辽宁人事考试网（www.lnrsks.com）、辽宁现代服务职业技术学院（www.lnxdfwxy.edu.cn）及拟聘用人员原学校网站上进行公示，公示期为<strong>5个</strong>工作日。</p><p>公示结束后，对公示无异议人员办理备案手续。对于公示有异议的人员，我单位将调查核实，并提出处理意见。公开招聘的人员按规定实行试用期制度。试用期一般不超过<strong>6个</strong>月（初次就业签订<strong>3年</strong>以上聘用合同的，试用期为<strong>12个</strong>月），国家另有规定的，按规定执行。试用期包括在聘用合同期限内。</p><p>试用期满考核合格的，予以正式聘用；不合格的，取消聘用。五、纪律与监督 公开招聘工作坚持“公开、平等、竞争、择优”的原则，严肃纪律，秉公办事，严禁弄虚作假，徇私舞弊，全程接受纪检监察部门和社会的监督。应聘人员有弄虚作假、违纪违规行为的，一经发现，均取消其考试或应聘资格，并将有关情况通报其所在学校或单位。</p><p>构成犯罪的，依法追究刑事责任。具体事宜依照《事业单位公开招聘违纪违规行为处理规定》（人社部令第<strong>35</strong>号）执行。六、其他 <strong>1</strong>.应聘人员自报名至拟聘用人员公示（资格审核、考核、体检、考察）期间，应确保报名时所填报的通讯工具畅通，以便联络，因所留通讯方式不畅所致后果，由应聘人员自负。</p><p><strong>2</strong>.在招聘期间，如不按规定参加资格审核、考核、体检、办理有关手续等，视为自动弃权。<strong>3</strong>.在签订就业协议、体检和考察环节，因到期拒签就业协议、体检不合格、考察不合格、自愿弃权、弄虚作假被取消应聘资格及其他原因出现岗位空缺，我院将按总成绩排名从高到低依次进行递补，仅递补一次。</p><p>公示后出现的岗位空缺，不再进行递补。<strong>4</strong>.本次公开招聘人员计划信息表中所列专业名称参照《<strong>2016年</strong>辽宁省省直事业单位公开招聘人员专业（学科）指导目录》《研究生教育学科专业目录（<strong>2022年</strong>）》等。<strong>5</strong>.本次招聘所有信息均在辽宁现代服务职业技术学院网站（www.lnxdfwxy.edu.cn）发布，请应聘人员及时关注。</p><p>七、其他未尽事宜按有关文件规定执行 本公告最终解释权归辽辽宁现代服务职业技术学院所有。</p></div></details></div>
+<div class="item" id="s2"><h3><a href="https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261103_7648740.html" target="_blank" rel="noopener">天津市2027年度定向招录选调生公告</a></h3><div class="src"><span>天津市人才考评中心</span><span>2026-11-03 10:30:00</span><a href="https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261103_7648740.html" target="_blank" rel="noopener">hrss.tj.gov.cn</a></div><blockquote>2026年11月17日 16:00</blockquote><details><summary>展开原文全文（24 段）</summary><div class="body"><p>为加强党政干部队伍源头建设，根据中央组织部有关规定，天津市 <strong>2027 年</strong>度计划定向招录 <strong>307 名</strong>选调生。现将有关事项公告如下： 一、选调对象 选调对象 主要 为 全国 部分 “ 双一流 ” 建设高校 和天津市一流学科、一流培育学科 <strong>2027 年</strong>应届毕业生。</p><p>选调高校（ <strong>45 </strong>所）：北京大学、清华大学、中国人民大学、中国农业大学、北京师范大学、中央财经大学、中国政法大学、南开大学、天津大学、大连理工大学、吉林大学、复旦大学、同济大学、上海交通大学、华东师范大学、南京大学、东南大学、浙江大学、厦门大学、山东大学、中国海洋大学、郑州大学、武汉大学、华中科技大学、中南大学、中山大学、华南理工大学、四川大学、电子科技大学、重庆大学、西安交通大学、兰州大学、东北大学、湖南大学、云南大学、西北农林科技大学、新疆大学、北京航空航天大学、北京理工大学、哈尔滨工业大学、西北工业大学、中央民族大学、中国科学院大学、中国科学技术大学、国防科技大学。</p><p>天津市一流学科（ <strong>40 个</strong>）： 中国民航大学（ 安全科学与工程 ）；河北工业大学（ 机械工程、材料科学与工程、电气工程 ）；天津科技大学（ 轻工技术与工程、食品科学与工程、海洋科学 ）；天津工业大学（ 机械工程、材料科学与工程、电气工程、纺织科学与工程、环境科学与工程 ）；</p><p>天津理工大学（ 材料科学与工程、计算机科学与技术、管理科学与工程 ）；天津农学院（ 水产 ）；天津医科大学（ 基础医学、临床医学、公共卫生与预防医学、药学 ）；天津中医药大学（ 中医学、中药学 ）；天津师范大学（ 政治学、马克思主义理论、教育学、心理学、中国语言文学、世界史、化学 ）；</p><p>天津职业技术师范大学（ 机械工程 ）；天津外国语大学（ 外国语言文学 ）；天津商业大学（ 动力工程及工程热物理 ）；天津财经大学（ 应用经济学、工商管理学、管理科学与工程 ）；天津体育学院（ 体育学 ）；天津音乐学院（ 音乐与舞蹈学 ）；天津美术学院（ 美术学、设计学 ）；</p><p>天津城建大学（ 土木工程 ）。天津市一流培育学科（ <strong>3 个</strong>）：天津外国语大学（ 中国语言文学 ）；天津职业技术师范大学（ 教育学 ）；天津城建大学（ 环境科学与工程 ）。具有服务基层项目工作经历的大学毕业生，即 <strong>2026 年</strong>服务期满且考核合格的 天津 市 “ 三支一扶 ” 大学生（以下简称 “ 三支一扶 ” 大学生）、 天津 市选派 “ 大学生志愿服务西部计划 ” 志愿者（以下简称 “ 西部计划 ” 志愿者），符合选调职位条件的可以报考 <strong>1 </strong>次选调生。</p><p><strong>2027 年</strong>应届毕业 的 天津 市青年马克思主义者培养工程入选者（以下简称 “ 青马工程 ” 入选者），符合选调职位条件的可以报考 <strong>1 </strong>次选调生。定向培养、委托培养的毕业生，非 全日制毕业生， 独立学院毕业生，民办高等院校毕业生，毕业后申请第二学士学位毕业生，各类成人教育、远程教育毕业生，专升本毕业生，在读的非应届高校毕业生，不在选调范围内。</p><p>二、选调条件 <strong>1 </strong>．具有中华人民共和国国籍，享有公民的政治权利。<strong>2 </strong>．具有正确的政治立场和政治态度，认真学习 贯彻 习近平新时代中国特色社会主义思想，坚定 拥护 “ 两个确立 ” 、坚决做到 “ 两个维护 ” ，在思想上政治上行动上同以习近平同志为核心的党中央保持高度一致，自觉践行社会主义核心价值观，爱党爱国，有理想抱负和家国情怀，甘于为国家和人民服务奉献；</p><p>学习成绩优良，作风朴实，诚实守信，吃苦耐劳，有较好的人际沟通和语言文字表达能力。<strong>3 </strong>．除应达到公务员招考基本条件外，还应于 <strong>2026 年</strong> <strong>11 月</strong> <strong>8 日</strong>之前，至少满足以下四个条件之一： （ <strong>1 </strong>）中共党员（含预备党员）。（ <strong>2 </strong>）学生干部。</p><p>学生干部是指选调对象最高在学阶段担任校学生会（研究生会、团组织）副部长及以上职务，院系学生会（研究生会、团组织）主席、副主席（书记、副书记），班长、团支部书记，且应任职满半学年 ， 不包含各类学生社团职务。（ <strong>3 </strong>）获得校级及以上荣誉称号（包括三好学生、优秀学生干部、优秀团干部等，不包含各类奖学金）。</p><p>校级及以上荣誉称号是指选调对象最高在学阶段取得的荣誉称号。（ <strong>4 </strong>）具有参军入伍经历。<strong>4 </strong>．具有国家承认的全日制大学本科以上学历和相应学位（截至 <strong>2027 年</strong> <strong>7 月</strong> <strong>31 日</strong>，须取得相应毕业证书和学位证书）。<strong>5 </strong>．符合选调单位提出的专业、学历等条件要求，须以最高在学阶段所学专业报考相应职位。</p><p>在校期间取得双学位证书的，可以依据双学位证书注明的专业报考。<strong>6 </strong>．通过选调生考试、考察。<strong>7 </strong>．具有正常履行职责的身体条件和心理素质，符合公务员录用体检标准。<strong>8 </strong>．本科生的年龄在 <strong>25 周岁</strong>以下（ <strong>2000 年</strong> <strong>11 月</strong>以后出生），硕士 研究生 的年龄在 <strong>28 周岁</strong>以下（ <strong>1997 年</strong> <strong>11 月</strong>以后出生），博士 研究生 的年龄在 <strong>32 周岁</strong>以下（ <strong>1993 年</strong> <strong>11 月</strong>以后出生）。</p><p>选调岗位有具体年龄要求的，应同时满足岗位要求的年龄条件。<strong>9 </strong>．报考要求 “ 具有法律职业资格证书 ” 的职位，应通过法律职业资格考试（含国家司法考试），取得 A 类法律职业资格证书。<strong>10 </strong>． 符合 公务员法规定的其他条件。报考人员在校期间有违规违纪违法行为、学术不端和道德品行问题的，因犯罪受过刑事处罚的，被开除中国共产党党籍 、共青团团籍 的，被开除公职的，被依法列为失信联合惩戒对象的，在各级公务员和选调生招考中被认定有舞弊等严重违反录用纪律行为的，公务员和参照公务员法管理机关（单位）工作人员被辞退未满 <strong>5 年</strong>的，以及法律法规规定不得录用为公务员的其他情形的人员，不得作为选调对象。</p><p>报考人员不得报考 录用 后即构成公务员法第七十四条第一款所列情形的职位，也不得报考与本人有夫妻关系、直系血亲关系、三代以内旁系血亲关系以及近姻亲关系的人员担任领导成员的单位及其管辖地区、系统、部门的职位。三、选调方式和程序 选调工作采取自愿报名、组织推荐和考试考察相结合的方式进行。</p><p>按照发布公告、网上报名、 组织推荐与综合审核 、 统一考试、体检考察、公示、录用审批 等程序组织实施。关于各选调单位具体的选调职位及人数、报考须知、报名登记表填写说明等信息，报考人员可通过 天津 市人力资源和社会 保障局网站天津人事考试版块（网址： https://hrss.tj.gov.cn/jsdw/rsksw/ ） 和 天津市公务员考试录用服务平台（ 网址 ： https://gklx.hrss.tj.gov.cn ）、 微信小程序 “天津公务员考试” 查询。</p><p>（一）网上报名 网上报名时间： <strong>2026 年</strong> <strong>11 月</strong> <strong>9 日</strong> <strong>8</strong>:<strong>30 </strong>至 <strong>11 月</strong> <strong>13 日</strong> <strong>18</strong>:<strong>00 </strong>。报名 网址为： https://gklx.hrss.tj.gov.cn 或使用 微信小程序报名 。报考人员限报一个职位，报名时应如实填写《选调生报名登记表》，认真核对相关内容，一经报名成功，视为对表中信息真实性、准确性作出承诺。</p><p>提供虚假信息所产生的一切后果由本人负责。各选调单位负责对报考人员进行网上资格初审。每个职位报考人数与选调计划数之比低于 <strong>2</strong>:<strong>1 </strong>的，相应调减该职位选调计划；报考人数不足 <strong>2 人</strong>的，取消该职位选调计划。按照男女比例 <strong>1</strong>:<strong>1 </strong>录取的职位，男性或女性报考人数与本性别选调计划数之比低于 <strong>2</strong>:<strong>1 </strong>的，调减该性别的选调计划 ；</p><p>报考人数不足 <strong>2 人</strong>的，取消该性别选调计划。报考职位选调计划被取消的，报考人员在规定时间内可改报其他职位，改报时间为 <strong>2026 年</strong> <strong>11 月</strong> <strong>23 日</strong> <strong>9</strong>:<strong>00 </strong>至 <strong>15</strong>:<strong>00 </strong>。（二）组织推荐与 综合审核 初审通过后，报考人员应于 <strong>2026 年</strong> <strong>11 月</strong> <strong>9 日</strong> <strong>8</strong>: <strong>30 </strong>至 <strong>11 月</strong> <strong>14 日</strong> <strong>18</strong>:<strong>00 </strong>之间，下载打印《选调生报名登记表》并签字确认 。</p><p>报考人员将 《选调生报名登记表》经所在院系和学校就业指导部门分别填写意见并加盖公章后， 于 <strong>2026 年</strong> <strong>11 月</strong> <strong>9 日</strong> <strong>8</strong>: <strong>30 </strong>至 <strong>11 月</strong> <strong>17 日</strong> <strong>16 </strong>:<strong>00 </strong>前，通过报名系统扫描上传至 报考单位 综合审核 。综合审核 在报考人员提交《选调生报名登记表》 <strong>24 小时</strong>之内 给予答复 。</p><p>高校审核 不同意推荐或本人未提交《 选调生报名登记表 》的 ，报名无效。“ 三支一扶 ” 大学生、 “ 西部计划 ” 志愿者和 “ 青马工程 ” 入选者，应及时打印《选调生报名登记表》并签字确认。其中， “ 三支一扶 ” 大学生的《选调生报名登记表》应经服务单位主管部门党组织和区人社局审查 分别填写 意见、加盖公章，交市人社局（径送人才开发处） 审核通过后，于 <strong>2026 年</strong> <strong>11 月</strong> <strong>17 日</strong> <strong>16</strong>:<strong>00 </strong>前通过报名系统提交报考单位 ；</p><p>“ 西部计划 ” 志愿者和 “ 青马工程 ” 入选者，将《选调生报名登记表》交团市委（ 一式两份， 径送学校部） 审核通过后， 于 <strong>2026 年</strong> <strong>11 月</strong> <strong>17 日</strong> <strong>16 </strong>:<strong>00 </strong>前 通过报名系统提交报考单位 。《选调生报名登记表》 原件由报考人员参加面试时提交选调单位。</p><p>综合审核通过后，报考人员应及时进行网上缴费， 缴费时间 为 ： <strong>2026 年</strong> <strong>11 月</strong> <strong>9 日</strong> <strong>8</strong>: <strong>30 </strong>至 <strong>11 月</strong> <strong>19 日</strong> <strong>18</strong>:<strong>00 </strong>。对国家最低生活保障家庭的报考人员， 免除 笔试考务费用。（三）统一考试 选调生考试分为笔试和面试，考生 凭准考证、 居民身份证 和学生证（卡）参加选调生考试。</p><p><strong>1 </strong>．笔试 笔试科目为《综合能力测试》，主要考察应试人员综合素质和发展潜能，满分为 <strong>100 分</strong>，合格线为 <strong>60 分</strong>，笔试成绩不合格者不能进入面试。考生于 <strong>2026 年</strong> <strong>12 月</strong> <strong>2 日</strong> <strong>14</strong>:<strong>00 </strong>起可 登录报名系统，下载打印《笔试准考证》。</p><p>笔试时间为 <strong>2026 年</strong> <strong>12 月</strong> <strong>5 日</strong> <strong>9</strong>:<strong>00</strong>—<strong>11</strong>:<strong>30 </strong>（考点设在天津） 。笔试成绩于 <strong>2027 年</strong> <strong>1 月</strong> <strong>6 日</strong>公布，考生可登录天津市公务员考试录用服务平台和微信小程序查询。<strong>2 </strong>．面试 面试阶段考试为结构化面谈，满分为 <strong>100 分</strong>，合格线为 <strong>60 分</strong>，面试成绩不合格者不能 进入体检 。</p></div></details></div>
+<div class="item" id="s3"><h3><a href="http://gwykl.fujian.gov.cn/portal/qz/klbulletin/bn6pekx8.htm" target="_blank" rel="noopener">关于泉州市2026年度考试录用公务员拟录用人员名单公示（六）</a></h3><div class="src"><span>福建省公务员局</span><span>2026-11-03 08:30</span><a href="http://gwykl.fujian.gov.cn/portal/qz/klbulletin/bn6pekx8.htm" target="_blank" rel="noopener">gwykl.fujian.gov.cn</a></div><blockquote>2026年11月3日 至11月9日</blockquote><details><summary>展开原文全文（2 段）</summary><div class="body"><p>公示期间，若 公示对象存在不得录用情况的可查实线索 ，欢迎以来电、来信、来访 等 形式及时反映情况。公示 时间 ： 从 <strong>2026 年</strong> <strong>11 月</strong> <strong>3 日</strong> 至 <strong>11 月</strong> <strong>9 日</strong>（正常工作时间） 招录 单位 电话： 中共永春县委组织部， <strong>0595</strong>-<strong>23880808 </strong>监督电话 ： <strong>0595</strong>-<strong>28386620 </strong>泉州市公务员局 <strong>2026 年</strong> <strong>11 月</strong> <strong>3 日</strong> 附件下载 <strong>2026</strong>考录公示六.xls 闽ICP备<strong>2022000345</strong>号-<strong>1 </strong>站点地图 中文域名：福建省公务员考试录用网.政务 主办：福建省公务员局 承办：福建省经济信息中心 ©GWYKL.FUJIAN.GOV.CN 建议您使用以下浏览器版本：IE浏览器<strong>9.0</strong>版本及以上；</p><p>Google Chrome浏览器 <strong>63</strong>版本及以上；<strong>360</strong>浏览器<strong>9.1</strong>版本及以上，且IE内核<strong>9.0</strong>及以上。闽政通APP</p></div></details></div>
+<div class="item" id="s4"><h3><a href="http://www.hnrsks.com/sitesources/hnsrskszx/page_pc/zngg/article171a8a4d6665465e94d0e2c117fd4b3a.html" target="_blank" rel="noopener">中央机关及其直属机构2027年度考试录用公务员笔试温馨提醒</a></h3><div class="src"><span>河南省人事考试中心</span><span>2026-11-02 15:05</span><a href="http://www.hnrsks.com/sitesources/hnsrskszx/page_pc/zngg/article171a8a4d6665465e94d0e2c117fd4b3a.html" target="_blank" rel="noopener">hnrsks.com</a></div><blockquote>河南省人事考试中心发布，中央机关及其直属机构2027年度考试录用公务员笔试温馨提醒。</blockquote><div class="note">这条的正文以图片或外部链接形式发布，文字版不重排，请点标题看原文。</div></div>
+<div class="item" id="s5"><h3><a href="https://rst.guizhou.gov.cn/zwgk/zdlyxx/sydwgkzp/202611/t20261102_91063231.html" target="_blank" rel="noopener">贵州民族大学参加第十四届贵州人才博览会引才拟聘用人员公示（第二批）</a></h3><div class="src"><span>贵州省人力资源和社会保障厅</span><span>2026-11-02 15:06:41</span><a href="https://rst.guizhou.gov.cn/zwgk/zdlyxx/sydwgkzp/202611/t20261102_91063231.html" target="_blank" rel="noopener">rst.guizhou.gov.cn</a></div><blockquote>2026年11月3日至2026年11月9日</blockquote><details><summary>展开原文全文（2 段 · 1 张表）</summary><div class="body"><p>根据《贵州民族大学参加第十四届贵州人才博览会引才工作方案》要求，经发布公告、应聘报名、资格审核、考核面试等程序并体检、考察合格，现将高层次人才拟聘用人员（第二批）予以公示。公示期间，如有问题，请向我单位反映。</p><div class="tw"><table><thead><tr><th>岗位名称</th><th>姓名</th><th>学历学位</th><th>毕业院校及专业</th><th>其他要求</th></tr></thead><tbody><tr><td class="nw">教师岗</td><td class="nw">郭宇</td><td class="nw">博士研究生</td><td>南京师范大学 人文地理学</td><td>1.具有博士后学习经历；2.近5年来，独立或以第一作者身份发表科研论文被中国社会科学评价研究院公布的社会科学期刊目录的权威期刊、SCI一区期刊（中科院分区）、SSCI期刊或CSSCI源刊收录1篇及以上。</td></tr></tbody></table></div></div></details></div>
+<div class="item" id="s6"><h3><a href="https://rst.guizhou.gov.cn/zwgk/zdlyxx/sydwgkzp/202611/t20261102_91063219.html" target="_blank" rel="noopener">贵州民族大学2026年公开招聘工作人员拟聘用人员公示</a></h3><div class="src"><span>贵州省人力资源和社会保障厅</span><span>2026-11-02 14:55:48</span><a href="https://rst.guizhou.gov.cn/zwgk/zdlyxx/sydwgkzp/202611/t20261102_91063219.html" target="_blank" rel="noopener">rst.guizhou.gov.cn</a></div><blockquote>贵州省人力资源和社会保障厅发布，贵州民族大学2026年公开招聘工作人员拟聘用人员公示。</blockquote><details><summary>展开原文全文（2 段）</summary><div class="body"><p>根据《贵州民族大学<strong>2026年</strong>公开招聘工作人员方案》，经发布公告、报名、笔试、资格复审、面试及总成绩计算等程序并体检、考察合格，现将拟聘用人员名单予以公示（具体名单见附件）。公示期间，如有问题，请向我单位反映。公示时间：<strong>2026 年</strong> <strong>11 月</strong> <strong>3 日</strong>至<strong>2026年</strong><strong>11月</strong> <strong>9 日</strong>。</p><p>受理电话：<strong>0851</strong>-<strong>83610231 </strong>监督电话：<strong>0851</strong>-<strong>88924267 </strong>来信地址及邮编：贵州省贵阳市花溪大学城贵州民族大学贵山校区行政楼人事处 邮编：<strong>550025 </strong>附件 贵州民族大学<strong>2026年</strong>公开招聘工作人员拟聘用人员名单.docx 贵州民族大学 <strong>2026年</strong><strong>11月</strong><strong>2日</strong></p></div></details></div>
+<div class="item" id="s7"><h3><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928095.html" target="_blank" rel="noopener">门头沟区教育系统事业单位2027年第一次公开招聘教师公告</a></h3><div class="src"><span>北京市人力资源和社会保障局</span><span>2026-11-02</span><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928095.html" target="_blank" rel="noopener">rsj.beijing.gov.cn</a></div><blockquote>2026年11月5日10:00</blockquote><details><summary>展开原文全文（24 段）</summary><div class="body"><p>二、招聘范围 （一）报考人员限列入国家统一招生计划（不含定向和委托培养）的普通高等学校，按时毕业并如期取得相应学历学位，毕业证书落款年度<strong>2年</strong>内（<strong>2026</strong>、<strong>2027年</strong>）的高校毕业生，其中非北京生源毕业生仅限报考“招聘范围”为“应届毕业生”的岗位，非京生源毕业生须符合北京市引进毕业生相关政策；</p><p>（二）<strong>2026年</strong><strong>1月</strong><strong>1日</strong>至公告发布之日取得国（境）外学历学位并完成教育部门学历学位认证，具有北京市常住户口且人事行政关系在京的留学回国人员，可参照北京生源应届毕业生报考。三、报考条件 （一）基本条件 <strong>1</strong>.具有中华人民共和国国籍；<strong>2</strong>.拥护中华人民共和国宪法，热爱祖国，热爱教育事业，拥护中国共产党的路线、方针、政策；</p><p><strong>3</strong>.具有良好的政治素质和道德品行，无违法犯罪记录；<strong>4</strong>.身心健康，具备正常履行职责的身体条件和心理素质；<strong>5</strong>.具有符合岗位要求的工作能力。（二）其他条件 <strong>1</strong>.报名人员年龄要求<strong>38周岁</strong>及以下（指<strong>1987年</strong><strong>11月</strong><strong>1日</strong>及以后出生），博士研究生放宽到<strong>40周岁</strong>及以下（指<strong>1985年</strong><strong>11月</strong><strong>1日</strong>及以后出生）；</p><p><strong>2</strong>.符合岗位要求的学历、学位、专业技术（职务任职）资格、职（执）业资格（截至公告发布之日前取得）；教师岗位须具有符合招聘岗位要求的教师资格证（仅笔试合格的不视为具有教师资格），如具有“中小学教师资格考试合格证明”，须在<strong>2027年</strong><strong>9月</strong>前取得教师资格证；</p><p>持有高学段教师资格证人员，可申报本学段或者低学段相应学科的岗位；<strong>3</strong>.专业要求参照教育部公布的专业目录执行，对于专业（学科）目录中没有具体对应的自设学科（专业）和境外留学专业，报考人员需及时与招聘单位沟通联系，说明主要课程、研究方向和学习内容等情况，招聘单位将根据岗位专业需求进行审核；</p><p><strong>4</strong>.符合回避制度的有关规定；<strong>5</strong>.《中华人民共和国未成年人保护法》及《未成年人学校保护规定》等文件规定的学校不得聘用的人员不得参加应聘；<strong>6</strong>.有下列情形之一的人员不得应聘：因犯罪受过刑事处罚的人员；曾被开除党籍、开除公职的人员；被依法列为失信联合惩戒对象名单人员；</p><p>尚未解除党纪、政务处分或涉嫌违纪违法被立案审查（调查）尚未结案的人员；曾在各级公职人员招考中被认定有舞弊等严重违反考试录用纪律行为还在禁考期的人员；现役军人和全日制学历在读人员（非<strong>2027年</strong>应届毕业生）；法律法规规定不得聘用到事业单位的其他情形的人员；</p><p><strong>7</strong>.符合岗位要求的其他条件，具体职位要求详见附件。所填报个人信息必须真实有效，户籍、年龄、学历、学位、专业等条件必须与岗位需求相符，每名报考人员只限报考一个岗位。请报考人员合理安排报名时间，尽量不要选择在最后一天（<strong>2026年</strong><strong>11月</strong><strong>11日</strong>）报名，以免因未通过资格初审而错失报考其他岗位机会。</p><p>（二）资格初审 在报名期间报考申请未通过资格审查的，可以修改重新上报；已通过资格审查的，将不能再更改报名信息。报名结束后，报考申请未通过资格审查的将不能改报其他岗位，但在<strong>2026年</strong><strong>11月</strong><strong>11日</strong><strong>17</strong>:<strong>00</strong>前可根据审核意见修改完善一次现应聘岗位的报名信息，再次提交审核（超过<strong>2026年</strong><strong>11月</strong><strong>11日</strong><strong>17</strong>:<strong>00时</strong>间提交的审核不予通过）。</p><p>招聘单位不再另行通知初审结果，报考人员须合理安排报名时间并及时查询网上审核状态，如有疑问，可联系各招聘单位咨询。（三）考试形式 本次招聘根据不同的岗位要求，考试方式分为仅面试、笔试加面试两种方式。报考者需仔细阅读《门头沟区教育系统事业单位<strong>2027年</strong>第一次公开招聘教师岗位及要求表》（详见附件），谨慎选择报考岗位。</p><p><strong>1</strong>.笔试内容：重点对教育教学政策法规、教师职业道德、教育学、教育心理学及应知应会常识等综合知识进行考察；<strong>2</strong>.打印准考证：报考笔试加面试岗位、通过系统报名且资格初审通过的报考人员，请于<strong>2026年</strong><strong>11月</strong><strong>19日</strong><strong>10</strong>:<strong>00</strong>至<strong>11月</strong><strong>21日</strong><strong>9</strong>:<strong>30</strong>登录北京市事业单位公开招聘服务平台自行打印准考证；</p><p><strong>3</strong>.笔试时间及笔试地点详见准考证；<strong>4</strong>.笔试成绩实行百分制，合格分数线为<strong>60分</strong>；低于合格分数线的，取消后续资格。笔试成绩通过合格分数线的考生，按照笔试成绩由高到低的顺序，以<strong>1</strong>:<strong>5</strong>的比例确定拟进入面试人选；不足<strong>1</strong>:<strong>5</strong>比例的岗位，以实际人数确定拟进入面试人选；</p><p><strong>5</strong>.笔试成绩及后续资格复审、面试、体检、考察等环节工作的时间、地点等相关具体事宜将另行公告。请考生随时关注 门头沟区人民政府网站-政务公开-政务公告（https://www.bjmtg.gov.cn/bjmtg/zwxx/zwgg/index.shtml） 相关信息，因自身原因未及时查看导致无法参加考试的，考生本人自行承担责任。</p><p>（四）资格复审 <strong>1</strong>.报考仅面试岗位的考生，资格初审合格直接确定为拟进入面试人员，复审通过后方可参加面试。<strong>2</strong>.报考笔试加面试岗位的考生，各招聘单位对拟进入面试人员进行资格复审，复审通过后方可参加面试。<strong>3</strong>.考生资格复审时须提供以下材料： （<strong>1</strong>）填写完整准确并有本人在诚信声明处签字的报名表（网上资格初审通过后，从北京市事业单位公开招聘服务平台打印）；</p><p>（<strong>2</strong>）本人身份证、户口簿（集体户口的需出示集体户口首页复印件和本人户口页）；（<strong>3</strong>）<strong>2027年</strong>应届毕业生须提供校级毕业生就业主管部门填写完整、盖章齐全的就业推荐表（就业推荐表上未注明“统招”或“非定向”的，还需要开具统招证明）、学校教务部门盖章的成绩单（成绩单有非百分制项目须提供说明）等材料；</p><p>（<strong>4</strong>）<strong>2026年</strong>毕业生须提供国家承认的学历、学位证书，及从中国高等学校学生信息网（https://www.chsi.com.cn/）自行下载并打印的《教育部学历证书电子注册备案表》《中国高等教育学位在线验证报告》；（<strong>5</strong>）留学回国人员须提供国（境）外学历学位证书及教育部留学服务中心出具的“国外学历学位认证书”；</p><p>（<strong>6</strong>）岗位所需的资格、职称、技术等级证书，其中教师资格需提供下列证件之一： ①普通中、小学教师资格证；②有效期内的“中小学教师资格考试合格证明”；③<strong>2027年</strong>普通中小学师范教育类应届毕业生，有高校教务部门开具的师范生免试认定证明或《师范生教师职业能力证书》；</p><p>（<strong>7</strong>）岗位所需的其它证明材料。（五）面试 面试由区教委组织各招聘单位开展。面试成绩由学科专业测试成绩和答辩成绩构成，其中学科专业测试成绩占<strong>60%</strong>，答辩成绩占<strong>40%</strong>。面试成绩实行百分制，合格分数线为<strong>60分</strong>；低于合格分数线的，不可进入体检和考察环节。</p><p>考生综合成绩的计算方法： <strong>1</strong>.报考仅面试岗位的考生综合成绩=面试成绩；<strong>2</strong>.报考笔试加面试岗位的考生综合成绩=笔试成绩*<strong>40%</strong>与面试成绩*<strong>60%</strong>之和。（六）体检和考察 <strong>1</strong>.面试成绩通过合格分数线的考生，按综合成绩由高到低的顺序，以<strong>1</strong>:<strong>1</strong>的比例确定进入体检考察人选。</p><p>（<strong>1</strong>）报考仅面试岗位的考生，如同一岗位综合成绩相同，按面试主考官评定的面试分数由高到低确定进入体检考察人选；（<strong>2</strong>）报考笔试加面试岗位的考生，如同一岗位综合成绩相同，按笔试成绩由高到低确定进入体检考察人选；如同一岗位笔试、面试成绩均相同，按面试主考官评定的面试分数由高到低确定进入体检考察人选。</p><p><strong>2</strong>.各招聘单位负责体检和考察工作。体检、考察标准参照公务员录用有关体检、考察标准执行。考察工作突出政治标准，采取审核人事档案（学籍档案）、个别谈话、实地走访等方式，对应聘人员的政治素质、道德品质、业务能力、工作实绩、是否具有应当回避的情形等情况进行综合考察，并对其资格条件进行复查。</p><p>（七）公示 体检、考察合格的考生确定为拟聘用人选，名单在门头沟区人民政府网站-政务公开-政务公告栏公示<strong>5个</strong>工作日。公示无异议的按有关规定办理聘用手续。拟聘用人员经公示无异议的，如仍然在职，应在公示期满后<strong>30日</strong>内与原工作单位解除劳动合同或聘用合同，解除后方可办理后续聘用手续；</p><p>无法按期解除劳动合同或聘用合同的，取消后续聘用资格。聘用人员服从门头沟区教委工作安排。五、其它强调事项 （一）应聘人员提供材料不予退还；（二）报考人员须提供真实、有效的个人信息以及证书、证件等相关材料。资格审查将贯穿招聘工作全过程，凡不符合报名条件或提供虚假信息、伪造相关材料者，一经发现立即取消报考资格，已办理手续者取消聘用，解除人事关系。</p><p>对违反相关考试纪律的人员按照人力资源和社会保障部《事业单位公开招聘违纪违规行为处理规定》执行；（三）应聘人员请妥善保管本人准考证，准考证号将作为招聘各环节工作安排及相应成绩查询的重要依据；（四）公示前各招聘环节如出现应聘人员放弃或资格审查、考察、体检不通过等情况， 招聘单位根据本岗位综合成绩由高到低排序依次进行递补。</p></div></details></div>
+<div class="item" id="s8"><h3><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33114.html" target="_blank" rel="noopener">广西电力职业技术学院2026年公开招聘博士及正高级职称人员拟聘人员公示（二）</a></h3><div class="src"><span>广西壮族自治区人事考试院</span><span>2026-11-02</span><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33114.html" target="_blank" rel="noopener">gxpta.com.cn</a></div><blockquote>2026年11月2日至2026年11月6日</blockquote><details><summary>展开原文全文（3 段 · 1 张表）</summary><div class="body"><div class="tw"><table><thead><tr><th>序号</th><th>应聘岗位名称</th><th>姓名</th><th>性别</th><th>政治面貌</th><th>学历学位</th><th>专业</th></tr></thead><tbody><tr><td class="nw">1</td><td class="nw">电力工程学院专任教师</td><td class="nw">李晓欣</td><td class="nw">女</td><td class="nw">群众</td><td class="nw">博士研究生</td><td class="nw">电气与电子信息工程</td></tr></tbody></table></div><p>公示时间为 <strong>2026年</strong><strong>11月</strong><strong>2日</strong>至<strong>2026年</strong><strong>11月</strong><strong>6日</strong>（共<strong>5个</strong>工作日），公示期间，如对拟聘人员有异议，请于<strong>2026年</strong><strong>11月</strong><strong>6日</strong>下午<strong>5</strong>点<strong>30分</strong>前，以书面形式（署真实姓名和联系方式）向我校人事处、纪检监察室反映（直接送达的以送达日期为准；邮寄的以邮戳为准），过期不予受理。</p><p>群众如实反映的情况依法受到保护。通讯地址：南宁市玉洞大道<strong>109 </strong>号，广西电力职业技术学院人事处或广西电力职业技术学院纪检监察室，邮政编码：<strong>530299</strong>，联系电话：<strong>0771</strong>-<strong>2212989</strong>（人事处）、<strong>0771</strong>-<strong>2212981</strong>（纪检监察室）。广西电力职业技术学院 <strong>2026年</strong><strong>11月</strong><strong>2日</strong> 上一篇： 关于做好自治区直属机关事业单位委托发布信息工作的通知 下一篇： 广西百色干部学院<strong>2026年</strong>度公开招聘高层次人才公告 友情链接 广西人社新闻官方微信 关于我们 广西壮族自治区人事考试院 版权所有 桂ICP备<strong>05003677</strong>号 地址：南宁市桂春路<strong>9</strong>号 咨询电话： <strong>0771</strong>-<strong>12333</strong>转区本级 广西网警备：<strong>45010000043</strong>号 桂公网安备 <strong>45010302000826</strong>号 广西人社微信服务厅</p></div></details></div>
+<div class="item" id="s9"><h3><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928052.html" target="_blank" rel="noopener">北京人民艺术剧院演员岗位面向2027年应届毕业生公开招聘公告</a></h3><div class="src"><span>北京市人力资源和社会保障局</span><span>2026-11-02</span><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928052.html" target="_blank" rel="noopener">rsj.beijing.gov.cn</a></div><blockquote>报名时间：即日起至2026年11月23日</blockquote><details><summary>展开原文全文（11 段）</summary><div class="body"><p>二、招聘对象 （一）应届毕业生。列入国家统一招生计划（不含委培生、定向生）的普通高等学校毕业生，按时毕业并取得相应学历学位，毕业证书落款<strong>2026年</strong>、<strong>2027年</strong>的高校毕业生。非北京生源应届毕业生还须符合北京市引进毕业生相关政策。（二）留学回国人员。</p><p>取得国（境）外学位并完成国内教育部门学历学位认证，符合报考岗位条件的具有北京市常住户口的留学回国人员。三、基本条件 （一）具有中华人民共和国国籍；（二）遵守宪法和法律，具有良好的政治素质和道德品行；（三）坚持正确的政治方向，热爱并愿意从事戏剧事业；</p><p>（四）具有适应岗位要求的身体条件和心理素质；（五）具有符合岗位要求的学历学位、专业、工作能力等条件；（六）年龄应在<strong>38周岁</strong>及以下（<strong>1987年</strong><strong>11月</strong><strong>1日</strong>及以后出生）；（七）符合回避制度的有关规定，具有拟聘职位所要求的其他资格条件。四、报名与资格审核 （一）报名时间：即日起至<strong>2026年</strong><strong>11月</strong><strong>23日</strong> （二）报名方法： <strong>1</strong>.下载《北京人民艺术剧院面向<strong>2027年</strong>应届毕业生公开招聘报名登记表》（附件<strong>2</strong>），如实填写，并在个人声明处签字；</p><p><strong>2</strong>.本人身份证正反面复印件（正反面在同一页）；<strong>3</strong>.户口簿首页及本人页复印件；<strong>4.2026年</strong>应届毕业生需同时提交学信网学历和学位验证。暂未取得学历、学位证书的<strong>2027年</strong>应届毕业生，须提供学生证和学信网学籍验证。留学生需提交毕业证书、成绩单及成绩单翻译件、教育部留学服务中心学历认定或学校开具的证明（含翻译件）等材料复印件；</p><p><strong>5</strong>.应聘岗位相关的专业说明（如说明书、获奖证书、宣传页等书面材料）；<strong>6</strong>.个人简历。请按上述顺序将材料装订好。于截止日期前邮寄至北京人艺人事处（标识“简历”），或交送到北京人艺收发室。未填送《北京人民艺术剧院面向<strong>2027年</strong>应届毕业生公开招聘报名登记表》者将不予受理应聘。</p><p>（三）资格审核。报名截止后，将集中对应聘简历进行资格审核，符合应聘条件者将被列入候考名单。五、招考程序 考试环节包含专业初试、专业复试、实习考察、综合考评。专业初试、专业复试均为合格性考核。专业初试合格者进入专业复试，专业复试合格者进入实习考察环节。</p><p>专业考试成绩公示只公布合格与不合格。实习考察时间为<strong>2</strong>-<strong>3个</strong>月，通过观摩、排练、演出等形式开展多方位考察，主要考察考生的岗位匹配度，考察意见将作为综合考评依据。综合考评将以现场考察形式开展，了解考生基本情况以及岗位适配程度，并结合前期考试及实习考察情况，按照<strong>1</strong>:<strong>1</strong>的比例综合研究确定拟聘用人员。</p><p>对拟聘用人员组织考察、体检工作，体检标准参照公务员录用有关体检标准执行。如出现考生自动放弃或体检、考察不合格情况的，不再递补人选。综合考评结果将以公示拟聘用人员形式进行体现，在我院官网人艺公告栏目中进行<strong>7个</strong>工作日的公示。考试具体时间、地点另行通知。</p><p>六、聘用 经公示无异议并通过政审及综合表现审核的，剧院根据事业单位聘用制度有关规定，与拟聘人员签订聘用合同。聘用实行试用期制度，试用期包括在合同期限内。试用期满考核合格的予以继续聘用，不合格的取消聘用。七、注意事项 （一）凡经资格审核或考试、考察后未被聘用的人员，简历及附带材料恕不退回。</p><p>（二）应聘者需对提供材料的真实性负责。提供虚假信息、伪造相关材料的将取消应聘资格。（三）本次招聘采取电话或短信方式通知各环节入围人员，考生应确保报名登记表中手机号码正确并保持畅通。未入围者均不另行通知。因电话联系不畅造成无法通知考生本人的，后果由应聘者负责。</p><p>（四）考试不指定考试辅导用书，不举办也不委托任何机构举办考试辅导培训班。八、联系方式 联系电话：<strong>010</strong>－<strong>65252557</strong>（工作日<strong>9</strong>:<strong>00</strong>-<strong>12</strong>:<strong>00</strong>、<strong>14</strong>:<strong>00</strong>-<strong>16</strong>:<strong>00</strong>） 邮寄地址：北京市东城区王府井大街<strong>22</strong>号 收件人：北京人民艺术剧院人事处 赵老师 邮编：<strong>100006 </strong>监督电话：<strong>65246789</strong>转<strong>2043 </strong>附件： <strong>1</strong>.北京人民艺术剧院面向<strong>2027年</strong>应届毕业生公开招聘需求表 <strong>2</strong>.北京人民艺术剧院面向<strong>2027年</strong>应届毕业生公开招聘报名登记表 北京人民艺术剧院 <strong>2026年</strong><strong>11月</strong><strong>2日</strong> 附件: <strong>1</strong>. 北京人民艺术剧院面向<strong>2027年</strong>应届毕业生公开招聘需求表 <strong>2</strong>. 北京人民艺术剧院面向<strong>2027年</strong>应届毕业生公开招聘报名登记表 手机扫码查看</p></div></details></div>
+<h2 class="sec">申论素材</h2>
+<div class="item" id="s10"><h3><a href="https://www.qstheory.cn/20261102/d26595de677d4b0c9ef4fab335c2003a/c.html" target="_blank" rel="noopener">习近平同阿曼苏丹海赛姆会谈</a></h3><div class="src"><span>求是网</span><span>2026-11-02 13:47</span><a href="https://www.qstheory.cn/20261102/d26595de677d4b0c9ef4fab335c2003a/c.html" target="_blank" rel="noopener">qstheory.cn</a></div><blockquote>求是网报道，习近平同阿曼苏丹海赛姆会谈。</blockquote><details><summary>展开原文全文（14 段）</summary><div class="body"><p>习近平同阿曼苏丹海赛姆会谈 来源：新华网 作者：记者 马卓言 孙楠 <strong>2026</strong>-<strong>11</strong>-<strong>02 </strong><strong>13</strong>:<strong>47</strong>:<strong>42 </strong>新华社北京<strong>11月</strong><strong>2日</strong>电（记者马卓言、孙楠）<strong>11月</strong><strong>2日</strong>上午，国家主席习近平在北京人民大会堂同来华进行国事访问的阿曼苏丹海赛姆举行会谈。</p><p><strong>11月</strong><strong>2日</strong>上午，国家主席习近平在北京人民大会堂同来华进行国事访问的阿曼苏丹海赛姆举行会谈。新华社记者 李响 摄 习近平指出，中阿友好源远流长，积淀深厚、基础牢固、前景广阔。双方始终以信相交、以诚相待、以礼相敬、以义同行，延续千年的中阿友好历久弥坚。</p><p>近年来，两国政治互信日益牢固，互利合作成果丰硕，传统友好深入人心。拓展和深化中阿关系是双方共同的战略选择，顺应时代潮流和历史大势，符合两国人民共同期盼。中方愿同阿方一道，推动中阿战略伙伴关系向更高水平迈进，更好造福两国人民，为地区和平、稳定、繁荣作出贡献。</p><p>习近平强调，此访是中阿建交<strong>48年</strong>来阿曼国家元首首次访华，相信这次会谈将成为中阿关系史上重要一页，为双边关系发展注入强劲动力。中阿要增进政治互信，加强治国理政经验交流，进一步擦亮中阿关系的战略底色。中方支持阿方维护国家独立、主权、安全和稳定，自主探索符合自身国情的发展道路，愿同阿方继续坚定相互支持。</p><p>双方要拓展务实合作，不断夯实两国互利共赢的根基。中国坚持推动高质量发展，扩大高水平对外开放，将为包括阿曼在内的世界各国带来更大机遇。中方愿同阿方深化发展战略对接，做稳定可靠的能源合作伙伴、富有潜力的投资合作伙伴、协同创新的高技术合作伙伴，推动两国能源合作更加立体全面，加强产业、投资、人工智能、科技人文交流，在各自发展振兴和实现现代化的道路上携手同行。</p><p>双方要赓续传统友好，拉紧民心相通纽带，密切教育、旅游、卫生、新闻、体育等合作，不断丰富拓展中阿战略伙伴关系内涵。习近平指出，当前世界百年变局加速演进，全球性问题层出不穷。中东海湾地区不应成为大国博弈和地缘冲突的角力场。地区的和平稳定需要各方共同营造呵护。</p><p>中方始终积极致力于止战促和，希望为破解地区安全困境贡献智慧和方案。我们将继续倡导通过政治外交途径化解争端，支持地区国家构建睦邻、发展、安全、合作的共同家园。中方愿同包括阿方在内的阿拉伯国家、海合会国家加强沟通协调，共同为早日恢复地区和平安宁、实现长治久安而努力。</p><p><strong>11月</strong><strong>2日</strong>上午，国家主席习近平在北京人民大会堂同来华进行国事访问的阿曼苏丹海赛姆举行会谈。新华社记者 丁林 摄 海赛姆表示，很高兴到访伟大友好的中国。在习近平主席坚强领导下，中国成为世界政治经济大国，为世界繁荣稳定作出重要贡献。阿中传统友好，一直相互尊重、相互信任。</p><p>阿曼坚定奉行一个中国原则，支持中国维护国家主权和领土完整。希望以此访为新的起点，发掘更多合作机遇，建设面向未来的伙伴关系，推动两国关系得到更大发展。中国多年是阿曼第一大贸易伙伴，中国企业对阿投资不断增长，两国经济关系更加全面多元。阿方愿同中方对接两国发展战略，加强贸易、投资、工业、基础设施建设、人工智能、科技等领域合作。</p><p>增进人文交流，促进两国人民相知相亲。中国为维护世界和平稳定发挥着不可或缺的领导作用。阿方高度赞赏中方在中东问题上的公正立场，愿同中方密切协调，捍卫国际法，坚持以和平方式解决分歧，共同促进地区和世界安全稳定。会谈后，两国元首共同见证签署产供链、绿色发展、数字金融等领域多项合作文件。</p><p><strong>11月</strong><strong>2日</strong>上午，国家主席习近平在北京人民大会堂同来华进行国事访问的阿曼苏丹海赛姆举行会谈。会谈后，两国元首共同见证签署产供链、绿色发展、数字金融等领域多项合作文件。新华社记者 高洁 摄 访问期间，双方发表《中华人民共和国和阿曼苏丹国关于深化中阿战略伙伴关系的联合声明》。</p><p>会谈前，习近平在人民大会堂北大厅为海赛姆举行欢迎仪式。<strong>11月</strong><strong>2日</strong>上午，国家主席习近平在北京人民大会堂同来华进行国事访问的阿曼苏丹海赛姆举行会谈。这是会谈前，习近平在人民大会堂北大厅为海赛姆举行欢迎仪式。新华社记者 岳月伟 摄 海赛姆抵达时，礼兵列队致敬。</p><p>两国元首登上检阅台，军乐团奏中阿两国国歌，天安门广场鸣放礼炮<strong>21</strong>响。海赛姆在习近平陪同下检阅中国人民解放军仪仗队，并观看分列式。<strong>11月</strong><strong>2日</strong>上午，国家主席习近平在北京人民大会堂同来华进行国事访问的阿曼苏丹海赛姆举行会谈。这是会谈前，习近平在人民大会堂北大厅为海赛姆举行欢迎仪式。</p><p>新华社记者 高洁 摄 当天中午，习近平在人民大会堂金色大厅为海赛姆举行欢迎宴会。王毅参加上述活动。扫描二维码</p></div></details></div>
+<div class="kv" style="margin-top:40px"><span><a href="/kaogong-daily/issues/2026-11-02/">← 上一期</a></span><span><a href="/">全部期数</a></span></div>
+<footer>
+<p>资讯内容由 AI 辅助生成并逐条回原文核验，仍可能存在错误，请以原始信息出处和官方信息为准。</p>
+<p>每条都标注来源机构与发布时间；点标题可直达原文。</p>
+<p><a href="/kaogong-daily/rss.xml">RSS</a> · <a href="/kaogong-daily/archive/">往期归档</a></p>
+</footer>
+</div></body></html>
