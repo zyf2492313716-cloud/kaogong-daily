@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-04 · 考公资讯日报</title>
+<meta name="description" content="2026-11-04 共 8 条考公资讯：招考公告、报名截止节点、政策文件。">
+<meta property="og:updated_time" content="2026-11-04T12:13:57.830397+08:00">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+/* ── 设计令牌 ───────────────────────────────────────────────────────────
+   来源：ui-ux-pro-max 的 "Swiss Modernism 2.0 + 暖纸" 方案（warm paper white
+   + ink brown + amber accent）。两处按实测改了它的值，写在下面各自位置。
+
+   全部色值都在这里，规则里一个裸色值都不留（它的 checklist 第一条就是
+   「禁止逐屏硬编码颜色」，上一版规则里还有 3 处裸值，这次一并收进来）。 */
+:root{
+  --paper:#FFFBEB;      /* 底：暖纸白 */
+  --ink:#0F172A;        /* 正文墨色 */
+  --stone:#78716C;      /* 石色（只用于装饰笔画，不用于正文，对比度不够） */
+  --stone-ink:#57534E;  /* 弱化文字用这个：在纸底上约 7:1，--stone 只有 4.3:1 */
+  --amber:#D97706;      /* 强调色：分隔线、色块、hover */
+  --amber-ink:#92400E;  /* 链接色：纸底上约 6.4:1，可直接当正文链接 */
+  --line:#E5E0D6;
+  --card:#FFFFFF;
+  --band:#F7F2E7;       /* 表头/引用块底色 */
+  --zebra:#FAF7F0;      /* 表格隔行 */
+  --focus:#B45309;      /* 焦点环 */
+  --ink-strong:#000000; /* 强调字：比正文更重的黑 */
+
+  /* 字号五档。正文提到 17px：中文长文 16px 在 700px 行宽下每行 40 字，
+     17px 配 1.85 行高更适合连着看几十条公告。 */
+  --fs-xs:13px;--fs-md:17px;--fs-lg:20px;--fs-xl:26px;--fs-2xl:32px;
+
+  /* 间距八档，全部 4 的倍数（沿用插件给的刻度，去掉它没用的 3 档） */
+  --sp-1:4px;--sp-2:8px;--sp-3:16px;--sp-4:24px;--sp-5:32px;
+  --sp-6:48px;--sp-7:64px;--sp-8:96px;
+
+  --radius:10px;
+  --radius-pill:999px;
+}
+body{background:var(--paper);color:var(--ink);font-size:var(--fs-md);line-height:1.85;
+  /* 字体不照抄它给的 Inter/Playfair Display：两者都没有中文字形，
+     中文会掉回系统字体，中英混排的行高基线会漂。中文字族用 Noto Sans SC。 */
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei UI",-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+/* 行宽：720px 容器减左右 32px = 656px 正文，17px 字约 38 字一行，
+   落在中文长文最舒服的 38–42 区间。 */
+.wrap{max-width:720px;margin:0 auto;padding:var(--sp-7) var(--sp-5) var(--sp-8)}
+a{color:var(--amber-ink);text-decoration:none;
+  text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration:underline}
+a:focus-visible,summary:focus-visible,button:focus-visible{
+  outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--sp-1)}
+header.top{border-bottom:1px solid var(--line);padding-bottom:var(--sp-4);
+  margin-bottom:var(--sp-5)}
+header.top h1{font-size:var(--fs-2xl);letter-spacing:.5px;line-height:1.35;
+  font-weight:700;display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap}
+/* 标题前的色块：瑞士风格的网格感，不用阴影不用渐变 */
+header.top h1::before{content:"";width:6px;height:.95em;background:var(--amber);
+  border-radius:2px;display:inline-block;flex:none}
+header.top .sub{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-2)}
+.meta{color:var(--stone-ink);font-size:var(--fs-xs);letter-spacing:.3px}
+h2.sec{font-size:var(--fs-lg);color:var(--ink);margin:var(--sp-6) 0 var(--sp-3);
+  letter-spacing:.5px;line-height:1.4;padding-bottom:var(--sp-2);
+  border-bottom:2px solid var(--ink)}
+h2.sec::before{content:"§";color:var(--amber);margin-right:var(--sp-2);font-weight:400}
+.item{padding:var(--sp-4) 0;border-bottom:1px solid var(--line);scroll-margin-top:var(--sp-3)}
+.item:last-child{border-bottom:none}
+.item h3{font-size:var(--fs-lg);line-height:1.55;font-weight:700;letter-spacing:.1px}
+.item h3 a{color:var(--ink)}
+.item h3 a:hover{color:var(--amber-ink);text-decoration:none}
+.item .src{color:var(--stone-ink);font-size:var(--fs-xs);margin-top:var(--sp-2);
+  display:flex;gap:var(--sp-3);flex-wrap:wrap;align-items:center}
+.tag{display:inline-block;padding:var(--sp-1) var(--sp-3);border-radius:var(--radius-pill);
+  font-size:var(--fs-xs);background:var(--band);color:var(--amber-ink);
+  border:1px solid var(--line)}
+.tag.t2{background:var(--card);color:var(--stone-ink)}
+blockquote{margin:var(--sp-3) 0 0;padding:var(--sp-3) var(--sp-4);
+  border-left:3px solid var(--amber);background:var(--band);
+  border-radius:0 var(--radius) var(--radius) 0;
+  color:var(--ink);font-size:var(--fs-md);line-height:1.75}
+details{margin-top:var(--sp-3)}
+details summary{cursor:pointer;color:var(--stone-ink);font-size:var(--fs-md);
+  user-select:none;min-height:var(--sp-5);display:flex;align-items:center;gap:var(--sp-2)}
+details summary:hover{color:var(--amber-ink)}
+details summary::marker{color:var(--amber)}
+.body{margin-top:var(--sp-3);font-size:var(--fs-md);color:var(--ink)}
+.body p{margin:var(--sp-3) 0}
+.body strong{color:var(--ink-strong);font-weight:700}
+.body code{background:var(--band);padding:0 var(--sp-1);border-radius:var(--sp-1);
+  font-size:var(--fs-xs);color:var(--amber-ink)}
+/* 表格：宽表向两侧出血，手机上横向滚动，正文列仍保持窄 */
+.tw{overflow-x:auto;margin:var(--sp-3) calc(-1 * var(--sp-5));
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.tw table{border-collapse:collapse;width:100%;font-size:var(--fs-xs);min-width:560px;
+  line-height:1.65}
+.tw th{background:var(--band);color:var(--ink);font-weight:700;text-align:left;
+  padding:var(--sp-2) var(--sp-3);white-space:nowrap;
+  border-bottom:1px solid var(--line);letter-spacing:.3px}
+.tw td{padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--line);
+  vertical-align:top;color:var(--ink)}
+.tw tr:last-child td{border-bottom:none}
+.tw tr:nth-child(even) td{background:var(--zebra)}
+.tw td:first-child{color:var(--stone-ink);font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+/* 短单元格不许折行：避免"天津财经 / 大学""10月26 / 日"这种断字 */
+.tw td.nw{white-space:nowrap}
+/* 表内网址：13px 字形盒只有 19 高，低于 WCAG 2.5.8 的 24×24 硬线，
+   补 min-height 把命中区抬到 24。 */
+.tw td a{word-break:break-all;color:var(--amber-ink);
+  display:inline-flex;align-items:center;min-height:var(--sp-4)}
+ol.idx{list-style:none}
+ol.idx li{padding:var(--sp-2) 0;border-bottom:1px solid var(--line);font-size:var(--fs-md);
+  display:flex;gap:var(--sp-3);align-items:baseline}
+ol.idx li .d{color:var(--stone-ink);font-size:var(--fs-xs);flex:none;
+  font-variant-numeric:tabular-nums}
+ol.idx li a{color:var(--ink)}
+ol.idx li a:hover{color:var(--amber-ink)}
+/* 进度：国考这条线（左边的点只作辅助，状态一律写成字）+ 待盯的日子 */
+.steps{display:flex;flex-direction:column;gap:var(--sp-1)}
+.step{display:flex;align-items:center;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md);line-height:1.5}
+.step .s{width:10px;height:10px;border-radius:50%;background:var(--stone);flex:none}
+.step.done .s,.step.past .s{opacity:.5}
+.step.upcoming .s{background:var(--amber)}
+.step.today{border-color:var(--amber);background:var(--band)}
+.step.today .s{background:var(--amber);box-shadow:0 0 0 4px rgba(217,119,6,.16)}
+.step b{font-weight:600;flex:1 1 auto;min-width:0}
+.step .w{flex:none;font-weight:700}
+.step.unknown .w,.step.gap .w{color:var(--stone-ink);font-weight:500}
+.step a,.step .o{flex:none;font-size:var(--fs-xs);color:var(--stone-ink);
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  min-height:24px;display:inline-flex;align-items:center}
+.days{list-style:none;display:flex;flex-direction:column;gap:var(--sp-1)}
+.days li{display:flex;align-items:baseline;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md)}
+.days .dd{flex:none;font-weight:700;font-variant-numeric:tabular-nums}
+.days .dn{flex:none;font-size:var(--fs-xs);color:var(--amber-ink);min-width:52px}
+.days a{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;min-height:24px;display:inline-flex;align-items:center}
+.days .dg{flex:1 1 auto;text-align:right;font-size:var(--fs-xs);color:var(--stone-ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.note{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-3);  padding:var(--sp-3) var(--sp-4);background:var(--band);
+  border-radius:var(--radius);border:1px solid var(--line)}
+footer{margin-top:var(--sp-7);padding-top:var(--sp-4);border-top:1px solid var(--line);
+  color:var(--stone-ink);font-size:var(--fs-xs);line-height:1.8}
+footer p{margin:var(--sp-2) 0}
+.kv{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin:var(--sp-3) 0}
+.kv span{padding:var(--sp-2) var(--sp-3);border-radius:var(--radius);background:var(--card);
+  border:1px solid var(--line);font-size:var(--fs-xs);color:var(--stone-ink)}
+.kv b{color:var(--ink);font-size:var(--fs-lg);margin-right:var(--sp-1);
+  font-variant-numeric:tabular-nums}
+/* 指尖命中区：行内链接补够 32px 高与左右余量，视觉上仍是一行字 */
+.src a,.idx li a[href*="http"],footer a,.kv a{display:inline-flex;align-items:center;
+  min-height:var(--sp-5);padding:0 var(--sp-2);margin:0 calc(-1 * var(--sp-2))}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+@media (max-width:760px){
+  .wrap{padding:var(--sp-5) var(--sp-3) var(--sp-7)}
+  .tw{margin-left:calc(-1 * var(--sp-3));margin-right:calc(-1 * var(--sp-3))}
+  header.top h1{font-size:var(--fs-xl)}
+  h2.sec{font-size:var(--fs-md)}
+}
+/* 深色偏好下反色：只在系统明确要求时生效，默认仍是暖纸 */
+@media (prefers-color-scheme:dark){
+  :root{--paper:#12100C;--ink:#EDE6DA;--stone-ink:#A8A29E;--line:#2A2622;
+        --card:#1A1713;--band:#1F1B16;--zebra:#191510;--amber:#F59E0B;
+        --amber-ink:#FBBF24;--focus:#FBBF24}
+  .body strong{color:var(--paper)}
+}
+</style></head><body><div class="wrap">
+<header class="top"><h1><i></i>考公资讯日报</h1><div class="sub">2026-11-04 星期三 · 第 17 期</div></header>
+<div class="kv"><span><b>8</b>条</span><span>更新于 2026-11-04 12:13</span></div>
+<h2 class="sec">国考这条线</h2><div class="steps" data-today="2026-11-04">
+<div class="step unknown"><span class="s"></span><b>发布公告与职位表</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>网上报名</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>网上报名与资格审查结束</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>报名确认</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>准考证打印</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>笔试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>成绩公布</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>面试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>体检与考察</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>公示与录用</b><span class="w">尚未公告</span></div>
+</div>
+<h2 class="sec">接下来要盯的日子</h2><ul class="days">
+<li><span class="dd">2026年11月4日</span><span class="dn">今天</span><a href="https://www.scpta.com.cn/front/News/info/2fa9d71e243b439bad513ecaa451405c?t=162" target="_blank" rel="noopener">公示</a><span class="dg" title="四川省中医药管理局所属事业单位2026年上半年公开考核招聘工作人员拟聘用人员的公告（第二">四川省人事考试中心</span></li>
+<li><span class="dd">2026年11月04日</span><span class="dn">今天</span><a href="http://www.apta.gov.cn/ProfTech_NoticeIndex/ProfTechActivityDetail?aid=1693" target="_blank" rel="noopener">缴费</a><span class="dg" title="2026年度安徽省二级造价工程师职业资格考试现场人工核查安排">安徽省人事考试院</span></li>
+<li><span class="dd">11月4日—10日</span><span class="dn">今天</span><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33117.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="广西工业职业技术学院2026年公开招聘工作人员第三批拟聘用人员公示">广西壮族自治区人事考试院</span></li>
+<li><span class="dd">2026年11月5日</span><span class="dn">1 天后</span><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261102_4928095.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="门头沟区教育系统事业单位2027年第一次公开招聘教师公告">北京市人力资源和社会保障局</span></li>
+<li><span class="dd">11月5日</span><span class="dn">1 天后</span><a href="https://www.gxpta.com.cn/ksxm/gwyzlks/gx2026ndkslygwyxdszt/2026nlygs/t33102.html" target="_blank" rel="noopener">公示</a><span class="dg" title="广西壮族自治区戒毒管理局2026年度考试录用公务员（人民警察）第二批拟录用人员公示">广西壮族自治区人事考试院</span></li>
+<li><span class="dd">2026年11月5日</span><span class="dn">1 天后</span><a href="https://rst.ln.gov.cn/rst/zxzx/gsgg/2026102914122114211/index.shtml" target="_blank" rel="noopener">报名截止</a><span class="dg" title="辽宁省人力资源和社会保障厅关于公开选聘法律顾问的公告">辽宁省人力资源和社会保障厅</span></li>
+<li><span class="dd">2026年11月6日</span><span class="dn">2 天后</span><a href="https://www.scpta.com.cn/front/News/info/1c34b9dbcfea411c9e20010e4556c105?t=162" target="_blank" rel="noopener">体检</a><span class="dg" title="成都轻工职业技术大学关于2026年4月公开考核招聘思想政治理论课教师考核总成绩及体检事项">四川省人事考试中心</span></li>
+<li><span class="dd">11月6日</span><span class="dn">2 天后</span><a href="https://www.nxpta.com/gwyks/202610/t20261030_5105913.html" target="_blank" rel="noopener">报名确认</a><span class="dg" title="中央机关及其直属机构2027年度考试录用公务员宁夏考区报名确认须知">宁夏人事考试中心</span></li>
+<li><span class="dd">2026年11月6日</span><span class="dn">2 天后</span><a href="http://www.qhpta.com/ncms/article_703c6c6331a4dc386d2557659eaa9154.shtml" target="_blank" rel="noopener">网上报名</a><span class="dg" title="关于中央机关及其直属机构2027年度考试录用公务员青海考区报名确认的须知">青海省人事考试信息网</span></li>
+</ul>
+<h2 class="sec">今天要事</h2><ol class="idx">
+<li><span class="d">2026-11-04</span><a href="#s1">中共湖南省委军民融合发展委员会办公室、湖南省国防动员办公室所属事业单位2026年公开招聘拟聘用人员公示</a> <a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261104_34094687.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-04</span><a href="#s2">湖南省体育局所属事业单位2026年公开招聘拟聘用人员公示</a> <a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261104_34094683.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-04</span><a href="#s3">辽宁省人民医院2026年面向社会公开招聘高层次和急需紧缺工作人员（第二批）公告</a> <a href="https://www.lnrsks.com/html/sydw_zhaopingonggao/7822.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-04</span><a href="#s4">天津市2026年度初级、中级经济专业技术资格考试温馨提示</a> <a href="https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261104_7649436.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-04</span><a href="#s5">天津市部分事业单位公开招聘信息</a> <a href="https://hrss.tj.gov.cn/ztzl/ztzl1/sydwgkzp/202611/t20261103_7649011.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-03</span><a href="#s6">2027年度内蒙古自治区事业单位公开招聘工作人员笔试退费补充公告</a> <a href="http://www.impta.com.cn/shiyedanwei/2026113115921.asp" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-03</span><a href="#s7">广西工业职业技术学院2026年公开招聘工作人员第三批拟聘用人员公示</a> <a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33117.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-02</span><a href="#s8">中央机关及其直属机构2027年度考试录用公务员笔试注意事项</a> <a href="http://www.hnrsks.com/sitesources/hnsrskszx/page_pc/zngg/articlece1703df8fba4cbda436c213ef175385.html" target="_blank" rel="noopener">↗</a></li>
+</ol>
+<h2 class="sec">招考公告</h2>
+<div class="item" id="s1"><h3><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261104_34094687.html" target="_blank" rel="noopener">中共湖南省委军民融合发展委员会办公室、湖南省国防动员办公室所属事业单位2026年公开招聘拟聘用人员公示</a></h3><div class="src"><span>湖南省人力资源和社会保障厅</span><span>2026-11-04 11:12:59</span><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261104_34094687.html" target="_blank" rel="noopener">rst.hunan.gov.cn</a></div><blockquote>2026年11月4日至11月11日</blockquote><details><summary>展开原文全文（2 段 · 1 张表）</summary><div class="body"><div class="tw"><table><thead><tr><th>序号</th><th>招聘单位</th><th>招聘岗位</th><th>准考证号</th><th>姓 名</th><th>性别</th><th>综合成绩</th><th>监督电话</th></tr></thead><tbody><tr><td class="nw">1</td><td class="nw">湖南省二〇二工程管理处</td><td>助理工程师 1</td><td class="nw">1143990908028</td><td class="nw">汪墨林</td><td class="nw">女</td><td class="nw">79.07</td><td>0731-88839756； 0731-88839885。</td></tr><tr><td class="nw">2</td><td class="nw">湖南省二〇二工程管理处</td><td>助理工程师 2</td><td class="nw">1143990101826</td><td class="nw">彭明嘉</td><td class="nw">男</td><td class="nw">79.22</td><td>0731-88839756； 0731-88839885。</td></tr><tr><td class="nw">3</td><td class="nw">湖南省人防指挥信息保障中心</td><td>助理工程师 3</td><td class="nw">1143992507320</td><td>王 璋</td><td class="nw">男</td><td class="nw">79.29</td><td>0731-88839756； 0731-88839885。</td></tr></tbody></table></div><p>公示时间： <strong>2026年</strong><strong>11月</strong><strong>4日</strong>至<strong>11月</strong><strong>11日</strong>。公示期间接受社会举报。举报者应以实名反映问题，所举报内容必须真实、准确，并提供有关调查核实线索。监督电话： <strong>0731</strong>- <strong>88839756 </strong>（省委军民融合办、省国防动员办人事处） <strong>0731</strong>- <strong>88839885</strong>（省委军民融合办、省国防动员办机关纪委） 湖南省人力资源和社会保障厅 <strong>2026年</strong><strong>11月</strong><strong>4日</strong></p></div></details></div>
+<div class="item" id="s2"><h3><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261104_34094683.html" target="_blank" rel="noopener">湖南省体育局所属事业单位2026年公开招聘拟聘用人员公示</a></h3><div class="src"><span>湖南省人力资源和社会保障厅</span><span>2026-11-04 11:09:03</span><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261104_34094683.html" target="_blank" rel="noopener">rst.hunan.gov.cn</a></div><blockquote>2026年11月4日至11月11日</blockquote><details><summary>展开原文全文（2 段 · 1 张表）</summary><div class="body"><div class="tw"><table><tbody><tr><td class="nw">序号</td><td class="nw">招聘单位</td><td class="nw">招聘岗位</td><td>准考证号 1</td><td>姓 名</td><td class="nw">性别</td><td class="nw">综合成绩</td><td class="nw">监督电话</td></tr><tr><td class="nw">1</td><td class="nw">湖南体育职业学院</td><td class="nw">社会体育教师</td><td class="nw">1111992508230</td><td class="nw">罗峥</td><td class="nw">男</td><td class="nw">77.95</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">2</td><td class="nw">湖南体育职业学院</td><td class="nw">体育管理学教师</td><td class="nw">1111995300824</td><td class="nw">康森林</td><td class="nw">男</td><td class="nw">80.72</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">3</td><td class="nw">湖南体育职业学院</td><td class="nw">运动竞赛组织与实践教师</td><td class="nw">1111990904710</td><td class="nw">徐娟</td><td class="nw">女</td><td class="nw">75.90</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">4</td><td class="nw">湖南体育职业学院</td><td class="nw">英语教师</td><td class="nw">1111992506909</td><td class="nw">刘惠</td><td class="nw">女</td><td class="nw">79.23</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">5</td><td class="nw">湖南体育职业学院</td><td class="nw">运动康复教师</td><td class="nw">1111995607808</td><td class="nw">冯硕</td><td class="nw">女</td><td class="nw">78.92</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">6</td><td class="nw">湖南体育职业学院</td><td class="nw">运动营养学教师</td><td class="nw">1111994400429</td><td class="nw">秦家鑫</td><td class="nw">女</td><td class="nw">81.04</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">7</td><td class="nw">湖南体育职业学院</td><td class="nw">统计学教师</td><td class="nw">1111990103225</td><td class="nw">谭婷</td><td class="nw">女</td><td class="nw">80.37</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">8</td><td class="nw">湖南体育职业学院</td><td class="nw">财务专干</td><td class="nw">1111990505726</td><td class="nw">龙诗林</td><td class="nw">女</td><td class="nw">69.38</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">9</td><td class="nw">湖南体育职业学院</td><td class="nw">体育场馆设计专干</td><td class="nw">1111995307913</td><td class="nw">彭思思</td><td class="nw">女</td><td class="nw">67.12</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">10</td><td class="nw">湖南体育职业学院</td><td>辅导员 5</td><td class="nw">1111992101026</td><td class="nw">张浩</td><td class="nw">男</td><td class="nw">71.40</td><td>0731-82866970； 0731-82867652。</td></tr><tr><td class="nw">11</td><td class="nw">湖南体育职业学院</td><td>辅导员 6</td><td class="nw">1111990503819</td><td class="nw">刘娟</td><td class="nw">女</td><td class="nw">76.15</td><td>0731-82866970； 0731-82867652。</td></tr></tbody></table></div><p>公示时间： <strong>2026年</strong><strong>11月</strong><strong>4日</strong>至<strong>11月</strong><strong>11日</strong> 。公示期间接受社会举报。举报者应以实名反映问题，所举报内容必须真实、准确，并提供有关调查核实线索。监督电话： <strong>0731</strong>-<strong>82867652</strong>（湖南体育职业学院组织人事部） <strong>0731</strong>-<strong>82866970</strong>（湖南体育职业学院纪检监察处） 湖南省人力资源和社会保障厅 <strong>2026年</strong><strong>11月</strong><strong>4日</strong></p></div></details></div>
+<div class="item" id="s3"><h3><a href="https://www.lnrsks.com/html/sydw_zhaopingonggao/7822.html" target="_blank" rel="noopener">辽宁省人民医院2026年面向社会公开招聘高层次和急需紧缺工作人员（第二批）公告</a></h3><div class="src"><span>辽宁省人事考试中心</span><span>2026-11-04 09:52</span><a href="https://www.lnrsks.com/html/sydw_zhaopingonggao/7822.html" target="_blank" rel="noopener">lnrsks.com</a></div><blockquote>招聘8名；报名时间：2026年11月5日</blockquote><details><summary>展开原文全文（19 段）</summary><div class="body"><p>二、招聘条件 （一）具有中华人民共和国国籍；（二）遵守宪法和法律；（三）年满十八周岁，具有良好的品行；（四）具备岗位所需的专业或技能条件，适应岗位要求的身体条件；（五）岗位所需要的其他条件,详见《辽宁省人民医院<strong>2026年</strong>公开招聘高层次和急需紧缺工作人员（第二批）计划信息表（考核）》（附件<strong>1</strong>）。</p><p>曾因犯罪受过各类刑事处罚，有犯罪嫌疑尚未查清或正在接受纪律审查的，国家法律法规规定不得聘用的其他人员，均不得报考。应聘人员年龄原则上不超过<strong>45周岁</strong>（<strong>1980年</strong><strong>11月</strong><strong>5日</strong>以后出生），具有正高级专业技术资格人员，原则上不超过<strong>50周岁</strong>（<strong>1975年</strong><strong>11月</strong><strong>5日</strong>以后出生）。</p><p>招聘岗位对年龄条件有特殊要求的，按岗位要求的年龄条件执行。应聘者的工作经历、其它资格条件及相关资历的计算截止日期为报名起始之日。海外院校毕业生取得的学历学位证书应获得国家教育部认证。<strong>2026年</strong>普通高校应届毕业生可先行报名、考核、体检、考察、公示并于<strong>2026年</strong><strong>12月</strong><strong>31日</strong>之前取得毕业证书、学位证书的，可按规定聘用，否则不予聘用。</p><p>三、招聘方式 本次招聘采取考核方式。四、招聘工作步骤 （一）发布招聘信息 招聘人员岗位信息在辽宁人事考试网（www.lnrsks.com）、辽宁省人民医院官网（www.lnph.com）统一发布。（二）报名 报名时间：<strong>2026年</strong><strong>11月</strong><strong>5日</strong><strong>8时</strong>至<strong>2026年</strong><strong>11月</strong><strong>11日</strong><strong>16时</strong>（以电子邮件接收时间为准）。</p><p>报名方式：采取电子邮箱报名方式。符合我单位招聘条件的考生请将《辽宁省人民医院<strong>2026年</strong>公开招聘高层次和急需紧缺工作人员（第二批）报名登记表》（见附件<strong>2</strong>）、《辽宁省人民医院<strong>2026年</strong>公开招聘高层次和急需紧缺工作人员（第二批）报名情况汇总表》（见附件<strong>3</strong>）及审查所需证件原件扫描件发送到<strong>24016568</strong>@<strong>163</strong>.com，邮件命名方式：报考岗位+姓名。</p><p>每名考生只能报考一个岗位。（三）网上资格审查 网上资格审查和报名同步进行。我单位严格按照岗位资格条件对报名考生进行网上审查确认。主要审查报名者的身份证、各层次学历学位证书、专业技术资格证书以及招聘信息中所涉及的资历和其他条件要求的证明材料扫描件。</p><p>工作经历需提供单位出具的相关工作证明。上述材料在报名时以附件形式发送至<strong>24016568</strong>@<strong>163</strong>.com。在报名时限内，审核未通过的考生可以补充本人报名资料，或选择符合报考条件的岗位再次提交报名信息。未在规定时间内提交证明材料者，将视为自动放弃。</p><p>报名结束后，我单位会将审核结果信息通过邮件的方式反馈给报名人员，告知合格人员提交原件材料，进行现场资格审查。（四）现场资格复审 我单位将严格按照公告及岗位资格条件，对网上资格审查通过的考生进行现场审查确认，现场资格审核时间及相关事宜将通过辽宁省人民医院官网（www.lnph.com）发布。</p><p>资格审核贯穿招聘全过程，一经发现考生不符合报考岗位要求或弄虚作假的，随时取消考生考试应聘资格。未在规定时间内接受现场资格审查者，视为自动放弃。（五）考核 考核工作由我单位组织实施，考核采取面试形式，主要考察应聘人员专业知识、业务水平和岗位适应能力。</p><p>面试成绩即为考核成绩。考核实行百分制的赋分方式，满分为<strong>100分</strong>，合格分数线为<strong>60分</strong>，如参加面试人员所报考职位不能形成竞争的（即该职位实际参加面试人数与招考计划数的比例等于或低于<strong>1</strong>:<strong>1</strong>），考生面试成绩应达到其所在面试考官小组使用同一面试题本面试的所有人员平均分或者面试成绩不低于<strong>70分</strong>，未达到合格分数线的，不予聘用。</p><p>考核相关事宜将在辽宁省人民医院官网（www.lnph.com）发布。（六）体检 根据应聘人员总成绩从高到低的顺序，按招聘计划<strong>1</strong>:<strong>1</strong>的比例确定体检人员。如考核成绩并列，采取面试加试的方式确定参加体检人员。体检人员名单在辽宁省人民医院官网（www.lnph.com）公布。</p><p>体检工作参照《关于修订&lt;公务员录用体检通用标准（试行）&gt;及&lt;公务员录用体检操作手册（试行）&gt;的通知》（人社部发〔<strong>2016</strong>〕<strong>140</strong>号）、《关于切实做好维护乙肝表面抗原携带者入学和就业权利工作有关问题的通知》（人社厅发〔<strong>2010</strong>〕<strong>22</strong>号）和《关于进一步做好公务员考试录用体检工作的通知》（人社部发〔<strong>2012</strong>〕<strong>65</strong>号）、《关于调整公务员录用体检有关项目检查标准的通知》（组厅字〔<strong>2025</strong>〕<strong>28</strong>号）等有关规定组织实施。</p><p>对身体有特殊要求的招聘岗位，参照《关于印发公务员录用体检特殊标准（试行）的通知》（人社部发〔<strong>2010</strong>〕<strong>82</strong>号）执行。体检由我单位统一组织在具有公务员考录和事业单位公开招聘体检经验的三级甲等医院进行。应聘者对体检结论有疑问要求复检的，可在接到体检结论的<strong>7日</strong>内，以书面形式向我单位提出。</p><p>另有规定的，从其规定。复检将在应聘者提出申请的<strong>7个</strong>工作日内安排。复检内容为对体检结论有影响的项目，复检只能进行一次，体检结果以复检结论为准。体检合格者确定为拟考察人员。（七）考察 我单位对拟考察人员的思想政治表现、道德品质、业务能力、工作实绩等情况进行实地调查了解，并对被考察人员资格条件进行复查。</p><p>考察中发现不符合聘用条件的，取消其聘用资格，并将结论及依据明确告知被考察人员。考察合格者，确定为拟聘用人员。在体检和考察环节，因体检弃权或不合格、考察不合格、自愿弃权、弄虚作假被取消应聘资格及其他原因出现岗位空缺，可进行一次递补。（八）公示与聘用 拟聘用人员信息统一在辽宁人事考试网（www.lnrsks.com）及辽宁省人民医院官网（www.lnph.com）进行公示，公示期为<strong>5个</strong>工作日。</p><p>公示结束后，对公示无疑义人员办理备案手续。对于公示有疑义的人员，我单位将调查核实，并提出处理意见。公开招聘的人员按规定实行试用期制度。试用期一般不超过<strong>6个</strong>月（初次就业签订<strong>3年</strong>以上聘用合同的,试用期为<strong>12个</strong>月），国家另有规定的，按规定执行。试用期包括在聘用合同期限内。</p><p>试用期满考核合格的，予以正式聘用；不合格的，取消聘用。五、纪律与监督 公开招聘工作坚持“公开、平等、竞争、择优”的原则，严肃纪律，秉公办事，严禁弄虚作假，徇私舞弊，全程接受纪检监察部门和社会的监督。报考者有弄虚作假、违纪违规行为的，一经发现，均取消其考试或应聘资格，并将有关情况通报其所在学校或单位。</p><p>构成犯罪的，依法追究刑事责任。具体事宜依照《事业单位公开招聘违纪违规行为处理规定》（人社部令第<strong>35</strong>号）执行。六、其他 <strong>1</strong>.本次招聘不指定考试辅导用书，不举办也不委托任何机构举办考核辅导培训班。敬请广大报考者提高警惕，切勿上当受骗。<strong>2</strong>.考生自报名至拟聘用人员公示（资格审核、面试、体检、考察）期间，应确保报名时所填报的通讯工具畅通，以便联络，因所留通讯方式不畅所致后果，由考生自负。</p><p><strong>3</strong>.在招聘期间，如不按规定参加资格审核、面试、体检、办理有关手续等，视为自动弃权。七、其他未尽事宜按有关文件规定执行。</p></div></details></div>
+<div class="item" id="s4"><h3><a href="https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261104_7649436.html" target="_blank" rel="noopener">天津市2026年度初级、中级经济专业技术资格考试温馨提示</a></h3><div class="src"><span>天津市人才考评中心</span><span>2026-11-04 09:00:00</span><a href="https://hrss.tj.gov.cn/jsdw/rsksw/tzgg4/202611/t20261104_7649436.html" target="_blank" rel="noopener">hrss.tj.gov.cn</a></div><blockquote>天津市人才考评中心发布，天津市2026年度初级、中级经济专业技术资格考试温馨提示。</blockquote><details><summary>展开原文全文（7 段）</summary><div class="body"><p>天津市 <strong>2026 年</strong>度 初级、中级经济专业技术资格考试 将于 <strong>2026 年</strong> <strong>11 月</strong> <strong>7 日</strong>、 <strong>8 日</strong> 举行 ，请考生登录中国人事考试网（ http://www.cpta.com.cn/ ）打印准考证，认真阅读准考证上的 《 应试人员须知 》 全部 内容， 熟悉考试相关要求 ， 提前做好考前准备。</p><p>现 将 有关事项提示如下： 一、考试须知 （ 一）应试人员参加考试可携带的文具只限于 黑色字迹的签字笔 。（二） 严禁将手机、蓝牙耳机、智能穿戴设备（包括但不限于智能手表、手环、眼镜）等具有通信、存储、记录（含拍照）功能的电子设备带至考场座位。</p><p>（三）存放个人物品前，请将手机调至静音或关机，关闭闹钟。（四） 请按照准考证上的考点名称和地址参加考试。凭 准考证（纸质） 和 有效身份证件原件 （居民身份证、社会保障卡等）入 校 。（ 五） 建议考前 使用电脑 登录中国人事考试网电子化考试服务专区 （网址 https://rsjk.cpta.com.cn/ ），利用 模拟作答系统，提前熟悉考试作答界面和考试流程。</p><p>二、交通出行提示 （一） 本次考试座位号需在入场后抽取确定，请预留充足取号时间。建议 乘坐公共交通 工具，适当提前抵达考点。入校请遵守考点 和考场机房 相关要求，应试 人员 及送考人员均不得开车入校。请关注开考时间，合理安排出行， 考试开始 <strong>5 分</strong>钟 后不得进入 考场教室 。</p><p>（二） 请遵从考点现场指引，切勿走错教学楼及教室。可提前查看《考点平面图》（详见附件），了解考场所在位置。（ 三） 请关注考试期间的天气情况， 注意 出行安全。三、远离违法犯罪，谨防涉考诈骗 根据《中华人民共和国刑法》《最高人民法院、最高人民检察院关于办理组织考试作弊等刑事案件适用法律若干问题的解释》《中华人民共和国治安管理处罚法》，在法律规定的国家考试中，组织考试作弊、非法出售或提供试题或答案、代替考试等；</p><p>在法律规定的国家考试以外的其他考试中，非法获取国家秘密，非法使用窃听、窃照专用器材，非法利用信息网络等，涉嫌违法犯罪的，人事考试机构将会同公安等部门，予以严厉打击。专业技术人员职业资格考试严格执行 “ 考培分开 ” 政策，国家未指定任何培训机构开展职业资格考试培训工作，广大考生切勿相信 “ 保过 ”“ 命题专家授课 ” 等虚假培训宣传，谨防上当受骗！</p><p>预祝广大应试人员考试顺利！</p></div></details></div>
+<div class="item" id="s5"><h3><a href="https://hrss.tj.gov.cn/ztzl/ztzl1/sydwgkzp/202611/t20261103_7649011.html" target="_blank" rel="noopener">天津市部分事业单位公开招聘信息</a></h3><div class="src"><span>天津市人力资源和社会保障局</span><span>2026-11-04 08:30:00</span><a href="https://hrss.tj.gov.cn/ztzl/ztzl1/sydwgkzp/202611/t20261103_7649011.html" target="_blank" rel="noopener">hrss.tj.gov.cn</a></div><blockquote>天津市人力资源和社会保障局发布，天津市部分事业单位公开招聘信息。</blockquote><details><summary>展开原文全文（4 段 · 1 张表）</summary><div class="body"><p>天津市部分事业单位公开招聘信息</p><p>近期，本市部分事业单位将在相关网站发布公开招聘工作人员公告，请登录查询。</p><p>事业单位公开招聘信息汇总</p><div class="tw"><table><thead><tr><th>序号</th><th>招聘单位</th><th>招聘岗位</th><th>招聘 人数</th><th>公告发布 时间</th><th>公告发布网址</th></tr></thead><tbody><tr><td class="nw">1</td><td class="nw">天津渤海职业技术学院</td><td>化工与环境学院 教师岗 专技岗十二级</td><td class="nw">7</td><td class="nw">2026年11月4日</td><td><a href="https://www.bcig.cn" target="_blank" rel="noopener">https://www.bcig.cn</a> <a href="https://www.tbvtc.edu.cn" target="_blank" rel="noopener">https://www.tbvtc.edu.cn</a></td></tr><tr><td class="nw">2</td><td class="nw">天津渤海职业技术学院</td><td>智能制造学院 教师岗 专技岗十二级</td><td class="nw">3</td><td></td><td></td></tr><tr><td class="nw">3</td><td class="nw">天津渤海职业技术学院</td><td>人工智能学院 教师岗 专技岗十二级</td><td class="nw">2</td><td></td><td></td></tr><tr><td class="nw">4</td><td class="nw">天津渤海职业技术学院</td><td>马克思主义学院 教师岗 专技岗十二级</td><td class="nw">1</td><td></td><td></td></tr><tr><td class="nw">5</td><td class="nw">天津渤海职业技术学院</td><td>网络安全和信息化办公室 行政岗 专技岗七级</td><td class="nw">1</td><td></td><td></td></tr></tbody></table></div></div></details></div>
+<div class="item" id="s6"><h3><a href="http://www.impta.com.cn/shiyedanwei/2026113115921.asp" target="_blank" rel="noopener">2027年度内蒙古自治区事业单位公开招聘工作人员笔试退费补充公告</a></h3><div class="src"><span>内蒙古自治区人力资源和社会保障厅</span><span>2026-11-03</span><a href="http://www.impta.com.cn/shiyedanwei/2026113115921.asp" target="_blank" rel="noopener">impta.com.cn</a></div><blockquote>截止时间延期至2026年11月10日；2026年11月10日17:00</blockquote><details><summary>展开原文全文（14 段）</summary><div class="body"><p>|</p><p>您的位置： 首页 - 事业单位招考</p><p><strong>2027年</strong>度内蒙古自治区事业单位公开招聘工作人员笔试退费补充公告</p><p>〖发布日期：<strong>2026</strong>-<strong>11</strong>-<strong>3 </strong>内蒙古人事考试网 管理员〗</p><p><strong>2027年</strong>度内蒙古自治区事业单位公开招聘工作人员笔试退费补充公告 各位考生： <strong>2027年</strong>度内蒙古自治区事业单位公开招聘工作人员笔试退费截止时间延期至<strong>2026年</strong><strong>11月</strong><strong>10日</strong><strong>17</strong>:<strong>00</strong>，请考生登录以下链接办理退费。笔试退费点击进入</p><p>〖</p><p>政务公开</p><p>新闻快讯</p><p>通知公告</p><p>机构简介</p><p>政策法规</p><p>资源下载</p><p>办事指南</p><p>网上报名操作步骤 | 网上缴费流程 | 易宝支付 版权所有：内蒙古自治区人事考试院 单位地址:内蒙古呼和浩特市新城区中山东路团结巷<strong>2</strong>号 邮政编码:<strong>010020 </strong>版权所有禁止转载 蒙ICP备<strong>09003817</strong>号-<strong>1</strong></p></div></details></div>
+<div class="item" id="s7"><h3><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33117.html" target="_blank" rel="noopener">广西工业职业技术学院2026年公开招聘工作人员第三批拟聘用人员公示</a></h3><div class="src"><span>广西壮族自治区人事考试院</span><span>2026-11-03</span><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33117.html" target="_blank" rel="noopener">gxpta.com.cn</a></div><blockquote>2026年11月4日至11月10日</blockquote><details><summary>展开原文全文（2 段）</summary><div class="body"><p>如对拟聘用人员有异议，请在公示期内，以书面形式，并署真实姓名、联系地址及联系方式向广西工业职业技术学院党委组织部（人事处）或纪委办公室（党委巡察工作办公室、纪检监察室）反映。群众如实反映情况受法律保护。材料邮寄（送达）地址：广西南宁市秀灵路 <strong>37 </strong>号广西工业职业技术学院党委组织部（人事处）或广西工业职业技术学院纪委办公室（党委巡察工作办公室、纪检监察室）。</p><p>监督电话： 党委组织部（人事处） ： <strong>0771</strong>-<strong>3829771 </strong>纪委办公室（党委巡察工作办公室、纪检监察室） ： <strong>0771</strong>- <strong>3851926 </strong>监督举报邮箱： gxicjjb@<strong>163</strong>.com 附件：广西工业职业技术学院 <strong>2026 年</strong>公开招聘工作人 员第 三 批拟聘用人员名单 广西工业职业技术学院 <strong>2026 年</strong> <strong>11 月</strong> <strong>3 日</strong> 附件：广西工业职业技术学院<strong>2026年</strong>公开招聘工作人员第三批拟聘用人员名单.pdf 上一篇： 关于做好自治区直属机关事业单位委托发布信息工作的通知 下一篇： 自治区市场监督管理局直属事业单位广西壮族自治区知识产权保护中心<strong>2026年</strong>度首批公开招聘工作人员面试公告 友情链接 广西人社新闻官方微信 关于我们 广西壮族自治区人事考试院 版权所有 桂ICP备<strong>05003677</strong>号 地址：南宁市桂春路<strong>9</strong>号 咨询电话： <strong>0771</strong>-<strong>12333</strong>转区本级 广西网警备：<strong>45010000043</strong>号 桂公网安备 <strong>45010302000826</strong>号 广西人社微信服务厅</p></div></details></div>
+<div class="item" id="s8"><h3><a href="http://www.hnrsks.com/sitesources/hnsrskszx/page_pc/zngg/articlece1703df8fba4cbda436c213ef175385.html" target="_blank" rel="noopener">中央机关及其直属机构2027年度考试录用公务员笔试注意事项</a></h3><div class="src"><span>河南省人事考试中心</span><span>2026-11-02 15:04</span><a href="http://www.hnrsks.com/sitesources/hnsrskszx/page_pc/zngg/articlece1703df8fba4cbda436c213ef175385.html" target="_blank" rel="noopener">hnrsks.com</a></div><blockquote>河南省人事考试中心发布，中央机关及其直属机构2027年度考试录用公务员笔试注意事项。</blockquote><div class="note">这条的正文以图片或外部链接形式发布，文字版不重排，请点标题看原文。</div></div>
+<div class="kv" style="margin-top:40px"><span><a href="/kaogong-daily/issues/2026-11-03/">← 上一期</a></span><span><a href="/">全部期数</a></span></div>
+<footer>
+<p>资讯内容由 AI 辅助生成并逐条回原文核验，仍可能存在错误，请以原始信息出处和官方信息为准。</p>
+<p>每条都标注来源机构与发布时间；点标题可直达原文。</p>
+<p><a href="/kaogong-daily/rss.xml">RSS</a> · <a href="/kaogong-daily/archive/">往期归档</a></p>
+</footer>
+</div></body></html>
