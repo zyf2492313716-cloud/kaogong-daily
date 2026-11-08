@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-08 · 考公资讯日报</title>
+<meta name="description" content="2026-11-08 共 2 条考公资讯：招考公告、报名截止节点、政策文件。">
+<meta property="og:updated_time" content="2026-11-08T11:31:32.278279+08:00">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+/* ── 设计令牌 ───────────────────────────────────────────────────────────
+   来源：ui-ux-pro-max 的 "Swiss Modernism 2.0 + 暖纸" 方案（warm paper white
+   + ink brown + amber accent）。两处按实测改了它的值，写在下面各自位置。
+
+   全部色值都在这里，规则里一个裸色值都不留（它的 checklist 第一条就是
+   「禁止逐屏硬编码颜色」，上一版规则里还有 3 处裸值，这次一并收进来）。 */
+:root{
+  --paper:#FFFBEB;      /* 底：暖纸白 */
+  --ink:#0F172A;        /* 正文墨色 */
+  --stone:#78716C;      /* 石色（只用于装饰笔画，不用于正文，对比度不够） */
+  --stone-ink:#57534E;  /* 弱化文字用这个：在纸底上约 7:1，--stone 只有 4.3:1 */
+  --amber:#D97706;      /* 强调色：分隔线、色块、hover */
+  --amber-ink:#92400E;  /* 链接色：纸底上约 6.4:1，可直接当正文链接 */
+  --line:#E5E0D6;
+  --card:#FFFFFF;
+  --band:#F7F2E7;       /* 表头/引用块底色 */
+  --zebra:#FAF7F0;      /* 表格隔行 */
+  --focus:#B45309;      /* 焦点环 */
+  --ink-strong:#000000; /* 强调字：比正文更重的黑 */
+
+  /* 字号五档。正文提到 17px：中文长文 16px 在 700px 行宽下每行 40 字，
+     17px 配 1.85 行高更适合连着看几十条公告。 */
+  --fs-xs:13px;--fs-md:17px;--fs-lg:20px;--fs-xl:26px;--fs-2xl:32px;
+
+  /* 间距八档，全部 4 的倍数（沿用插件给的刻度，去掉它没用的 3 档） */
+  --sp-1:4px;--sp-2:8px;--sp-3:16px;--sp-4:24px;--sp-5:32px;
+  --sp-6:48px;--sp-7:64px;--sp-8:96px;
+
+  --radius:10px;
+  --radius-pill:999px;
+}
+body{background:var(--paper);color:var(--ink);font-size:var(--fs-md);line-height:1.85;
+  /* 字体不照抄它给的 Inter/Playfair Display：两者都没有中文字形，
+     中文会掉回系统字体，中英混排的行高基线会漂。中文字族用 Noto Sans SC。 */
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei UI",-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+/* 行宽：720px 容器减左右 32px = 656px 正文，17px 字约 38 字一行，
+   落在中文长文最舒服的 38–42 区间。 */
+.wrap{max-width:720px;margin:0 auto;padding:var(--sp-7) var(--sp-5) var(--sp-8)}
+a{color:var(--amber-ink);text-decoration:none;
+  text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration:underline}
+a:focus-visible,summary:focus-visible,button:focus-visible{
+  outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--sp-1)}
+header.top{border-bottom:1px solid var(--line);padding-bottom:var(--sp-4);
+  margin-bottom:var(--sp-5)}
+header.top h1{font-size:var(--fs-2xl);letter-spacing:.5px;line-height:1.35;
+  font-weight:700;display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap}
+/* 标题前的色块：瑞士风格的网格感，不用阴影不用渐变 */
+header.top h1::before{content:"";width:6px;height:.95em;background:var(--amber);
+  border-radius:2px;display:inline-block;flex:none}
+header.top .sub{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-2)}
+.meta{color:var(--stone-ink);font-size:var(--fs-xs);letter-spacing:.3px}
+h2.sec{font-size:var(--fs-lg);color:var(--ink);margin:var(--sp-6) 0 var(--sp-3);
+  letter-spacing:.5px;line-height:1.4;padding-bottom:var(--sp-2);
+  border-bottom:2px solid var(--ink)}
+h2.sec::before{content:"§";color:var(--amber);margin-right:var(--sp-2);font-weight:400}
+.item{padding:var(--sp-4) 0;border-bottom:1px solid var(--line);scroll-margin-top:var(--sp-3)}
+.item:last-child{border-bottom:none}
+.item h3{font-size:var(--fs-lg);line-height:1.55;font-weight:700;letter-spacing:.1px}
+.item h3 a{color:var(--ink)}
+.item h3 a:hover{color:var(--amber-ink);text-decoration:none}
+.item .src{color:var(--stone-ink);font-size:var(--fs-xs);margin-top:var(--sp-2);
+  display:flex;gap:var(--sp-3);flex-wrap:wrap;align-items:center}
+.tag{display:inline-block;padding:var(--sp-1) var(--sp-3);border-radius:var(--radius-pill);
+  font-size:var(--fs-xs);background:var(--band);color:var(--amber-ink);
+  border:1px solid var(--line)}
+.tag.t2{background:var(--card);color:var(--stone-ink)}
+blockquote{margin:var(--sp-3) 0 0;padding:var(--sp-3) var(--sp-4);
+  border-left:3px solid var(--amber);background:var(--band);
+  border-radius:0 var(--radius) var(--radius) 0;
+  color:var(--ink);font-size:var(--fs-md);line-height:1.75}
+details{margin-top:var(--sp-3)}
+details summary{cursor:pointer;color:var(--stone-ink);font-size:var(--fs-md);
+  user-select:none;min-height:var(--sp-5);display:flex;align-items:center;gap:var(--sp-2)}
+details summary:hover{color:var(--amber-ink)}
+details summary::marker{color:var(--amber)}
+.body{margin-top:var(--sp-3);font-size:var(--fs-md);color:var(--ink)}
+.body p{margin:var(--sp-3) 0}
+.body strong{color:var(--ink-strong);font-weight:700}
+.body code{background:var(--band);padding:0 var(--sp-1);border-radius:var(--sp-1);
+  font-size:var(--fs-xs);color:var(--amber-ink)}
+/* 表格：宽表向两侧出血，手机上横向滚动，正文列仍保持窄 */
+.tw{overflow-x:auto;margin:var(--sp-3) calc(-1 * var(--sp-5));
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.tw table{border-collapse:collapse;width:100%;font-size:var(--fs-xs);min-width:560px;
+  line-height:1.65}
+.tw th{background:var(--band);color:var(--ink);font-weight:700;text-align:left;
+  padding:var(--sp-2) var(--sp-3);white-space:nowrap;
+  border-bottom:1px solid var(--line);letter-spacing:.3px}
+.tw td{padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--line);
+  vertical-align:top;color:var(--ink)}
+.tw tr:last-child td{border-bottom:none}
+.tw tr:nth-child(even) td{background:var(--zebra)}
+.tw td:first-child{color:var(--stone-ink);font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+/* 短单元格不许折行：避免"天津财经 / 大学""10月26 / 日"这种断字 */
+.tw td.nw{white-space:nowrap}
+/* 表内网址：13px 字形盒只有 19 高，低于 WCAG 2.5.8 的 24×24 硬线，
+   补 min-height 把命中区抬到 24。 */
+.tw td a{word-break:break-all;color:var(--amber-ink);
+  display:inline-flex;align-items:center;min-height:var(--sp-4)}
+ol.idx{list-style:none}
+ol.idx li{padding:var(--sp-2) 0;border-bottom:1px solid var(--line);font-size:var(--fs-md);
+  display:flex;gap:var(--sp-3);align-items:baseline}
+ol.idx li .d{color:var(--stone-ink);font-size:var(--fs-xs);flex:none;
+  font-variant-numeric:tabular-nums}
+ol.idx li a{color:var(--ink)}
+ol.idx li a:hover{color:var(--amber-ink)}
+/* 进度：国考这条线（左边的点只作辅助，状态一律写成字）+ 待盯的日子 */
+.steps{display:flex;flex-direction:column;gap:var(--sp-1)}
+.step{display:flex;align-items:center;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md);line-height:1.5}
+.step .s{width:10px;height:10px;border-radius:50%;background:var(--stone);flex:none}
+.step.done .s,.step.past .s{opacity:.5}
+.step.upcoming .s{background:var(--amber)}
+.step.today{border-color:var(--amber);background:var(--band)}
+.step.today .s{background:var(--amber);box-shadow:0 0 0 4px rgba(217,119,6,.16)}
+.step b{font-weight:600;flex:1 1 auto;min-width:0}
+.step .w{flex:none;font-weight:700}
+.step.unknown .w,.step.gap .w{color:var(--stone-ink);font-weight:500}
+.step a,.step .o{flex:none;font-size:var(--fs-xs);color:var(--stone-ink);
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  min-height:24px;display:inline-flex;align-items:center}
+.days{list-style:none;display:flex;flex-direction:column;gap:var(--sp-1)}
+.days li{display:flex;align-items:baseline;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md)}
+.days .dd{flex:none;font-weight:700;font-variant-numeric:tabular-nums}
+.days .dn{flex:none;font-size:var(--fs-xs);color:var(--amber-ink);min-width:52px}
+.days a{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;min-height:24px;display:inline-flex;align-items:center}
+.days .dg{flex:1 1 auto;text-align:right;font-size:var(--fs-xs);color:var(--stone-ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.note{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-3);  padding:var(--sp-3) var(--sp-4);background:var(--band);
+  border-radius:var(--radius);border:1px solid var(--line)}
+footer{margin-top:var(--sp-7);padding-top:var(--sp-4);border-top:1px solid var(--line);
+  color:var(--stone-ink);font-size:var(--fs-xs);line-height:1.8}
+footer p{margin:var(--sp-2) 0}
+.kv{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin:var(--sp-3) 0}
+.kv span{padding:var(--sp-2) var(--sp-3);border-radius:var(--radius);background:var(--card);
+  border:1px solid var(--line);font-size:var(--fs-xs);color:var(--stone-ink)}
+.kv b{color:var(--ink);font-size:var(--fs-lg);margin-right:var(--sp-1);
+  font-variant-numeric:tabular-nums}
+/* 指尖命中区：行内链接补够 32px 高与左右余量，视觉上仍是一行字 */
+.src a,.idx li a[href*="http"],footer a,.kv a{display:inline-flex;align-items:center;
+  min-height:var(--sp-5);padding:0 var(--sp-2);margin:0 calc(-1 * var(--sp-2))}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+@media (max-width:760px){
+  .wrap{padding:var(--sp-5) var(--sp-3) var(--sp-7)}
+  .tw{margin-left:calc(-1 * var(--sp-3));margin-right:calc(-1 * var(--sp-3))}
+  header.top h1{font-size:var(--fs-xl)}
+  h2.sec{font-size:var(--fs-md)}
+}
+/* 深色偏好下反色：只在系统明确要求时生效，默认仍是暖纸 */
+@media (prefers-color-scheme:dark){
+  :root{--paper:#12100C;--ink:#EDE6DA;--stone-ink:#A8A29E;--line:#2A2622;
+        --card:#1A1713;--band:#1F1B16;--zebra:#191510;--amber:#F59E0B;
+        --amber-ink:#FBBF24;--focus:#FBBF24}
+  .body strong{color:var(--paper)}
+}
+</style></head><body><div class="wrap">
+<header class="top"><h1><i></i>考公资讯日报</h1><div class="sub">2026-11-08 星期日 · 第 21 期</div></header>
+<div class="kv"><span><b>2</b>条</span><span>更新于 2026-11-08 11:31</span></div>
+<h2 class="sec">国考这条线</h2><div class="steps" data-today="2026-11-08">
+<div class="step unknown"><span class="s"></span><b>发布公告与职位表</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>网上报名</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>网上报名与资格审查结束</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>报名确认</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>准考证打印</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>笔试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>成绩公布</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>面试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>体检与考察</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>公示与录用</b><span class="w">尚未公告</span></div>
+</div>
+<h2 class="sec">接下来要盯的日子</h2><ul class="days">
+<li><span class="dd">2026年11月08日</span><span class="dn">今天</span><a href="http://www.apta.gov.cn/ProfTech_NoticeIndex/ProfTechActivityDetail?aid=1693" target="_blank" rel="noopener">缴费</a><span class="dg" title="2026年度安徽省二级造价工程师职业资格考试现场人工核查安排">安徽省人事考试院</span></li>
+<li><span class="dd">11月8日</span><span class="dn">今天</span><a href="https://www.hebpta.com.cn:8090/door/search?pageNum=1&amp;pageSize=100" target="_blank" rel="noopener">打印准考证</a><span class="dg" title="河北省事业单位2026年下半年公开招聘(统一招聘)笔试联考考务咨询电话和联系地址">河北省人事考试中心</span></li>
+<li><span class="dd">2026年11月08日</span><span class="dn">今天</span><a href="http://www.fjpta.com/portal/indexbulletin/2INYSwE.htm" target="_blank" rel="noopener">网上报名</a><span class="dg" title="2026年度设备监理师职业资格考试福建考区成绩合格人员承诺情况公示">福建省人事考试中心</span></li>
+<li><span class="dd">11月9日</span><span class="dn">1 天后</span><a href="http://gwykl.fujian.gov.cn/portal/qz/klbulletin/bn6pekx8.htm" target="_blank" rel="noopener">公示</a><span class="dg" title="关于泉州市2026年度考试录用公务员拟录用人员名单公示（六）">福建省公务员局</span></li>
+<li><span class="dd">2026年11月10日</span><span class="dn">2 天后</span><a href="http://www.impta.com.cn/shiyedanwei/2026113115921.asp" target="_blank" rel="noopener">网上报名</a><span class="dg" title="2027年度内蒙古自治区事业单位公开招聘工作人员笔试退费补充公告">内蒙古自治区人力资源和社会保障厅</span></li>
+<li><span class="dd">2026年11月10日</span><span class="dn">2 天后</span><a href="https://rst.xinjiang.gov.cn/xjrst/c112746/202611/313dbbdd7f354ac58590f0c249f751e3.shtml" target="_blank" rel="noopener">网上报名</a><span class="dg" title="新疆维吾尔自治区和新疆生产建设兵团2027年度选调大学毕业生公告">新疆维吾尔自治区人力资源和社会保障厅</span></li>
+<li><span class="dd">2026年11月10日</span><span class="dn">2 天后</span><a href="http://www.jxpta.com/jxsrskszx/wsbm164/pc/content/content_2110985837123010560.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="江西省法院系统2026年度公开招聘聘用制书记员网上报名专题">江西省人事考试中心</span></li>
+<li><span class="dd">2026年11月11日</span><span class="dn">3 天后</span><a href="https://rsj.sh.gov.cn/tzpgg_17408/20261105/t0035_1444537.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="2026年上海市绿化和市容管理局部分直属事业单位公开招聘公告">上海市人力资源和社会保障局</span></li>
+<li><span class="dd">11月11日</span><span class="dn">3 天后</span><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261104_34094687.html" target="_blank" rel="noopener">公示</a><span class="dg" title="中共湖南省委军民融合发展委员会办公室、湖南省国防动员办公室所属事业单位2026年公开招聘">湖南省人力资源和社会保障厅</span></li>
+</ul>
+<h2 class="sec">今天要事</h2><ol class="idx">
+<li><span class="d">2026-11-05</span><a href="#s1">重庆市气象部门2027年度事业单位公开招聘应届高校毕业生公告</a> <a href="https://cq.cma.gov.cn/sqxj/ggtz/202611/t20261105_8128696.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-07</span><a href="#s2">中共中央发出通知 部署党的二十一大代表选举工作</a> <a href="https://www.qstheory.cn/20261107/61d4420d62ab49238b025a84a4598434/c.html" target="_blank" rel="noopener">↗</a></li>
+</ol>
+<h2 class="sec">招考公告</h2>
+<div class="item" id="s1"><h3><a href="https://cq.cma.gov.cn/sqxj/ggtz/202611/t20261105_8128696.html" target="_blank" rel="noopener">重庆市气象部门2027年度事业单位公开招聘应届高校毕业生公告</a></h3><div class="src"><span>重庆市人力资源和社会保障局</span><span>2026-11-05</span><a href="https://cq.cma.gov.cn/sqxj/ggtz/202611/t20261105_8128696.html" target="_blank" rel="noopener">cq.cma.gov.cn</a></div><blockquote>2026年11月6日 10:00；1个岗位</blockquote><details><summary>展开原文全文（24 段）</summary><div class="body"><p>市局本级设<strong>10个</strong>内设机构， <strong>6 个</strong>正处级直属事业单位和<strong>1个</strong>社团组织，管理<strong>2个</strong>正处级地方事业机构；全市设<strong>34个</strong>区县（自治县）气象局。全市气象部门博士研究生 <strong>23 人</strong>，入选中国气象局新时代气象高层次科技创新人才计划<strong>16人</strong>次，本科及以上学历占 <strong>96%</strong>。</p><p>正高级工程师<strong>40 人</strong>，中级及以上职称占 <strong>78%</strong>。博士后工作站累计进站<strong>30人</strong>，出站<strong>21 人</strong>，在站 <strong>9 人</strong>。二、招聘岗位 具体见《重庆市气象部门<strong>2027 年</strong>度事业单位公开招聘应届高校毕业生岗位明细表（国家事业编制）》（附件<strong>1</strong>）。三、招聘条件 （一）应聘人员必须具备以下条件： <strong>1</strong>.具有中华人民共和国国籍。</p><p><strong>2</strong>.遵守中华人民共和国宪法和法律，拥护中国共产党领导和社会主义制度。<strong>3</strong>. 具有良好的政治素质、道德品行和敬业奉献精神，热爱气象工作。<strong>4</strong>.具有正常履行职责的身体条件和心理素质。<strong>5</strong>. 应为<strong>2027年</strong>应届高校毕业生（纳入国家统一招生计划、持有毕业生就业协议且在择业期内未落实工作单位的普通高校毕业生，含两年择业期内未落实工作单位的普通高校毕业生，不含定向生、委培生），以及根据国家有关政策可报考应届毕业生岗位的相关人员。</p><p><strong>2025年</strong><strong>1月</strong><strong>1日</strong>至 面试前取得国（境）外学历学位并完成教育部门学历学位认证的、未落实工作单位的留学回国人员。符合条件的博士后出站人员可视同应届毕业生进行公开招聘。<strong>6</strong>. 具有与招聘岗位要求相符的专业、学历和学位等资格条件。应聘人员应以已获得或即将获得的最高学历和与最高学历对应的学位报考。</p><p>专业根据《气象部门人员招聘专业目录（<strong>2027年</strong>版）》认定，并满足岗位所需的其他条件。留学回国等应聘人员所学学科专业与岗位要求的学科专业相近但不在气象部门人员招聘专业目录的，可以主动联系确认报名资格。<strong>7</strong>.国内本科及以上学历毕业生，<strong>2027年</strong><strong>12月</strong><strong>31日</strong>前需取得相应学历毕业证、学位证及其它相关手续证明；</p><p>留学 回国人员，面试前需取得教育部留学服务中心的国外学历学位认证书。<strong>8</strong>.硕士研究生及以下人员年龄要求<strong>38周岁</strong>及以下 （ <strong>1987年</strong><strong>11月</strong>以后出生 ）、博士研究生人员年龄要求为<strong>40周岁</strong>及以下（ <strong>1985年</strong><strong>11月</strong>以后出生 ）。<strong>9</strong>. 法律法规 、规章对应聘人员资格条件另有规定的，从其规定。</p><p>（二）有下列情况之一者，不得报考： <strong>1</strong>.因犯罪受到刑事处罚的；<strong>2</strong>.被开除中国共产党党籍的；<strong>3</strong>.被开除公职的；<strong>4</strong>.被列为失信联合惩戒对象的；<strong>5</strong>.人事档案等相关重要材料造假的；<strong>6</strong>. 涉嫌违纪违法正在接受审查尚未作出结论，或者受处分期间、未满影响期限的；</p><p><strong>7</strong>.按照《事业单位公开招聘人员暂行规定》（人事部令第<strong>6</strong>号）和相关规定应当回避的；<strong>8</strong>.法律、法规规定不得招聘为事业单位工作人员的其他情形。四、招聘形式 招聘岗位学历学位要求为博士研究生的，资格审查通过人数与招聘人数比例达到<strong>3</strong>:<strong>1</strong>的，采取笔试加面试的考试方式，达不到<strong>3</strong>:<strong>1</strong>的，采取直接面试的考试方式；</p><p>招聘岗位学历学位要求为大学本科及以上或者硕士研究生及以上的，采取笔试加面试的考试方式。五、招聘程序 （一）报名 <strong>1</strong>.报名采取网上报名方式进行，符合条件的应聘人员可于<strong>2026 年</strong><strong>11月</strong> <strong>6 日</strong> <strong>10</strong>:<strong>00 </strong>至<strong>11月</strong> <strong>17 日</strong><strong>18</strong>：<strong>00</strong>期间，登录气象人才招聘网（zp.cmatec.cn）进行报名，并提交个人身份证扫描件、佐证本人所学专业的材料（如毕业生就业推荐表、在校成绩单、学历学位证书等）扫描件、诚信承诺书扫描件等，以上材料合并为一个PDF格式文件上传报名系统。</p><p><strong>2</strong>. 应聘人员只能报考<strong>1个</strong>岗位。实行应聘人员诚信承诺制度。如实说明本人与气象部门职工是否存在亲属关系，进行诚信承诺，并承担不实承诺相关责任。（二）资格初审 由用人单位和重庆市气象局人事处依据《气象部门人员招聘专业目录（<strong>2027年</strong>版）》，对照岗位招聘条件，对应聘人员学历层次、专业等进行资格初审。</p><p>资格初审通过名单在气象人才招聘网和重庆市气象局门户网站公布。采取直接面试考试方式的，资格初审合格人员直接进入面试环节。采取笔试加面试考试方式的，同一岗位通过资格初审人数与招聘人数的比例不低于<strong>3</strong>:<strong>1</strong>，达不到该比例的，相应减少岗位招聘人数或取消该岗位的招聘计划，并在气象人才招聘网和重庆市气象局门户网站发布核减或者取消公告。</p><p>对艰苦边远地区或艰苦气象台站公开招聘达不到<strong>3</strong>:<strong>1</strong>比例要求的岗位，以及区县气象台招聘气象类专业达不到<strong>3</strong>:<strong>1</strong>比例要求的岗位，经重庆市气象局党组集体研究同意，可以按通过资格初审人数组织笔试。（三）笔试 <strong>1</strong>.笔试时间初定于<strong>2026年</strong><strong>12月</strong>中旬，考试地点设在重庆市区。</p><p>具体时间、地点及准考证打印等事宜见笔试公告，笔试公告发布在气象人才招聘网和重庆市气象局门户网站 。<strong>2</strong>.笔试内容为综合能力测试（为公共基础知识和能力测试），采取计算机化的考试方式。笔试不指定参考用书。<strong>3</strong>. 笔试设立合格分数线，笔试合格分数线为参加此次公开招聘考试所有参考人员有效笔试成绩的平均分*<strong>90%</strong>，低于合格线应聘人员不得进入面试。</p><p>面试人选从达到笔试成绩合格线的人员中，从高分到低分顺序按照考生人数与招聘人数<strong>3</strong>:<strong>1</strong>比例确定，笔试合格人数未达到规定比例的，经重庆市气象局党组集体研究同意，将达到笔试成绩合格线的人员确定为面试人选；入围面试的末位人选出现笔试成绩并列同分的，同时确定为面试人选。</p><p>对取消或主动放弃面试资格产生的空缺，可从应聘本岗位达到笔试成绩合格线的人员中按成绩高低依次递补。（四）资格复审 面试前由用人单位和重庆市气象局人事处对进入面试的应聘人员进行资格复审。参加面试人员应提供招聘公告及报考岗位要求的学历学位证书（暂时无法提供学历、学位证书的，提供毕业院校盖章的就业推荐表；</p><p>学历、学位证书最迟可延至报到前提交）、身份证、《毕业生就业协议》（网签的需学校出具未签约证明，同时现场查验网签情况）、诚信承诺书等原件资料。（五）面试 <strong>1</strong>. 招聘岗位学历学位要求为博士研究生的 ，面试以现场答辩方式进行；招聘岗位学历学位要求为大学本科及以上或者硕士研究生及以上的， 面试以结构化面试方式进行。</p><p><strong>2</strong>.设立面试合格分数线<strong>70分</strong>（满分<strong>100分</strong>），低于合格线考生不得进入 体检环节。<strong>3</strong>.面试地点设在重庆市区。具体时间、地点等事宜见面试公告，面试公告将发布在气象人才招聘网和重庆市气象局门户网站 。（六）综合成绩计算 <strong>1</strong>. 综合成绩 保留小数点后<strong>2</strong>位，按四舍五入计算 。</p><p><strong>2</strong>.采取 直接面试考试方式的，面试成绩即为综合成绩；采取笔试加面试考试方式的， 综合成绩按照“笔试成绩（换算成百分制）*<strong>50%</strong>+面试成绩*<strong>50%</strong>”计算。若综合成绩相同，以笔试成绩从高到低排名。<strong>3</strong>. 设定综合成绩合格分数线。采取直接面试考试方式的，综合成绩合格线为<strong>70分</strong>；</p><p>采取笔试加面试考试方式的，综合成绩合格线为“笔试合格分数线（换算成百分制）*<strong>50%</strong>+面试合格分数线*<strong>50%</strong>”。低于综合成绩合格线考生不得进入体检环节。<strong>4</strong>.通过面试的拟聘用人员《毕业生就业协议》留存用人单位。（七）体检 <strong>1</strong>. 从达到面试合格线、综合成绩合格分数线的应聘人员中，根据综合成绩由高到低的顺序，按<strong>1</strong>:<strong>1</strong>比例 确 定体检、考察人选名单。</p><p><strong>2</strong>. 体检由重庆市气象局人事处统一组织，体检费用自理。体检参照公务员现行录用体检标准和相关规定组织实施。<strong>3</strong>.未按规定时间参加体检者，视为自动放弃；体检不符合要求的，不予聘用。（八）考察 对体检合格人员进行实地考察，考察包含实地走访、查询社会信用记录、同本人面谈等环节。</p><p>重点对考察人选的思想政治表现、道德品行、综合素质、学业成绩、社会实践、遵纪守法以及是否需要回避的情况等进行考察，对人事档案进行审核，并对资格条件进行复查。考察人选符合招聘岗位条件要求的，按程序进入公开招聘下一环节。（九）公示 根据笔试、面试、体检和考察结果，经重庆市气象局党组研究确定拟聘人员名单。</p><p>在招聘公告发布的范围内对拟聘用人员信息进行公示，公示时间为 <strong>7个</strong>工作日。（十）递补及调剂 因下列情形导致招聘岗位出现空缺的，招聘方可根据工作实际，按照“人岗相适”原则研究是否递补。需递补的，从同一岗位考试合格人员中，按照考试成绩由高到低依次递补。</p><p><strong>1</strong>.应聘人员体检或者考察不符合要求的；<strong>2</strong>.拟聘用人员公示的结果影响聘用的；<strong>3</strong>.拟聘用人员明确放弃聘用的; <strong>4</strong>.导致拟聘岗位空缺的其他情形。没有递补人员的，招聘方综合研究是否调剂。需调剂的，调剂人选从报考的服从调剂、达到合格分数线且符合调剂岗位资格条件的考生中，根据考试成绩由高到低逐一确定，并按要求进行公示。</p><p>（十一）聘用 经公示无异议的，须在<strong>10个</strong>工作日内由用人单位与拟聘人员签订《毕业生就业协议》。若毕业生无正当理由不签署就业协议的，视为放弃聘用。将拟聘人员名单报中国气象局人事司审批后，按规定程序和权限办理聘用入编手续。受聘人员按照规定实行试用期制。</p></div></details></div>
+<h2 class="sec">申论素材</h2>
+<div class="item" id="s2"><h3><a href="https://www.qstheory.cn/20261107/61d4420d62ab49238b025a84a4598434/c.html" target="_blank" rel="noopener">中共中央发出通知 部署党的二十一大代表选举工作</a></h3><div class="src"><span>求是网</span><span>2026-11-07 11:47</span><a href="https://www.qstheory.cn/20261107/61d4420d62ab49238b025a84a4598434/c.html" target="_blank" rel="noopener">qstheory.cn</a></div><blockquote>求是网报道，中共中央发出通知 部署党的二十一大代表选举工作。</blockquote><details><summary>展开原文全文（11 段）</summary><div class="body"><p>中共中央发出通知 部署党的二十一大代表选举工作 来源：新华网 <strong>2026</strong>-<strong>11</strong>-<strong>07 </strong><strong>11</strong>:<strong>47</strong>:<strong>38 </strong>新华社北京<strong>11月</strong><strong>7日</strong>电 党的二十届五中全会决定，党的二十一大于<strong>2027年</strong>下半年在北京召开。最近，中共中央印发了《关于党的二十一大代表选举工作的通知》，对二十一大代表选举工作作出全面部署。</p><p>中央组织部近日召开会议，对这项工作作出具体安排。党的二十一大，是我们党在基本实现社会主义现代化的关键时期、向第二个百年奋斗目标进军新征程上召开的一次十分重要的代表大会，是党和国家政治生活中的一件大事。认真做好二十一大代表选举工作，是开好大会的重要基础。</p><p>党中央对做好二十一大代表选举工作高度重视，习近平总书记主持召开中央政治局常委会会议和中央政治局会议专门研究，确定了做好这项工作的总体要求和目标任务，要求各级党组织切实负起政治责任，认真履行职责，精心组织实施，确保代表选举工作圆满完成。党中央确定，二十一大代表名额共<strong>2360名</strong>，由全国<strong>38个</strong>选举单位选举产生。</p><p>做好二十一大代表选举工作，要全面贯彻习近平新时代中国特色社会主义思想，深入学习贯彻习近平党建思想，以党章为根本，坚持和加强党的全面领导特别是党中央集中统一领导，坚持把政治标准放在首位，严格标准条件，严密选举程序，严肃选举纪律，确保选出的二十一大代表素质优良、结构合理、分布广泛、党员拥护。</p><p>党中央明确，二十一大代表应是共产党员中的优秀分子，模范遵守党章，严格按照党员标准要求自己，具有共产党员的先进性。要严把人选政治关，做深做实政治素质考察，加强党性鉴别，着重考察人选政治立场、政治态度、政治觉悟和政治判断力、政治领悟力、政治执行力，深刻领悟“两个确立”的决定性意义，增强“四个意识”、坚定“四个自信”、做到“两个维护”等方面的表现情况，对政治上不合格的一票否决。</p><p>严把人选廉洁关、作风关，落实廉洁把关各项规定，严格甄别核查，注重了解道德品行、作风形象等情况，坚决防止“带病提名”、“带病当选”。要合理把握代表结构，保证生产和工作第一线代表比例，注重推荐工人、农民和专业技术人员党员中的先进模范人物作为代表人选；</p><p>女党员和少数民族党员代表应占一定比例。要有经济、科技、国防、政法、教育、宣传、文化、卫生、体育、社会管理和新就业群体等各方面的代表。党中央要求，二十一大代表的选举产生，采取自下而上、上下结合、反复酝酿、逐级遴选的办法进行。要深入开展宣传教育，广泛发动基层党组织和党员积极参与代表人选的推荐提名，根据多数党组织和党员的意见，逐级遴选择优。</p><p>要严格组织考察，实行差额考察和考察预告，充分听取基层党组织、党代会代表、党员和群众的意见。要认真搞好会议选举，代表实行差额选举，差额选举的比例应多于<strong>15%</strong>。党中央强调，各级党组织要切实加强领导，周密安排部署，以高度的政治责任感和严谨细致的工作作风，扎实做好二十一大代表选举工作。</p><p>要严肃政治纪律、组织纪律和选举纪律，坚持严的基调、严的措施、严的氛围，运用湖南衡阳、四川南充、辽宁等地拉票贿选、破坏选举案件开展警示教育，汲取教训，引以为戒。加强对代表选举工作的全程监督，对违规违纪违法问题“零容忍”，一经发现坚决查处，确保风清气正。</p><p>要落实持之以恒推进全面从严治党要求，使代表选举产生过程，成为深入学习贯彻习近平新时代中国特色社会主义思想特别是习近平党建思想的过程，成为党性党风党纪党史教育和党内政治生活生动实践的过程，成为推动树立和践行正确政绩观、激励干事创业的过程，进一步增强党的创造力、凝聚力、战斗力，动员广大党员、干部更加紧密地团结在以习近平同志为核心的党中央周围，不忘初心、牢记使命，万众一心、勠力进取，为基本实现社会主义现代化而共同奋斗，不断开创以中国式现代化全面推进强国建设、民族复兴伟业新局面。</p><p>二十一大代表选举工作从现在开始，到明年<strong>6月</strong>底前结束。扫描二维码</p></div></details></div>
+<div class="kv" style="margin-top:40px"><span><a href="/kaogong-daily/issues/2026-11-07/">← 上一期</a></span><span><a href="/">全部期数</a></span></div>
+<footer>
+<p>资讯内容由 AI 辅助生成并逐条回原文核验，仍可能存在错误，请以原始信息出处和官方信息为准。</p>
+<p>每条都标注来源机构与发布时间；点标题可直达原文。</p>
+<p><a href="/kaogong-daily/rss.xml">RSS</a> · <a href="/kaogong-daily/archive/">往期归档</a></p>
+</footer>
+</div></body></html>
