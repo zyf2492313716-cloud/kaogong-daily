@@ -1,0 +1,215 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-10 · 考公资讯日报</title>
+<meta name="description" content="2026-11-10 共 4 条考公资讯：招考公告、报名截止节点、政策文件。">
+<meta property="og:updated_time" content="2026-11-10T11:31:20.432527+08:00">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+/* ── 设计令牌 ───────────────────────────────────────────────────────────
+   来源：ui-ux-pro-max 的 "Swiss Modernism 2.0 + 暖纸" 方案（warm paper white
+   + ink brown + amber accent）。两处按实测改了它的值，写在下面各自位置。
+
+   全部色值都在这里，规则里一个裸色值都不留（它的 checklist 第一条就是
+   「禁止逐屏硬编码颜色」，上一版规则里还有 3 处裸值，这次一并收进来）。 */
+:root{
+  --paper:#FFFBEB;      /* 底：暖纸白 */
+  --ink:#0F172A;        /* 正文墨色 */
+  --stone:#78716C;      /* 石色（只用于装饰笔画，不用于正文，对比度不够） */
+  --stone-ink:#57534E;  /* 弱化文字用这个：在纸底上约 7:1，--stone 只有 4.3:1 */
+  --amber:#D97706;      /* 强调色：分隔线、色块、hover */
+  --amber-ink:#92400E;  /* 链接色：纸底上约 6.4:1，可直接当正文链接 */
+  --line:#E5E0D6;
+  --card:#FFFFFF;
+  --band:#F7F2E7;       /* 表头/引用块底色 */
+  --zebra:#FAF7F0;      /* 表格隔行 */
+  --focus:#B45309;      /* 焦点环 */
+  --ink-strong:#000000; /* 强调字：比正文更重的黑 */
+
+  /* 字号五档。正文提到 17px：中文长文 16px 在 700px 行宽下每行 40 字，
+     17px 配 1.85 行高更适合连着看几十条公告。 */
+  --fs-xs:13px;--fs-md:17px;--fs-lg:20px;--fs-xl:26px;--fs-2xl:32px;
+
+  /* 间距八档，全部 4 的倍数（沿用插件给的刻度，去掉它没用的 3 档） */
+  --sp-1:4px;--sp-2:8px;--sp-3:16px;--sp-4:24px;--sp-5:32px;
+  --sp-6:48px;--sp-7:64px;--sp-8:96px;
+
+  --radius:10px;
+  --radius-pill:999px;
+}
+body{background:var(--paper);color:var(--ink);font-size:var(--fs-md);line-height:1.85;
+  /* 字体不照抄它给的 Inter/Playfair Display：两者都没有中文字形，
+     中文会掉回系统字体，中英混排的行高基线会漂。中文字族用 Noto Sans SC。 */
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei UI",-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+/* 行宽：720px 容器减左右 32px = 656px 正文，17px 字约 38 字一行，
+   落在中文长文最舒服的 38–42 区间。 */
+.wrap{max-width:720px;margin:0 auto;padding:var(--sp-7) var(--sp-5) var(--sp-8)}
+a{color:var(--amber-ink);text-decoration:none;
+  text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration:underline}
+a:focus-visible,summary:focus-visible,button:focus-visible{
+  outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--sp-1)}
+header.top{border-bottom:1px solid var(--line);padding-bottom:var(--sp-4);
+  margin-bottom:var(--sp-5)}
+header.top h1{font-size:var(--fs-2xl);letter-spacing:.5px;line-height:1.35;
+  font-weight:700;display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap}
+/* 标题前的色块：瑞士风格的网格感，不用阴影不用渐变 */
+header.top h1::before{content:"";width:6px;height:.95em;background:var(--amber);
+  border-radius:2px;display:inline-block;flex:none}
+header.top .sub{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-2)}
+.meta{color:var(--stone-ink);font-size:var(--fs-xs);letter-spacing:.3px}
+h2.sec{font-size:var(--fs-lg);color:var(--ink);margin:var(--sp-6) 0 var(--sp-3);
+  letter-spacing:.5px;line-height:1.4;padding-bottom:var(--sp-2);
+  border-bottom:2px solid var(--ink)}
+h2.sec::before{content:"§";color:var(--amber);margin-right:var(--sp-2);font-weight:400}
+.item{padding:var(--sp-4) 0;border-bottom:1px solid var(--line);scroll-margin-top:var(--sp-3)}
+.item:last-child{border-bottom:none}
+.item h3{font-size:var(--fs-lg);line-height:1.55;font-weight:700;letter-spacing:.1px}
+.item h3 a{color:var(--ink)}
+.item h3 a:hover{color:var(--amber-ink);text-decoration:none}
+.item .src{color:var(--stone-ink);font-size:var(--fs-xs);margin-top:var(--sp-2);
+  display:flex;gap:var(--sp-3);flex-wrap:wrap;align-items:center}
+.tag{display:inline-block;padding:var(--sp-1) var(--sp-3);border-radius:var(--radius-pill);
+  font-size:var(--fs-xs);background:var(--band);color:var(--amber-ink);
+  border:1px solid var(--line)}
+.tag.t2{background:var(--card);color:var(--stone-ink)}
+blockquote{margin:var(--sp-3) 0 0;padding:var(--sp-3) var(--sp-4);
+  border-left:3px solid var(--amber);background:var(--band);
+  border-radius:0 var(--radius) var(--radius) 0;
+  color:var(--ink);font-size:var(--fs-md);line-height:1.75}
+details{margin-top:var(--sp-3)}
+details summary{cursor:pointer;color:var(--stone-ink);font-size:var(--fs-md);
+  user-select:none;min-height:var(--sp-5);display:flex;align-items:center;gap:var(--sp-2)}
+details summary:hover{color:var(--amber-ink)}
+details summary::marker{color:var(--amber)}
+.body{margin-top:var(--sp-3);font-size:var(--fs-md);color:var(--ink)}
+.body p{margin:var(--sp-3) 0}
+.body strong{color:var(--ink-strong);font-weight:700}
+.body code{background:var(--band);padding:0 var(--sp-1);border-radius:var(--sp-1);
+  font-size:var(--fs-xs);color:var(--amber-ink)}
+/* 表格：宽表向两侧出血，手机上横向滚动，正文列仍保持窄 */
+.tw{overflow-x:auto;margin:var(--sp-3) calc(-1 * var(--sp-5));
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.tw table{border-collapse:collapse;width:100%;font-size:var(--fs-xs);min-width:560px;
+  line-height:1.65}
+.tw th{background:var(--band);color:var(--ink);font-weight:700;text-align:left;
+  padding:var(--sp-2) var(--sp-3);white-space:nowrap;
+  border-bottom:1px solid var(--line);letter-spacing:.3px}
+.tw td{padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--line);
+  vertical-align:top;color:var(--ink)}
+.tw tr:last-child td{border-bottom:none}
+.tw tr:nth-child(even) td{background:var(--zebra)}
+.tw td:first-child{color:var(--stone-ink);font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+/* 短单元格不许折行：避免"天津财经 / 大学""10月26 / 日"这种断字 */
+.tw td.nw{white-space:nowrap}
+/* 表内网址：13px 字形盒只有 19 高，低于 WCAG 2.5.8 的 24×24 硬线，
+   补 min-height 把命中区抬到 24。 */
+.tw td a{word-break:break-all;color:var(--amber-ink);
+  display:inline-flex;align-items:center;min-height:var(--sp-4)}
+ol.idx{list-style:none}
+ol.idx li{padding:var(--sp-2) 0;border-bottom:1px solid var(--line);font-size:var(--fs-md);
+  display:flex;gap:var(--sp-3);align-items:baseline}
+ol.idx li .d{color:var(--stone-ink);font-size:var(--fs-xs);flex:none;
+  font-variant-numeric:tabular-nums}
+ol.idx li a{color:var(--ink)}
+ol.idx li a:hover{color:var(--amber-ink)}
+/* 进度：国考这条线（左边的点只作辅助，状态一律写成字）+ 待盯的日子 */
+.steps{display:flex;flex-direction:column;gap:var(--sp-1)}
+.step{display:flex;align-items:center;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md);line-height:1.5}
+.step .s{width:10px;height:10px;border-radius:50%;background:var(--stone);flex:none}
+.step.done .s,.step.past .s{opacity:.5}
+.step.upcoming .s{background:var(--amber)}
+.step.today{border-color:var(--amber);background:var(--band)}
+.step.today .s{background:var(--amber);box-shadow:0 0 0 4px rgba(217,119,6,.16)}
+.step b{font-weight:600;flex:1 1 auto;min-width:0}
+.step .w{flex:none;font-weight:700}
+.step.unknown .w,.step.gap .w{color:var(--stone-ink);font-weight:500}
+.step a,.step .o{flex:none;font-size:var(--fs-xs);color:var(--stone-ink);
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  min-height:24px;display:inline-flex;align-items:center}
+.days{list-style:none;display:flex;flex-direction:column;gap:var(--sp-1)}
+.days li{display:flex;align-items:baseline;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md)}
+.days .dd{flex:none;font-weight:700;font-variant-numeric:tabular-nums}
+.days .dn{flex:none;font-size:var(--fs-xs);color:var(--amber-ink);min-width:52px}
+.days a{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;min-height:24px;display:inline-flex;align-items:center}
+.days .dg{flex:1 1 auto;text-align:right;font-size:var(--fs-xs);color:var(--stone-ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.note{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-3);  padding:var(--sp-3) var(--sp-4);background:var(--band);
+  border-radius:var(--radius);border:1px solid var(--line)}
+footer{margin-top:var(--sp-7);padding-top:var(--sp-4);border-top:1px solid var(--line);
+  color:var(--stone-ink);font-size:var(--fs-xs);line-height:1.8}
+footer p{margin:var(--sp-2) 0}
+.kv{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin:var(--sp-3) 0}
+.kv span{padding:var(--sp-2) var(--sp-3);border-radius:var(--radius);background:var(--card);
+  border:1px solid var(--line);font-size:var(--fs-xs);color:var(--stone-ink)}
+.kv b{color:var(--ink);font-size:var(--fs-lg);margin-right:var(--sp-1);
+  font-variant-numeric:tabular-nums}
+/* 指尖命中区：行内链接补够 32px 高与左右余量，视觉上仍是一行字 */
+.src a,.idx li a[href*="http"],footer a,.kv a{display:inline-flex;align-items:center;
+  min-height:var(--sp-5);padding:0 var(--sp-2);margin:0 calc(-1 * var(--sp-2))}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+@media (max-width:760px){
+  .wrap{padding:var(--sp-5) var(--sp-3) var(--sp-7)}
+  .tw{margin-left:calc(-1 * var(--sp-3));margin-right:calc(-1 * var(--sp-3))}
+  header.top h1{font-size:var(--fs-xl)}
+  h2.sec{font-size:var(--fs-md)}
+}
+/* 深色偏好下反色：只在系统明确要求时生效，默认仍是暖纸 */
+@media (prefers-color-scheme:dark){
+  :root{--paper:#12100C;--ink:#EDE6DA;--stone-ink:#A8A29E;--line:#2A2622;
+        --card:#1A1713;--band:#1F1B16;--zebra:#191510;--amber:#F59E0B;
+        --amber-ink:#FBBF24;--focus:#FBBF24}
+  .body strong{color:var(--paper)}
+}
+</style></head><body><div class="wrap">
+<header class="top"><h1><i></i>考公资讯日报</h1><div class="sub">2026-11-10 星期二 · 第 23 期</div></header>
+<div class="kv"><span><b>4</b>条</span><span>更新于 2026-11-10 11:31</span></div>
+<h2 class="sec">国考这条线</h2><div class="steps" data-today="2026-11-10">
+<div class="step past"><span class="s"></span><b>发布公告与职位表</b><span class="w">—</span></div>
+<div class="step past"><span class="s"></span><b>网上报名</b><span class="w">—</span></div>
+<div class="step past"><span class="s"></span><b>网上报名与资格审查结束</b><span class="w">—</span></div>
+<div class="step past"><span class="s"></span><b>报名确认</b><span class="w">—</span></div>
+<div class="step today"><span class="s"></span><b>准考证打印</b><span class="w">2026年11月10日</span><a href="https://www.hljsgwy.org.cn/tyzpwb/website/queryMore.htm" target="_blank" rel="noopener" title="黑龙江省公务员局">黑龙江省公务员局</a></div>
+<div class="step unknown"><span class="s"></span><b>笔试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>成绩公布</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>面试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>体检与考察</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>公示与录用</b><span class="w">尚未公告</span></div>
+</div>
+<h2 class="sec">接下来要盯的日子</h2><ul class="days">
+<li><span class="dd">2026年11月10日</span><span class="dn">今天</span><a href="http://www.impta.com.cn/shiyedanwei/2026113115921.asp" target="_blank" rel="noopener">网上报名</a><span class="dg" title="2027年度内蒙古自治区事业单位公开招聘工作人员笔试退费补充公告">内蒙古自治区人力资源和社会保障厅</span></li>
+<li><span class="dd">2026年11月10日</span><span class="dn">今天</span><a href="http://www.apta.gov.cn/ProfTech_NoticeIndex/ProfTechActivityDetail?aid=1693" target="_blank" rel="noopener">缴费</a><span class="dg" title="2026年度安徽省二级造价工程师职业资格考试现场人工核查安排">安徽省人事考试院</span></li>
+<li><span class="dd">2026年11月10日</span><span class="dn">今天</span><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33128.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="广西壮族自治区江滨医院2026年度公开招聘拟聘人员公示">广西壮族自治区人事考试院</span></li>
+<li><span class="dd">11月12日</span><span class="dn">2 天后</span><a href="https://www.scpta.com.cn/front/News/info/dd5ca0e2539146deb337e53596f62933?t=162" target="_blank" rel="noopener">公示</a><span class="dg" title="四川省商务厅关于所属事业单位2026年公开选调工作人员拟选调人员的公示">四川省人事考试中心</span></li>
+<li><span class="dd">11月12日</span><span class="dn">2 天后</span><a href="http://www.qhpta.com/ncms/article_63ad73173d98ce0d4bbd87003549d94d.shtml" target="_blank" rel="noopener">网上报名</a><span class="dg" title="青海省2027年度选调应届优秀大学毕业生公告">青海省人事考试信息网</span></li>
+<li><span class="dd">2026年11月14日</span><span class="dn">4 天后</span><a href="https://www.gdzz.gov.cn/tzgg/content/post_26298.html" target="_blank" rel="noopener">缴费</a><span class="dg" title="广东省2027年考试录用公务员公告">中共广东省委组织部</span></li>
+<li><span class="dd">2026年11月14日</span><span class="dn">4 天后</span><a href="http://zjks.rlsbt.zj.gov.cn/col/col1229635561/art/2026/art_d3a45c0b23ec44d7a192b463e7a93cc2.html" target="_blank" rel="noopener">缴费</a><span class="dg" title="浙江省各级机关单位2027年度考试录用公务员公告">浙江省人事考试院</span></li>
+<li><span class="dd">11月16日</span><span class="dn">6 天后</span><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261109_34098250.html" target="_blank" rel="noopener">公示</a><span class="dg" title="湖南省自然资源厅所属事业单位2026年公开招聘拟聘用人员公示">湖南省人力资源和社会保障厅</span></li>
+<li><span class="dd">11月17日</span><span class="dn">7 天后</span><a href="http://www.apta.gov.cn/ProfTech_NoticeIndex/ProfTechActivityDetail?aid=1691" target="_blank" rel="noopener">准考证打印</a><span class="dg" title="2026年度安徽省二级造价工程师职业资格考试公告">安徽省人事考试院</span></li>
+</ul>
+<h2 class="sec">今天要事</h2><ol class="idx">
+<li><span class="d">2026-11-10</span><a href="#s1">北京印刷学院2026年海外优秀学者招聘公告</a> <a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261110_4939696.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-09</span><a href="#s2">湖南省自然资源厅所属事业单位2026年公开招聘拟聘用人员公示</a> <a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261109_34098250.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-09</span><a href="#s3">湖南省住房和城乡建设厅所属事业单位2026年公开招聘拟聘用人员公示</a> <a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261109_34098249.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-09</span><a href="#s4">广西壮族自治区江滨医院2026年度公开招聘拟聘人员公示</a> <a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33128.html" target="_blank" rel="noopener">↗</a></li>
+</ol>
+<h2 class="sec">招考公告</h2>
+<div class="item" id="s1"><h3><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261110_4939696.html" target="_blank" rel="noopener">北京印刷学院2026年海外优秀学者招聘公告</a></h3><div class="src"><span>北京市人力资源和社会保障局</span><span>2026-11-10</span><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261110_4939696.html" target="_blank" rel="noopener">rsj.beijing.gov.cn</a></div><blockquote>北京市人力资源和社会保障局发布，北京印刷学院2026年海外优秀学者招聘公告。</blockquote><details><summary>展开原文全文（16 段）</summary><div class="body"><p>学校现已成为在出版与传播、印刷与包装、设计与艺术三个领域具有明显优势和特色，国内唯一以出版为学科专业特色、为出版传媒全产业链培养人才的全日制高水平特色型高等院校。学校拥有国家级一流本科专业建设点<strong>8个</strong>，国家级特色专业建设点<strong>2个</strong>，北京高校重点建设一流本科专业<strong>2个</strong>，北京市级一流专业建设点<strong>14个</strong>，北京市特色专业建设点<strong>4个</strong>，现有<strong>12个</strong>教学机构，<strong>28个</strong>本科专业招生。</p><p>学校现有<strong>11个</strong>一级学科硕士学位授权点，<strong>8个</strong>专业学位授权点，拥有博士后科研工作站，具有独立招收和培养博士后资格。<strong>2024年</strong>，学校成功获批博士学位授予单位，新增出版专业博士学位授权点，形成了“学士、硕士、博士”完整的学位授权体系。依据上级及学校相关政策要求，结合学校事业发展需要，现面向社会公开招聘海外优秀学者。</p><p>一、招聘岗位 本批次学校计划招聘<strong>8人</strong>，岗位信息和具体要求详见附件<strong>1</strong>《北京印刷学院<strong>2026年</strong>海外优秀学者招聘岗位信息表》。二、基本条件和要求 （一）具有中华人民共和国国籍，坚持中国共产党的领导，拥护社会主义办学方向，遵守宪法和法律，具有良好的思想道德品质；</p><p>热爱教育事业，具有团队精神、敬业精神和责任意识；具有扎实的专业知识和较强的科研创新能力；身心健康；无任何不良记录。（二）应聘人员应具有博士研究生学历和博士学位（海外博士学位以教育部留学服务中心学历学位认证为准），符合招聘岗位的任职资格和条件要求，专业要求参照教育部专业目录执行。</p><p>（三）应聘人员须具有北京市常住户口或符合北京市人才引进相关条件和在京就业落户有关要求。（四）年龄要求：原则上不超过<strong>40周岁</strong>（<strong>1985年</strong><strong>11月</strong>及以后出生，以身份证登记日期为准）。（五）符合事业单位公开招聘人员回避制度的有关要求。应聘人员不得报考聘用后构成回避关系的招聘岗位，如有需要回避的情况应在报名阶段主动报告。</p><p>三、招聘程序 （一）报名 自公告发布之日起至<strong>2026年</strong><strong>11月</strong><strong>30日</strong>期间接受报名，应聘人员填写《北京印刷学院应聘登记表（海外优秀学者）》（附件<strong>2</strong>），并将学历学位证书、主要业绩成果及获奖证书等材料电子版一并发送到附件<strong>1</strong>中相关岗位指定邮箱，邮件以“姓名—应聘XX学院海外优秀学者”命名。</p><p>（二）资格审查 按照岗位要求及北京市人才引进相关政策进行资格审核，未通过者不另行通知。（三）初选 依据北京市相关政策规定及岗位具体要求，学校各招聘单位组织面试，成绩采取百分制，合格线为<strong>70分</strong>。每个岗位依据面试成绩由高到低按照<strong>1</strong>:<strong>8</strong>的比例进行排序，推荐进入复选环节，若实际人数不足比例，以实际人数为准。</p><p>（四）心理健康测评 应聘人员须在规定时间内完成测评，未按要求完成测评者视为自动放弃应聘资格。（五）复选 学校组织学术评价，根据成绩高低按照<strong>1</strong>:<strong>3</strong>的比例报人才人事工作领导小组研究。若实际人数不足比例，以实际人数为准。（六）确定人选 学校结合推荐人选的基本情况、教育背景、学科专业契合度、工作实践经历、国际视野、学术成果与奖励等综合因素，按<strong>1</strong>:<strong>1</strong>比例研究确定拟聘人员，同时按不高于<strong>1</strong>:<strong>2</strong>的比例研究确定推荐候补人选。</p><p>（七）思想政治考察和档案审查 考察小组对拟聘人员进行思想政治考察和档案审查，应聘人员在规定时间内按要求提交相关材料，配合完成考察工作。（八）体检 拟聘人员在规定时间内参加北京市教师资格认定体检（拟聘人员须符合教师资格体检标准，体检费用自理）。</p><p>（九）公示 学校对拟聘人员在北京印刷学院官网进行公示，公示时间为<strong>5个</strong>工作日。体检结果合格、思想政治考察通过且公示期满无异议者，学校为其办理相关接收手续。体检不合格、思想政治考察不通过或公示期间查实存在影响聘用问题的，取消其拟聘资格，空缺岗位可按候补人选顺序依次递补。</p><p>四、其他 （一）相关待遇。按照国家、北京市和学校有关规定执行，提供具有竞争力的薪酬待遇。（二）学校将通过电话、短信、邮件等形式通知各环节入围人员相关事宜，请应聘人员保持通信畅通。未进入下一环节者，学校不再另行通知，应聘材料不予退还。因通信不畅导致本人未能及时接到通知的，或因个人原因造成未按学校规定时间完成招聘、报到各环节工作的，学校可取消其应聘资格。</p><p>（三）国外院校毕业人员所学专业名称与岗位要求专业名称不一致，但所学专业与岗位所要求的学科专业类同，应聘人员可对照教育部历年公布的学科专业目录或经教育部批准的高校特设专业目录，提供所在学校（院、系）出具的专业一致性说明材料（须加盖学校或院、系公章，注明联系人及联系电话）；</p><p>国外院校毕业的提供专业课程目录及成绩单（附翻译件），供招聘单位和学校进行综合评判。（四）应聘人员须提供真实有效的个人信息以及相关证书、证件等材料。凡与报名条件不符或提供虚假信息、伪造相关材料者，一经发现，立即取消应聘资格，已办理聘用手续者解除聘用，由此产生的一切后果由应聘人员承担。</p><p>（五）有下列情形之一者不得应聘：曾受过党纪政务处分、行政处分或刑事处罚的人员；正在接受纪律审查人员；涉嫌违法犯罪正在接受调查人员；被依法列为失信联合惩戒对象人员；在各级各类招聘招考中被认定有舞弊等严重违反聘用纪律行为人员；具有其他不良行为记录且影响聘用人员。</p><p>（六）北京印刷学院<strong>2026年</strong>海外优秀学者招聘的最终解释权归北京印刷学院人才办所有。五、联系方式 （一）涉及岗位要求等事宜咨询各招聘岗位所在部门，具体联系电话和邮箱详见附件。（二）涉及招聘报名、程序等相关问题咨询人才办施老师，电话：<strong>010</strong>-<strong>60269972</strong>，邮箱：rencaiban@bigc.edu.cn。</p><p>附件： <strong>1</strong>.北京印刷学院<strong>2026年</strong>海外优秀学者招聘岗位信息表 <strong>2</strong>.北京印刷学院应聘登记表（海外优秀学者） 北京印刷学院 <strong>2026年</strong><strong>11月</strong><strong>10日</strong> 附件: <strong>1</strong>. 北京印刷学院<strong>2026年</strong>海外优秀学者招聘岗位信息表 <strong>2</strong>. 北京印刷学院应聘登记表(海外优秀学者） 手机扫码查看</p></div></details></div>
+<div class="item" id="s2"><h3><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261109_34098250.html" target="_blank" rel="noopener">湖南省自然资源厅所属事业单位2026年公开招聘拟聘用人员公示</a></h3><div class="src"><span>湖南省人力资源和社会保障厅</span><span>2026-11-09 17:23:39</span><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261109_34098250.html" target="_blank" rel="noopener">rst.hunan.gov.cn</a></div><blockquote>2026年11月9日至11月16日</blockquote><details><summary>展开原文全文（2 段 · 1 张表）</summary><div class="body"><div class="tw"><table><thead><tr><th>序号</th><th>招聘单位</th><th>招聘岗位</th><th>准考证号</th><th>姓 名</th><th>性别</th><th>综合成绩</th><th>监督电话</th></tr></thead><tbody><tr><td class="nw">1</td><td>湖南省自然资源 事务中心</td><td class="nw">地质矿产岗</td><td class="nw">1111992505022</td><td class="nw">刘佳欣</td><td class="nw">女</td><td class="nw">70.82</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">2</td><td>湖南省自然资源 事务中心</td><td class="nw">生态修复岗</td><td class="nw">1111990505602</td><td class="nw">贾春玉</td><td class="nw">女</td><td class="nw">72.92</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">3</td><td>湖南省自然资源 事务中心</td><td>文秘 1</td><td class="nw">1111994405929</td><td class="nw">胡芹宁</td><td class="nw">女</td><td class="nw">75.35</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">4</td><td class="nw">湖南省第二测绘院</td><td>卫星遥感 应用岗</td><td class="nw">1111994400206</td><td class="nw">魏思雨</td><td class="nw">女</td><td class="nw">71.25</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">5</td><td class="nw">湖南省第二测绘院</td><td class="nw">自然资源调查监测岗</td><td class="nw">1111992509126</td><td class="nw">彭勇</td><td class="nw">男</td><td class="nw">71.32</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">6</td><td class="nw">湖南省第三测绘院</td><td class="nw">信息化建设岗一</td><td class="nw">1111992504902</td><td class="nw">李晨杰</td><td class="nw">男</td><td class="nw">75.72</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">7</td><td class="nw">湖南省第三测绘院</td><td class="nw">信息化建设岗二</td><td class="nw">1111992104829</td><td class="nw">罗润杰</td><td class="nw">男</td><td class="nw">74.57</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">8</td><td class="nw">湖南省不动产登记中心</td><td>综合管理岗 1</td><td class="nw">1111990501304</td><td class="nw">张媛媛</td><td class="nw">女</td><td class="nw">71.55</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">9</td><td class="nw">湖南省不动产登记中心</td><td>地籍数据分析和应用 研究岗</td><td class="nw">1111992109020</td><td class="nw">游思蜜</td><td class="nw">女</td><td class="nw">74.48</td><td>0731-89991291； 0731-89991316。</td></tr><tr><td class="nw">10</td><td class="nw">湖南省测绘科技研究所</td><td class="nw">测绘科研岗位二</td><td class="nw">1111994404306</td><td class="nw">王文曦</td><td class="nw">女</td><td class="nw">74.23</td><td>0731-89991291； 0731-89991316。</td></tr></tbody></table></div><p>公示时间： <strong>2026年</strong><strong>11月</strong><strong>9日</strong>至<strong>11月</strong><strong>16日</strong>。公示期间接受社会举报。举报者应以实名反映问题，所举报内容必须真实、准确，并提供有关调查核实线索。监督电话： <strong>0731</strong>-<strong>89991291 </strong>（湖南省自然资源厅人事处） <strong>0731</strong>-<strong>89991316 </strong>（湖南省自然资源厅机关纪委） 湖南省人力资源和社会保障厅 <strong>2026年</strong><strong>11月</strong><strong>9日</strong></p></div></details></div>
+<div class="item" id="s3"><h3><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261109_34098249.html" target="_blank" rel="noopener">湖南省住房和城乡建设厅所属事业单位2026年公开招聘拟聘用人员公示</a></h3><div class="src"><span>湖南省人力资源和社会保障厅</span><span>2026-11-09 17:22:20</span><a href="http://rst.hunan.gov.cn/rst/xxgk/zpzl/sydwzp/202611/t20261109_34098249.html" target="_blank" rel="noopener">rst.hunan.gov.cn</a></div><blockquote>2026年11月9日至11月16日</blockquote><details><summary>展开原文全文（2 段 · 1 张表）</summary><div class="body"><div class="tw"><table><thead><tr><th>序号</th><th>招聘单位</th><th>招聘岗位</th><th>准考证号</th><th>姓 名</th><th>性别</th><th>综合成绩</th><th>监督电话</th></tr></thead><tbody><tr><td class="nw">1</td><td class="nw">湖南省数字城建档案中心</td><td>土建业务岗 1</td><td class="nw">1111995307212</td><td class="nw">李泽南</td><td class="nw">男</td><td class="nw">76.08</td><td>0731-88950091 ； 0731-88950107 。</td></tr><tr><td class="nw">2</td><td class="nw">湖南省数字城建档案中心</td><td>土建业务岗 2</td><td class="nw">1111995307827</td><td class="nw">阳健</td><td class="nw">男</td><td class="nw">77.50</td><td>0731-88950091 ； 0731-88950107 。</td></tr></tbody></table></div><p>公示时间： <strong>2026年</strong><strong>11月</strong><strong>9日</strong>至<strong>11月</strong><strong>16日</strong>。公示期间接受社会举报。举报者应以实名反映问题，所举报内容必须真实、准确，并提供有关调查核实线索。监督电话： <strong>0731</strong>-<strong>88950091 </strong>（湖南省住房和城乡建设厅人事部门） <strong>0731</strong>-<strong>88950107 </strong>（湖南省住房和城乡建设厅机关纪委） 湖南省人力资源和社会保障厅 <strong>2026 年</strong> <strong>11 月</strong> <strong>9 日</strong></p></div></details></div>
+<div class="item" id="s4"><h3><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33128.html" target="_blank" rel="noopener">广西壮族自治区江滨医院2026年度公开招聘拟聘人员公示</a></h3><div class="src"><span>广西壮族自治区人事考试院</span><span>2026-11-09</span><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33128.html" target="_blank" rel="noopener">gxpta.com.cn</a></div><blockquote>广西壮族自治区人事考试院发布，广西壮族自治区江滨医院2026年度公开招聘拟聘人员公示。</blockquote><details><summary>展开原文全文（2 段）</summary><div class="body"><p>公示期间如有异议，请以书面形式，并署本人真实姓名及联系方式，于 <strong>2026 年</strong> <strong>11 月</strong> <strong>18 日</strong> 前寄送到医院监察室（直接送达以送达日期为准，邮寄以寄出邮戳之日为准）。地址：广西南宁市河堤路 <strong>85</strong>号，邮编：<strong>530021</strong>，联系电话<strong>0771</strong>-<strong>2080019</strong>。</p><p>群众如实反映公示对象的有关问题，受法律保护。广西壮族自治区江滨医院 <strong>2026 年</strong> <strong>11 月</strong> <strong>9 日</strong> 广西壮族自治区江滨医院<strong>2026年</strong>公开招聘聘用人员控制数工作人员拟聘名单.xlsx 上一篇： 关于做好自治区直属机关事业单位委托发布信息工作的通知 下一篇： 广西体育高等专科学校<strong>2026年</strong>拟聘用人员公示（一） 友情链接 广西人社新闻官方微信 关于我们 广西壮族自治区人事考试院 版权所有 桂ICP备<strong>05003677</strong>号 地址：南宁市桂春路<strong>9</strong>号 咨询电话： <strong>0771</strong>-<strong>12333</strong>转区本级 广西网警备：<strong>45010000043</strong>号 桂公网安备 <strong>45010302000826</strong>号 广西人社微信服务厅</p></div></details></div>
+<div class="kv" style="margin-top:40px"><span><a href="/kaogong-daily/issues/2026-11-09/">← 上一期</a></span><span><a href="/">全部期数</a></span></div>
+<footer>
+<p>资讯内容由 AI 辅助生成并逐条回原文核验，仍可能存在错误，请以原始信息出处和官方信息为准。</p>
+<p>每条都标注来源机构与发布时间；点标题可直达原文。</p>
+<p><a href="/kaogong-daily/rss.xml">RSS</a> · <a href="/kaogong-daily/archive/">往期归档</a></p>
+</footer>
+</div></body></html>
