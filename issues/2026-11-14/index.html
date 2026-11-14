@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-14 · 考公资讯日报</title>
+<meta name="description" content="2026-11-14 共 3 条考公资讯：招考公告、报名截止节点、政策文件。">
+<meta property="og:updated_time" content="2026-11-14T11:32:12.810489+08:00">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+/* ── 设计令牌 ───────────────────────────────────────────────────────────
+   来源：ui-ux-pro-max 的 "Swiss Modernism 2.0 + 暖纸" 方案（warm paper white
+   + ink brown + amber accent）。两处按实测改了它的值，写在下面各自位置。
+
+   全部色值都在这里，规则里一个裸色值都不留（它的 checklist 第一条就是
+   「禁止逐屏硬编码颜色」，上一版规则里还有 3 处裸值，这次一并收进来）。 */
+:root{
+  --paper:#FFFBEB;      /* 底：暖纸白 */
+  --ink:#0F172A;        /* 正文墨色 */
+  --stone:#78716C;      /* 石色（只用于装饰笔画，不用于正文，对比度不够） */
+  --stone-ink:#57534E;  /* 弱化文字用这个：在纸底上约 7:1，--stone 只有 4.3:1 */
+  --amber:#D97706;      /* 强调色：分隔线、色块、hover */
+  --amber-ink:#92400E;  /* 链接色：纸底上约 6.4:1，可直接当正文链接 */
+  --line:#E5E0D6;
+  --card:#FFFFFF;
+  --band:#F7F2E7;       /* 表头/引用块底色 */
+  --zebra:#FAF7F0;      /* 表格隔行 */
+  --focus:#B45309;      /* 焦点环 */
+  --ink-strong:#000000; /* 强调字：比正文更重的黑 */
+
+  /* 字号五档。正文提到 17px：中文长文 16px 在 700px 行宽下每行 40 字，
+     17px 配 1.85 行高更适合连着看几十条公告。 */
+  --fs-xs:13px;--fs-md:17px;--fs-lg:20px;--fs-xl:26px;--fs-2xl:32px;
+
+  /* 间距八档，全部 4 的倍数（沿用插件给的刻度，去掉它没用的 3 档） */
+  --sp-1:4px;--sp-2:8px;--sp-3:16px;--sp-4:24px;--sp-5:32px;
+  --sp-6:48px;--sp-7:64px;--sp-8:96px;
+
+  --radius:10px;
+  --radius-pill:999px;
+}
+body{background:var(--paper);color:var(--ink);font-size:var(--fs-md);line-height:1.85;
+  /* 字体不照抄它给的 Inter/Playfair Display：两者都没有中文字形，
+     中文会掉回系统字体，中英混排的行高基线会漂。中文字族用 Noto Sans SC。 */
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei UI",-apple-system,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+/* 行宽：720px 容器减左右 32px = 656px 正文，17px 字约 38 字一行，
+   落在中文长文最舒服的 38–42 区间。 */
+.wrap{max-width:720px;margin:0 auto;padding:var(--sp-7) var(--sp-5) var(--sp-8)}
+a{color:var(--amber-ink);text-decoration:none;
+  text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration:underline}
+a:focus-visible,summary:focus-visible,button:focus-visible{
+  outline:2px solid var(--focus);outline-offset:2px;border-radius:var(--sp-1)}
+header.top{border-bottom:1px solid var(--line);padding-bottom:var(--sp-4);
+  margin-bottom:var(--sp-5)}
+header.top h1{font-size:var(--fs-2xl);letter-spacing:.5px;line-height:1.35;
+  font-weight:700;display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap}
+/* 标题前的色块：瑞士风格的网格感，不用阴影不用渐变 */
+header.top h1::before{content:"";width:6px;height:.95em;background:var(--amber);
+  border-radius:2px;display:inline-block;flex:none}
+header.top .sub{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-2)}
+.meta{color:var(--stone-ink);font-size:var(--fs-xs);letter-spacing:.3px}
+h2.sec{font-size:var(--fs-lg);color:var(--ink);margin:var(--sp-6) 0 var(--sp-3);
+  letter-spacing:.5px;line-height:1.4;padding-bottom:var(--sp-2);
+  border-bottom:2px solid var(--ink)}
+h2.sec::before{content:"§";color:var(--amber);margin-right:var(--sp-2);font-weight:400}
+.item{padding:var(--sp-4) 0;border-bottom:1px solid var(--line);scroll-margin-top:var(--sp-3)}
+.item:last-child{border-bottom:none}
+.item h3{font-size:var(--fs-lg);line-height:1.55;font-weight:700;letter-spacing:.1px}
+.item h3 a{color:var(--ink)}
+.item h3 a:hover{color:var(--amber-ink);text-decoration:none}
+.item .src{color:var(--stone-ink);font-size:var(--fs-xs);margin-top:var(--sp-2);
+  display:flex;gap:var(--sp-3);flex-wrap:wrap;align-items:center}
+.tag{display:inline-block;padding:var(--sp-1) var(--sp-3);border-radius:var(--radius-pill);
+  font-size:var(--fs-xs);background:var(--band);color:var(--amber-ink);
+  border:1px solid var(--line)}
+.tag.t2{background:var(--card);color:var(--stone-ink)}
+blockquote{margin:var(--sp-3) 0 0;padding:var(--sp-3) var(--sp-4);
+  border-left:3px solid var(--amber);background:var(--band);
+  border-radius:0 var(--radius) var(--radius) 0;
+  color:var(--ink);font-size:var(--fs-md);line-height:1.75}
+details{margin-top:var(--sp-3)}
+details summary{cursor:pointer;color:var(--stone-ink);font-size:var(--fs-md);
+  user-select:none;min-height:var(--sp-5);display:flex;align-items:center;gap:var(--sp-2)}
+details summary:hover{color:var(--amber-ink)}
+details summary::marker{color:var(--amber)}
+.body{margin-top:var(--sp-3);font-size:var(--fs-md);color:var(--ink)}
+.body p{margin:var(--sp-3) 0}
+.body strong{color:var(--ink-strong);font-weight:700}
+.body code{background:var(--band);padding:0 var(--sp-1);border-radius:var(--sp-1);
+  font-size:var(--fs-xs);color:var(--amber-ink)}
+/* 表格：宽表向两侧出血，手机上横向滚动，正文列仍保持窄 */
+.tw{overflow-x:auto;margin:var(--sp-3) calc(-1 * var(--sp-5));
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.tw table{border-collapse:collapse;width:100%;font-size:var(--fs-xs);min-width:560px;
+  line-height:1.65}
+.tw th{background:var(--band);color:var(--ink);font-weight:700;text-align:left;
+  padding:var(--sp-2) var(--sp-3);white-space:nowrap;
+  border-bottom:1px solid var(--line);letter-spacing:.3px}
+.tw td{padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--line);
+  vertical-align:top;color:var(--ink)}
+.tw tr:last-child td{border-bottom:none}
+.tw tr:nth-child(even) td{background:var(--zebra)}
+.tw td:first-child{color:var(--stone-ink);font-variant-numeric:tabular-nums;
+  white-space:nowrap}
+/* 短单元格不许折行：避免"天津财经 / 大学""10月26 / 日"这种断字 */
+.tw td.nw{white-space:nowrap}
+/* 表内网址：13px 字形盒只有 19 高，低于 WCAG 2.5.8 的 24×24 硬线，
+   补 min-height 把命中区抬到 24。 */
+.tw td a{word-break:break-all;color:var(--amber-ink);
+  display:inline-flex;align-items:center;min-height:var(--sp-4)}
+ol.idx{list-style:none}
+ol.idx li{padding:var(--sp-2) 0;border-bottom:1px solid var(--line);font-size:var(--fs-md);
+  display:flex;gap:var(--sp-3);align-items:baseline}
+ol.idx li .d{color:var(--stone-ink);font-size:var(--fs-xs);flex:none;
+  font-variant-numeric:tabular-nums}
+ol.idx li a{color:var(--ink)}
+ol.idx li a:hover{color:var(--amber-ink)}
+/* 进度：国考这条线（左边的点只作辅助，状态一律写成字）+ 待盯的日子 */
+.steps{display:flex;flex-direction:column;gap:var(--sp-1)}
+.step{display:flex;align-items:center;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md);line-height:1.5}
+.step .s{width:10px;height:10px;border-radius:50%;background:var(--stone);flex:none}
+.step.done .s,.step.past .s{opacity:.5}
+.step.upcoming .s{background:var(--amber)}
+.step.today{border-color:var(--amber);background:var(--band)}
+.step.today .s{background:var(--amber);box-shadow:0 0 0 4px rgba(217,119,6,.16)}
+.step b{font-weight:600;flex:1 1 auto;min-width:0}
+.step .w{flex:none;font-weight:700}
+.step.unknown .w,.step.gap .w{color:var(--stone-ink);font-weight:500}
+.step a,.step .o{flex:none;font-size:var(--fs-xs);color:var(--stone-ink);
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  min-height:24px;display:inline-flex;align-items:center}
+.days{list-style:none;display:flex;flex-direction:column;gap:var(--sp-1)}
+.days li{display:flex;align-items:baseline;gap:12px;padding:9px var(--sp-3);
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--card);
+  font-size:var(--fs-md)}
+.days .dd{flex:none;font-weight:700;font-variant-numeric:tabular-nums}
+.days .dn{flex:none;font-size:var(--fs-xs);color:var(--amber-ink);min-width:52px}
+.days a{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;
+  white-space:nowrap;min-height:24px;display:inline-flex;align-items:center}
+.days .dg{flex:1 1 auto;text-align:right;font-size:var(--fs-xs);color:var(--stone-ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.note{color:var(--stone-ink);font-size:var(--fs-md);margin-top:var(--sp-3);  padding:var(--sp-3) var(--sp-4);background:var(--band);
+  border-radius:var(--radius);border:1px solid var(--line)}
+footer{margin-top:var(--sp-7);padding-top:var(--sp-4);border-top:1px solid var(--line);
+  color:var(--stone-ink);font-size:var(--fs-xs);line-height:1.8}
+footer p{margin:var(--sp-2) 0}
+.kv{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin:var(--sp-3) 0}
+.kv span{padding:var(--sp-2) var(--sp-3);border-radius:var(--radius);background:var(--card);
+  border:1px solid var(--line);font-size:var(--fs-xs);color:var(--stone-ink)}
+.kv b{color:var(--ink);font-size:var(--fs-lg);margin-right:var(--sp-1);
+  font-variant-numeric:tabular-nums}
+/* 指尖命中区：行内链接补够 32px 高与左右余量，视觉上仍是一行字 */
+.src a,.idx li a[href*="http"],footer a,.kv a{display:inline-flex;align-items:center;
+  min-height:var(--sp-5);padding:0 var(--sp-2);margin:0 calc(-1 * var(--sp-2))}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+}
+@media (max-width:760px){
+  .wrap{padding:var(--sp-5) var(--sp-3) var(--sp-7)}
+  .tw{margin-left:calc(-1 * var(--sp-3));margin-right:calc(-1 * var(--sp-3))}
+  header.top h1{font-size:var(--fs-xl)}
+  h2.sec{font-size:var(--fs-md)}
+}
+/* 深色偏好下反色：只在系统明确要求时生效，默认仍是暖纸 */
+@media (prefers-color-scheme:dark){
+  :root{--paper:#12100C;--ink:#EDE6DA;--stone-ink:#A8A29E;--line:#2A2622;
+        --card:#1A1713;--band:#1F1B16;--zebra:#191510;--amber:#F59E0B;
+        --amber-ink:#FBBF24;--focus:#FBBF24}
+  .body strong{color:var(--paper)}
+}
+</style></head><body><div class="wrap">
+<header class="top"><h1><i></i>考公资讯日报</h1><div class="sub">2026-11-14 星期六 · 第 26 期</div></header>
+<div class="kv"><span><b>3</b>条</span><span>更新于 2026-11-14 11:32</span></div>
+<h2 class="sec">国考这条线</h2><div class="steps" data-today="2026-11-14">
+<div class="step past"><span class="s"></span><b>发布公告与职位表</b><span class="w">—</span></div>
+<div class="step past"><span class="s"></span><b>网上报名</b><span class="w">—</span></div>
+<div class="step past"><span class="s"></span><b>网上报名与资格审查结束</b><span class="w">—</span></div>
+<div class="step past"><span class="s"></span><b>报名确认</b><span class="w">—</span></div>
+<div class="step today"><span class="s"></span><b>准考证打印</b><span class="w">2026年11月14日</span><a href="https://www.hljsgwy.org.cn/tyzpwb/website/queryMore.htm" target="_blank" rel="noopener" title="黑龙江省公务员局">黑龙江省公务员局</a></div>
+<div class="step unknown"><span class="s"></span><b>笔试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>成绩公布</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>面试</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>体检与考察</b><span class="w">尚未公告</span></div>
+<div class="step unknown"><span class="s"></span><b>公示与录用</b><span class="w">尚未公告</span></div>
+</div>
+<h2 class="sec">接下来要盯的日子</h2><ul class="days">
+<li><span class="dd">2026年11月14日</span><span class="dn">今天</span><a href="https://www.gdzz.gov.cn/gwygz/lypytzgg/content/post_26299.html" target="_blank" rel="noopener">缴费</a><span class="dg" title="广东省2027年考试录用公务员公告">中共广东省委组织部</span></li>
+<li><span class="dd">2026年11月14日</span><span class="dn">今天</span><a href="http://www.apta.gov.cn/ProfTech_NoticeIndex/ProfTechActivityDetail?aid=1693" target="_blank" rel="noopener">缴费</a><span class="dg" title="2026年度安徽省二级造价工程师职业资格考试现场人工核查安排">安徽省人事考试院</span></li>
+<li><span class="dd">2026年11月14日</span><span class="dn">今天</span><a href="http://www.jxpta.com/jxsrskszx/wsbm164/pc/content/content_2110985837123010560.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="江西省法院系统2026年度公开招聘聘用制书记员网上报名专题">江西省人事考试中心</span></li>
+<li><span class="dd">2026年11月16日</span><span class="dn">2 天后</span><a href="https://www.nanhaixf.gov.cn:443/articles/59/52001.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="海南省2027年度选调应届优秀大学毕业生公告">中共海南省委组织部</span></li>
+<li><span class="dd">11月16日—20日</span><span class="dn">2 天后</span><a href="https://www.scpta.com.cn/front/News/info/e4ac493ef8304dd0b514ccb7c39cabf3?t=162" target="_blank" rel="noopener">公示</a><span class="dg" title="四川省残疾人联合会直属事业单位2026年公开选调工作人员拟调人员公示">四川省人事考试中心</span></li>
+<li><span class="dd">2026年11月16日</span><span class="dn">2 天后</span><a href="https://www.nanhaixf.gov.cn/articles/59/52001.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="海南省2027年度选调应届优秀大学毕业生公告">海南省考试局</span></li>
+<li><span class="dd">11月17日</span><span class="dn">3 天后</span><a href="http://www.apta.gov.cn/ProfTech_NoticeIndex/ProfTechActivityDetail?aid=1691" target="_blank" rel="noopener">准考证打印</a><span class="dg" title="2026年度安徽省二级造价工程师职业资格考试公告">安徽省人事考试院</span></li>
+<li><span class="dd">11月17日</span><span class="dn">3 天后</span><a href="https://cq.cma.gov.cn/sqxj/ggtz/202611/t20261105_8128696.html" target="_blank" rel="noopener">网上报名</a><span class="dg" title="重庆市气象部门2027年度事业单位公开招聘应届高校毕业生公告">重庆市人力资源和社会保障局</span></li>
+<li><span class="dd">2026年11月20日</span><span class="dn">6 天后</span><a href="https://rsj.sh.gov.cn/tzpgg_17408/20261111/t0035_1444607.html" target="_blank" rel="noopener">报名截止</a><span class="dg" title="上海健康医学院2026年公开招聘工作人员公告（第三批）">上海市人力资源和社会保障局</span></li>
+</ul>
+<h2 class="sec">今天要事</h2><ol class="idx">
+<li><span class="d">2026-11-13</span><a href="#s1">新疆生产建设兵团2026年度面向高校毕业生公开招聘事业单位工作人员的公告（共229人）</a> <a href="https://rst.xinjiang.gov.cn/xjrst/c112746/202611/47d62b1fd31747f99af7456769ea2c24.shtml" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-13</span><a href="#s2">2026年石景山区卫生健康委所属事业单位下半年公开招聘工作人员公告</a> <a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261113_4944882.html" target="_blank" rel="noopener">↗</a></li>
+<li><span class="d">2026-11-13</span><a href="#s3">广西卫生职业技术学院2026年公开招聘 高层次人才拟聘人员公示（七）</a> <a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33143.html" target="_blank" rel="noopener">↗</a></li>
+</ol>
+<h2 class="sec">招考公告</h2>
+<div class="item" id="s1"><h3><a href="https://rst.xinjiang.gov.cn/xjrst/c112746/202611/47d62b1fd31747f99af7456769ea2c24.shtml" target="_blank" rel="noopener">新疆生产建设兵团2026年度面向高校毕业生公开招聘事业单位工作人员的公告（共229人）</a></h3><div class="src"><span>新疆维吾尔自治区人力资源和社会保障厅</span><span>2026-11-13 16:04:06</span><a href="https://rst.xinjiang.gov.cn/xjrst/c112746/202611/47d62b1fd31747f99af7456769ea2c24.shtml" target="_blank" rel="noopener">rst.xinjiang.gov.cn</a></div><blockquote>新疆维吾尔自治区人力资源和社会保障厅发布，新疆生产建设兵团2026年度面向高校毕业生公开招聘事业单位工作人员的公告（共229人）。</blockquote><details><summary>展开原文全文（10 段）</summary><div class="body"><p>为认真贯彻落实新时代人才强兵团战略，服务兵团经济社会高质量发展，现组织实施新疆生产建设兵团<strong>2026年</strong>度事业单位面向高校毕业生公开招聘事业单位工作人员工作。具体公告如下。一、招聘对象及条件 （一）招聘对象 符合招聘岗位条件的 应届、历届高校毕业生 。</p><p>（二）招聘条件 <strong>1</strong>.具有中华人民共和国国籍；<strong>2</strong>.拥护中华人民共和国宪法和法律法规，拥护中国共产党领导和社会主义制度，遵纪守法；<strong>3</strong>.具有良好的政治素质和道德品行；<strong>4</strong>.具有岗位所需的专业知识、业务能力或技能条件；<strong>5</strong>.具有正常履行职责的身体条件和心理素质；</p><p><strong>6</strong>.具有符合岗位要求的工作能力；<strong>7</strong>.法律、法规规定的其他条件。相关年龄、资格等条件计算截止日期均为报名第一日。以下人员不得报考 <strong>1</strong>.现役军人（确定于<strong>2026年</strong><strong>11月</strong>份退役的除外）；<strong>2</strong>.全日制高校在读的非<strong>2027</strong>届毕业生；<strong>3</strong>.涉嫌违法违纪正在接受审查的人员及尚未解除党纪、政务等处分的人员；</p><p>因犯罪受过刑事处罚的人员；被开除中国共产党党籍的人员，被开除公职的人员，被依法列为失信联合惩戒对象的人员，尚未解除惩戒的; <strong>4</strong>.在各级公务员招录或事业单位公开招聘考试、职称考试中被认定有舞弊等严重违纪违规行为，尚在禁止报考期限内人员；<strong>5</strong>.未提交同意报考证明的在职公务员和参照公务员法管理的机关及事业单位工作人员；</p><p><strong>6</strong>.公务员和参照公务员法管理的机关及事业单位工作人员被辞退未满<strong>5年</strong>的，以及法律法规规定不得录用的其他情形的人员；<strong>7</strong>.按照《事业单位公开招聘人员暂行规定》《事业单位人事管理回避规定》等应当执行回避制度的人员（报考者不得报考与本人有夫妻关系、直系血亲关系、三代以内旁系血亲关系以及近姻亲关系的人员担任领导成员的用人单位的岗位）；</p><p><strong>8</strong>.法律法规规定不得聘为事业单位工作人员的其他情形的人员。二、招聘岗位 本次招聘岗位 <strong>93个</strong> ，计划招聘人数 <strong>229人</strong> （详见附件）。三、招聘程序 按报名、资格审查、笔试、面试、体检、考察、公示、聘用等环节组织实施。四、招聘方式 本次事业单位公开招聘工作采取“笔试+面试”的方式开展，由兵团人力资源和社会保障局统一面向社会发布招聘公告，由各招聘单位组织考生报名。</p><p>报名时间和方式、笔试、面试等后续环节的具体要求请咨询各招聘单位。五、监督 本次公开招聘工作全程接受纪检监察部门和社会监督，严格执行回避制度。对于违反规定的相关工作人员将参照《中华人民共和国公务员法》《事业单位公开招聘违纪违规行为处理规定》（人社部第<strong>35</strong>号令）和《事业单位人事管理回避规定》（人社部规〔<strong>2019</strong>〕<strong>1</strong>号）等相关规定进行严肃查处、追究问责。</p><p>考生违反规定的，视情节轻重，取消其考试资格；有舞弊等严重违反聘用纪律行为的，按照有关规定处理；不属于报考范围已被聘用的，取消其聘用资格。六、特别提醒 在招聘工作组织实施过程中，如有关招聘环节安排进行调整，将在兵团考试信息网公布，请广大报考者及时关注。</p><p>本次招聘不出版也不指定考试辅导用书，不举办也不委托任何机构或者个人举办考试辅导培训班。对于社会上有关本次招聘考试培训、网站或者出版物等牟利的，请广大报考者提高警惕、理性对待，避免上当受骗，防止权益受损。请社会各界加强监督，如发现以上情况，请向相关部门举报，依法依规严肃查处。</p><p>兵团人力资源和社会保障局会同有关部门，共同维护良好的考试秩序，营造公平公正、安全有序的考试环境。监督电话：<strong>0991</strong>—<strong>2896676</strong>（兼传真） 附件： 新疆生产建设兵团<strong>2026年</strong>度事业单位面向高校毕业生公开招聘事业单位工作人员岗位表 （下载）</p></div></details></div>
+<div class="item" id="s2"><h3><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261113_4944882.html" target="_blank" rel="noopener">2026年石景山区卫生健康委所属事业单位下半年公开招聘工作人员公告</a></h3><div class="src"><span>北京市人力资源和社会保障局</span><span>2026-11-13</span><a href="https://rsj.beijing.gov.cn/xxgk/gkzp/202611/t20261113_4944882.html" target="_blank" rel="noopener">rsj.beijing.gov.cn</a></div><blockquote>报名时间：即日起至2026年11月24日</blockquote><details><summary>展开原文全文（18 段）</summary><div class="body"><p><strong>2</strong>.应聘人员应具有北京市常住户口；<strong>3</strong>.具有符合岗位要求的工作能力；<strong>4</strong>.具有正常履行职责的身体条件和心理素质；<strong>5</strong>.具备招聘单位拟聘用岗位所要求的其他资格条件。（二）其他要求 <strong>1</strong>.面向应届毕业生的招聘岗位，限于列入国家统一招生计划（不含委培生、定向生）、毕业时能够如期取得相应学历、学位证书的普通高等院校应届毕业生（毕业证书落款年度为<strong>2026年</strong>、<strong>2025年</strong>，<strong>2024</strong>届离校未就业毕业生毕业后未有工作经历、未缴纳过社保）；</p><p><strong>2025年</strong><strong>1月</strong><strong>1日</strong>之后取得国（境）外学位，完成国内教育部门学历学位认证，且符合报考岗位条件，可以报考应届毕业生岗位。留学回国人员报考的，应于资格复审时向招聘单位提供教育部门学历认证材料。学历认证有关事项可登录教育部留学服务中心网站（http://www.cscse.edu.cn）查询；</p><p><strong>2</strong>.《<strong>2026年</strong>石景山区卫生健康委所属事业单位下半年公开招聘工作人员岗位需求表》（以下简称《岗位需求表》）所要求的学历应为报考者所获得的最高学历；<strong>3</strong>.“<strong>38周岁</strong>及以下”指<strong>1987年</strong><strong>11月</strong>及以后出生，“<strong>45周岁</strong>及以下”指<strong>1980年</strong><strong>11月</strong>及以后出生；</p><p><strong>4</strong>.符合岗位的任职条件要求的学历、专业、专业技术（职务任职）资格、职（执、从）业资格等条件及回避的有关规定；<strong>5</strong>.现役军人、在读的非应届毕业生不能报考；<strong>6</strong>.尚未解除党纪、政纪处分或正在接受纪律审查的人员，以及刑事处罚期限未满或涉嫌违法犯罪正在接受调查的人员，不得报考。</p><p>二、报名程序 （一）岗位查询 各招聘单位的招聘人数、具体岗位、资格条件等详见《岗位需求表》，报考者可以通过北京市人力资源和社会保障局政务公开事业单位公开招聘专栏（http://rsj.beijing.gov.cn）以及石景山区政府门户网站（http://www.bjsjs.gov.cn）查阅。</p><p>对《岗位需求表》中的专业、学历、学位、职业资格等信息需要咨询时，请报考者直接与招聘单位联系，咨询电话可以通过《岗位需求表》查询。（二）报名方式 此次招聘通过现场方式报名。报考者只能选择一个单位中的一个岗位进行报名，不进行调剂，报名与考试时使用的本人有效居民身份证必须一致。</p><p>报考者提交的报考申请材料应当真实、准确、完整。<strong>1</strong>.报名时间：即日起至<strong>2026年</strong><strong>11月</strong><strong>24日</strong><strong>16时</strong>（限工作日） <strong>2</strong>.地址：详见各招聘单位联系方式 <strong>3</strong>.报名人员需同时报送以下材料： （<strong>1</strong>）事业单位公开招聘报名表（附件<strong>2</strong>）；（<strong>2</strong>）本人近期彩色免冠证件照片电子版；</p><p>（<strong>3</strong>）身份证（正反面）、户口簿（首页、本人页、变更页）原件及复印件（集体户口人员需携带户口首页复印件加盖户籍管理部门公章）；（<strong>4</strong>）学历学位证书原件及复印件；（<strong>5</strong>）报考职位要求的其它相关材料的原件及复印件；（<strong>6</strong>）应聘事业单位工作人员诚信承诺书（附件<strong>3</strong>）。</p><p>三、笔试内容和时间 （一）内容：笔试采取闭卷的方式，满分为<strong>100分</strong>。考试范围包括综合素养、基本能力、综合能力和专业知识等。（二）时间地点：另行通知。（三）成绩查询：笔试成绩满分为<strong>100分</strong>，划定合格分数线为<strong>60分</strong>。笔试成绩在石景山区人民政府网站（http://www.bjsjs.gov.cn）公布，请考生届时查询。</p><p>每个招考岗位按照拟招聘人数与参加面试人数<strong>1</strong>:<strong>5</strong>的比例，从高分到低分依次确定拟进入面试人选，成绩低于合格线者不能进入面试，未达到<strong>1</strong>:<strong>5</strong>比例的岗位，按成绩不低于合格线的实际人数参加面试。四、资格复审和面试 拟进入面试人选范围的考生，按照招聘单位通知的时间地点携带有关材料参加资格复审。</p><p>资格复审包括审查考生户籍、身份、学历，报考岗位资格条件要求的相关等级、资格、资质证书等材料，社会人员须同时提供现单位同意报考证明。凡有关材料主要信息不实，影响资格复审结果的，招聘单位有权取消该报考者参加面试的资格。经审查，报考条件存疑的考生应在<strong>2日</strong>内补全材料，经审查不具备报考条件的，取消面试资格。</p><p>因弃权或取消资格造成的空缺，按笔试成绩依次递补。面试成绩满分<strong>100分</strong>，划定合格分数线为<strong>60分</strong>。面试主要考察应聘者综合分析、逻辑思维、语言表达、专业知识等方面。笔试与面试成绩分别按照<strong>40%</strong>、<strong>60%</strong>的权重计入综合成绩，面试成绩低于合格线的不能进入体检考察环节，综合成绩在石景山区人民政府网站（http://www.bjsjs.gov.cn）公示。</p><p>面试具体时间、地点另行通知。五、体检和考察 每个招聘岗位按照<strong>1</strong>:<strong>1</strong>的比例，在面试成绩合格人员中，根据综合成绩排名顺序确定参加体检、考察人选。如同一职位综合成绩相同，按笔试成绩由高到低确定参加体检、考察人选。体检标准参照公务员录用有关体检标准执行。</p><p>考察工作突出政治标准，采取个别谈话、实地走访、审核人事档案（学籍档案）、查询社会信用记录等方法进行，主要考察应聘人员的思想政治表现、道德品质、工作表现、遵纪守法、廉洁自律、身心健康状况，与招聘岗位匹配度等情况，以及是否具有应当回避的情形。六、公示 体检合格、考察通过的考生即可确定为拟聘用人选，名单在石景山区政府门户网上公示<strong>7个</strong>工作日。</p><p>公示内容包括报考单位、拟聘用岗位、拟聘用人员姓名等，同时公布举报电话，接受社会监督。公示一经开始，如再出现招聘岗位人选空缺情况，不再顺延。七、聘用审批 公示期满，对没有问题或者反映的问题不影响聘用的人员，按有关规定办理调入手续；对公示期间反映有影响聘用的问题并查实的，不予办理聘用审批手续；</p><p>对反映的问题一时难以查实的，暂缓办理，待查清后再决定是否为其办理聘用审批手续。应聘人员应按照招聘单位规定的时限及要求，配合完成考察、体检及调入等工作，未能按照规定时限及要求完成的，取消后续聘用资格。八、其他需说明的事项 （一）从现场报名到招聘工作结束，考生应保证现场报名时所留电话号码联系畅通，因电话联系不畅造成无法通知考生本人的，后果由考生本人负责。</p><p>（二）资格审查贯穿公开招聘工作全过程，报考者提供虚假报考申请材料的，一经查实，即取消报考资格。对伪造、变造有关证件、材料、信息，骗取考试资格的，将按照有关规定严肃处理。（三）考生报名和资格复审时上交的复印件材料不予退还。（四）社会人员在报考前应征得所在单位同意，如果不能配合拟聘用单位按时完成考察的，视为放弃，不予聘用。</p><p>（五）如遇考试调整等事宜，将在石景山区人民政府网站通知公告栏发布。咨询电话：各招聘单位（详见附件<strong>1</strong>） 监督电话：<strong>88605063 </strong>附件： <strong>1.2026年</strong>石景山区卫生健康委所属事业单位下半年公开招聘工作人员岗位需求表 <strong>2</strong>.事业单位公开招聘报名表 <strong>3</strong>.应聘事业单位工作人员诚信承诺书 石景山区卫生健康委员会 <strong>2026年</strong><strong>11月</strong><strong>13日</strong> 附件: <strong>1</strong>. <strong>2026年</strong>石景山区卫生健康委所属事业单位下半年公开招聘工作人员岗位需求表 <strong>2</strong>. 事业单位公开招聘报名表 <strong>3</strong>. 应聘事业单位工作人员诚信承诺书 手机扫码查看</p></div></details></div>
+<div class="item" id="s3"><h3><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33143.html" target="_blank" rel="noopener">广西卫生职业技术学院2026年公开招聘 高层次人才拟聘人员公示（七）</a></h3><div class="src"><span>广西壮族自治区人事考试院</span><span>2026-11-13</span><a href="https://www.gxpta.com.cn/ksxm/sydwzpks/t33143.html" target="_blank" rel="noopener">gxpta.com.cn</a></div><blockquote>广西壮族自治区人事考试院发布，广西卫生职业技术学院2026年公开招聘 高层次人才拟聘人员公示（七）。</blockquote><details><summary>展开原文全文（2 段）</summary><div class="body"><p>现将拟聘用人员有关情况予以公示，公示期为 <strong>5个</strong>工作 日。公示期间，如对拟聘用人员有异议，请以书面形 式，并署真实姓名、联系方式及联系地址，于 <strong>2026 年</strong> <strong>11 月</strong> <strong>20 日</strong>前寄送到广西卫生职业技术学院 人事处 （直接送的以送达日期为准；邮寄的以邮戳为准）。</p><p>地址：广西南宁市昆仑大道 <strong>8</strong>号，邮政编码：<strong>530023 </strong>，电话： <strong>0771</strong>-<strong>5602902</strong>，邮箱：gxwzyrs@<strong>163</strong>.com 。逾期不予受理。附件： 广西卫生职业技术学院 <strong>2026年</strong>公开招聘高层次人才拟聘人员 名单（七） 广西卫生职业技术学院 <strong>2026年</strong><strong>11月</strong><strong>13日</strong> 附件 广西卫生职业技术学院<strong>2026年</strong>公开招聘高层次人才拟聘人员名单（七）.pdf 上一篇： 关于做好自治区直属机关事业单位委托发布信息工作的通知 下一篇： 广西社会科学院博士后科研工作站 <strong>2026年</strong>博士后研究人员招收公告 友情链接 广西人社新闻官方微信 关于我们 广西壮族自治区人事考试院 版权所有 桂ICP备<strong>05003677</strong>号 地址：南宁市桂春路<strong>9</strong>号 咨询电话： <strong>0771</strong>-<strong>12333</strong>转区本级 广西网警备：<strong>45010000043</strong>号 桂公网安备 <strong>45010302000826</strong>号 广西人社微信服务厅</p></div></details></div>
+<div class="kv" style="margin-top:40px"><span><a href="/kaogong-daily/issues/2026-11-13/">← 上一期</a></span><span><a href="/">全部期数</a></span></div>
+<footer>
+<p>资讯内容由 AI 辅助生成并逐条回原文核验，仍可能存在错误，请以原始信息出处和官方信息为准。</p>
+<p>每条都标注来源机构与发布时间；点标题可直达原文。</p>
+<p><a href="/kaogong-daily/rss.xml">RSS</a> · <a href="/kaogong-daily/archive/">往期归档</a></p>
+</footer>
+</div></body></html>
